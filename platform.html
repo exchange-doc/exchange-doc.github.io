@@ -365,10 +365,10 @@ body > pre {
         </div>
         <div class="g-doc">
           <div class="table-of-contents"><ul><li><a href="#u65b0u624bu6307u5f15">新手指引</a><ul><li><a href="#u63a5u5165u6d41u7a0b0a3ca20id3du63a5u5165u6d41u7a0b3e203ca3e">接入流程
-<a id=接入流程> </a></a></li><li><a href="#u8ba2u5355u573au666fu7c7bu578b0a3ca20id3du8ba2u5355u573au666fu7c7bu578b3e203ca3e">订单场景类型
-<a id=订单场景类型> </a></a></li><li><a href="#u8d26u6237u7c7bu578b0a3ca20id3du8d26u6237u7c7bu578b3e203ca3e">账户类型
-<a id=账户类型> </a></a></li><li><a href="#u9519u8befu78010a3ca20id3du9519u8befu78013e203ca3e">错误码
-<a id=错误码> </a></a></li></ul></li><li><a href="#oauth">OAuth</a><ul><li><a href="#u7b2cu4e00u6b65uff0coauthu6388u6743u767bu5f55u98750a3ca20id3du7b2cu4e00u6b65uff0coauthu6388u6743u767bu5f55u98753e203ca3e">第一步，OAuth授权登录页
+<a id=接入流程> </a></a></li><li><a href="#u9519u8befu78010a3ca20id3du9519u8befu78013e203ca3e">错误码
+<a id=错误码> </a></a></li><li><a href="#u8d26u6237u7c7bu578b0a3ca20id3du8d26u6237u7c7bu578b3e203ca3e">账户类型
+<a id=账户类型> </a></a></li><li><a href="#u8ba2u5355u573au666fu7c7bu578b0a3ca20id3du8ba2u5355u573au666fu7c7bu578b3e203ca3e">订单场景类型
+<a id=订单场景类型> </a></a></li></ul></li><li><a href="#oauth">OAuth</a><ul><li><a href="#u7b2cu4e00u6b65uff0coauthu6388u6743u767bu5f55u98750a3ca20id3du7b2cu4e00u6b65uff0coauthu6388u6743u767bu5f55u98753e203ca3e">第一步，OAuth授权登录页
 <a id=第一步，OAuth授权登录页> </a></a></li><li><a href="#u7b2cu4e8cu6b65uff0cu4f7fu7528codeu6362u53d6tokenu3001openidu63a5u53e30a3ca20id3du7b2cu4e8cu6b65uff0cu4f7fu7528codeu6362u53d6tokenu3001openidu63a5u53e33e203ca3e">第二步，使用code换取token、openId接口
 <a id=第二步，使用code换取token、openId接口> </a></a></li></ul></li><li><a href="#u652fu4ed8">支付</a><ul><li><a href="#u7b2cu4e00u6b65uff0cu521bu5efau652fu4ed8u8ba2u53550a3ca20id3du7b2cu4e00u6b65uff0cu521bu5efau652fu4ed8u8ba2u53553e203ca3e">第一步，创建支付订单
 <a id=第一步，创建支付订单> </a></a></li><li><a href="#u7b2cu4e8cu6b65uff0cu652fu4ed8u9875u97620a3ca20id3du7b2cu4e8cu6b65uff0cu652fu4ed8u9875u97623e203ca3e">第二步，支付页面
@@ -446,127 +446,10 @@ me1522055680xxxxxxxxxxxxxxxxx)<br>
   </thead><tbody className="ant-table-tbody">
                </tbody>
               </table>
-<h2 id="u8ba2u5355u573au666fu7c7bu578b0a3ca20id3du8ba2u5355u573au666fu7c7bu578b3e203ca3e">订单场景类型
-<a id=订单场景类型> </a></h2>
-<p></p>
-<h3 id="-4">基本信息</h3>
-<p><strong>Path：</strong> /doc/orderSceneType</p>
-<p><strong>Method：</strong> GET</p>
-<p><strong>接口描述：</strong></p>
-<table>
-<thead>
-<tr>
-<th>orderSceneType（即时生成）</th>
-<th>场景说明（商家定义）</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1001</td>
-<td><span class="colour" style="color:rgb(0, 128, 0)">抢购活动</span></td>
-</tr>
-<tr>
-<td>... ...</td>
-<td>... ...</td>
-</tr>
-</tbody>
-</table>
-<h3 id="-5">请求参数</h3>
-<h2 id="u8d26u6237u7c7bu578b0a3ca20id3du8d26u6237u7c7bu578b3e203ca3e">账户类型
-<a id=账户类型> </a></h2>
-<p></p>
-<h3 id="-6">基本信息</h3>
-<p><strong>Path：</strong> /doc/accountType</p>
-<p><strong>Method：</strong> GET</p>
-<p><strong>接口描述：</strong></p>
-<table>
-<thead>
-<tr>
-<th><strong><strong>assetType</strong></strong></th>
-<th><strong>常用资产类型</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><span class="colour" style="color:rgb(0, 128, 0)">201</span></td>
-<td><span class="colour" style="color:rgb(0, 128, 0)">正常余额</span></td>
-</tr>
-<tr>
-<td><span class="colour" style="color:rgb(0, 128, 0)">202</span></td>
-<td><span class="colour" style="color:rgb(0, 128, 0)">冻结</span></td>
-</tr>
-<tr>
-<td><span class="colour" style="color:rgb(0, 128, 0)">203</span></td>
-<td><span class="colour" style="color:rgb(0, 128, 0)">提现中</span></td>
-</tr>
-<tr>
-<td><span class="colour" style="color:rgb(0, 128, 0)">206</span></td>
-<td><span class="colour" style="color:rgb(0, 128, 0)">赠币账户</span></td>
-</tr>
-<tr>
-<td><span class="colour" style="color:rgb(0, 128, 0)">207</span></td>
-<td><span class="colour" style="color:rgb(0, 128, 0)">锁仓账户</span></td>
-</tr>
-<tr>
-<td><span class="colour" style="color:rgb(0, 128, 0)">208</span></td>
-<td><span class="colour" style="color:rgb(0, 128, 0)">储值锁仓账户</span></td>
-</tr>
-<tr>
-<td><span class="colour" style="color:rgb(0, 128, 0)">209</span></td>
-<td><span class="colour" style="color:rgb(0, 128, 0)">储值账户</span></td>
-</tr>
-<tr>
-<td><span class="colour" style="color:rgb(0, 128, 0)">210</span></td>
-<td><span class="colour" style="color:rgb(0, 128, 0)">场外商户保证金账户</span></td>
-</tr>
-<tr>
-<td><span class="colour" style="color:rgb(0, 128, 0)">216</span></td>
-<td><span class="colour" style="color:rgb(0, 128, 0)">合约保证金账户</span></td>
-</tr>
-<tr>
-<td><span class="colour" style="color:rgb(0, 128, 0)">217</span></td>
-<td><span class="colour" style="color:rgb(0, 128, 0)">场外正常余额</span></td>
-</tr>
-<tr>
-<td><span class="colour" style="color:rgb(0, 128, 0)">218</span></td>
-<td><span class="colour" style="color:rgb(0, 128, 0)">场外冻结</span></td>
-</tr>
-<tr>
-<td><span class="colour" style="color:rgb(0, 128, 0)">220</span></td>
-<td><span class="colour" style="color:rgb(0, 128, 0)">代币锁仓账户</span></td>
-</tr>
-<tr>
-<td><span class="colour" style="color:rgb(0, 128, 0)">221</span></td>
-<td><span class="colour" style="color:rgb(0, 128, 0)">申购冻结</span></td>
-</tr>
-<tr>
-<td><span class="colour" style="color:rgb(0, 128, 0)">222</span></td>
-<td><span class="colour" style="color:rgb(0, 128, 0)">代币锁仓账户 V2</span></td>
-</tr>
-<tr>
-<td><span class="colour" style="color:rgb(0, 128, 0)">241</span></td>
-<td><span class="colour" style="color:rgb(0, 128, 0)">开放平台 - 支付可用账户</span></td>
-</tr>
-<tr>
-<td><span class="colour" style="color:rgb(0, 128, 0)">242</span></td>
-<td><span class="colour" style="color:rgb(0, 128, 0)">开放平台 - 收款冻结账户</span></td>
-</tr>
-</tbody>
-</table>
-<h3 id="-7">请求参数</h3>
-<h3 id="-8">返回数据</h3>
-<table>
-  <thead class="ant-table-thead">
-    <tr>
-      <th key=name>名称</th><th key=type>类型</th><th key=required>是否必须</th><th key=default>默认值</th><th key=desc>备注</th><th key=sub>其他信息</th>
-    </tr>
-  </thead><tbody className="ant-table-tbody">
-               </tbody>
-              </table>
 <h2 id="u9519u8befu78010a3ca20id3du9519u8befu78013e203ca3e">错误码
 <a id=错误码> </a></h2>
 <p></p>
-<h3 id="-9">基本信息</h3>
+<h3 id="-4">基本信息</h3>
 <p><strong>Path：</strong> /doc/code</p>
 <p><strong>Method：</strong> GET</p>
 <p><strong>接口描述：</strong></p>
@@ -728,6 +611,123 @@ me1522055680xxxxxxxxxxxxxxxxx)<br>
 </tr>
 </tbody>
 </table>
+<h3 id="-5">请求参数</h3>
+<h2 id="u8d26u6237u7c7bu578b0a3ca20id3du8d26u6237u7c7bu578b3e203ca3e">账户类型
+<a id=账户类型> </a></h2>
+<p></p>
+<h3 id="-6">基本信息</h3>
+<p><strong>Path：</strong> /doc/accountType</p>
+<p><strong>Method：</strong> GET</p>
+<p><strong>接口描述：</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong><strong>assetType</strong></strong></th>
+<th><strong>常用资产类型</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="colour" style="color:rgb(0, 128, 0)">201</span></td>
+<td><span class="colour" style="color:rgb(0, 128, 0)">正常余额</span></td>
+</tr>
+<tr>
+<td><span class="colour" style="color:rgb(0, 128, 0)">202</span></td>
+<td><span class="colour" style="color:rgb(0, 128, 0)">冻结</span></td>
+</tr>
+<tr>
+<td><span class="colour" style="color:rgb(0, 128, 0)">203</span></td>
+<td><span class="colour" style="color:rgb(0, 128, 0)">提现中</span></td>
+</tr>
+<tr>
+<td><span class="colour" style="color:rgb(0, 128, 0)">206</span></td>
+<td><span class="colour" style="color:rgb(0, 128, 0)">赠币账户</span></td>
+</tr>
+<tr>
+<td><span class="colour" style="color:rgb(0, 128, 0)">207</span></td>
+<td><span class="colour" style="color:rgb(0, 128, 0)">锁仓账户</span></td>
+</tr>
+<tr>
+<td><span class="colour" style="color:rgb(0, 128, 0)">208</span></td>
+<td><span class="colour" style="color:rgb(0, 128, 0)">储值锁仓账户</span></td>
+</tr>
+<tr>
+<td><span class="colour" style="color:rgb(0, 128, 0)">209</span></td>
+<td><span class="colour" style="color:rgb(0, 128, 0)">储值账户</span></td>
+</tr>
+<tr>
+<td><span class="colour" style="color:rgb(0, 128, 0)">210</span></td>
+<td><span class="colour" style="color:rgb(0, 128, 0)">场外商户保证金账户</span></td>
+</tr>
+<tr>
+<td><span class="colour" style="color:rgb(0, 128, 0)">216</span></td>
+<td><span class="colour" style="color:rgb(0, 128, 0)">合约保证金账户</span></td>
+</tr>
+<tr>
+<td><span class="colour" style="color:rgb(0, 128, 0)">217</span></td>
+<td><span class="colour" style="color:rgb(0, 128, 0)">场外正常余额</span></td>
+</tr>
+<tr>
+<td><span class="colour" style="color:rgb(0, 128, 0)">218</span></td>
+<td><span class="colour" style="color:rgb(0, 128, 0)">场外冻结</span></td>
+</tr>
+<tr>
+<td><span class="colour" style="color:rgb(0, 128, 0)">220</span></td>
+<td><span class="colour" style="color:rgb(0, 128, 0)">代币锁仓账户</span></td>
+</tr>
+<tr>
+<td><span class="colour" style="color:rgb(0, 128, 0)">221</span></td>
+<td><span class="colour" style="color:rgb(0, 128, 0)">申购冻结</span></td>
+</tr>
+<tr>
+<td><span class="colour" style="color:rgb(0, 128, 0)">222</span></td>
+<td><span class="colour" style="color:rgb(0, 128, 0)">代币锁仓账户 V2</span></td>
+</tr>
+<tr>
+<td><span class="colour" style="color:rgb(0, 128, 0)">241</span></td>
+<td><span class="colour" style="color:rgb(0, 128, 0)">开放平台 - 支付可用账户</span></td>
+</tr>
+<tr>
+<td><span class="colour" style="color:rgb(0, 128, 0)">242</span></td>
+<td><span class="colour" style="color:rgb(0, 128, 0)">开放平台 - 收款冻结账户</span></td>
+</tr>
+</tbody>
+</table>
+<h3 id="-7">请求参数</h3>
+<h3 id="-8">返回数据</h3>
+<table>
+  <thead class="ant-table-thead">
+    <tr>
+      <th key=name>名称</th><th key=type>类型</th><th key=required>是否必须</th><th key=default>默认值</th><th key=desc>备注</th><th key=sub>其他信息</th>
+    </tr>
+  </thead><tbody className="ant-table-tbody">
+               </tbody>
+              </table>
+<h2 id="u8ba2u5355u573au666fu7c7bu578b0a3ca20id3du8ba2u5355u573au666fu7c7bu578b3e203ca3e">订单场景类型
+<a id=订单场景类型> </a></h2>
+<p></p>
+<h3 id="-9">基本信息</h3>
+<p><strong>Path：</strong> /doc/orderSceneType</p>
+<p><strong>Method：</strong> GET</p>
+<p><strong>接口描述：</strong></p>
+<table>
+<thead>
+<tr>
+<th>orderSceneType（即时生成）</th>
+<th>场景说明（商家定义）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1001</td>
+<td><span class="colour" style="color:rgb(0, 128, 0)">抢购活动</span></td>
+</tr>
+<tr>
+<td>... ...</td>
+<td>... ...</td>
+</tr>
+</tbody>
+</table>
 <h3 id="-10">请求参数</h3>
 <h1 id="oauth">OAuth</h1>
 <p></p>
@@ -785,7 +785,7 @@ me1522055680xxxxxxxxxxxxxxxxx)<br>
 <a id=第二步，使用code换取token、openId接口> </a></h2>
 <p></p>
 <h3 id="-14">基本信息</h3>
-<p><strong>Path：</strong> /fe-platform-api/chainup/open/auth/token</p>
+<p><strong>Path：</strong> /chainup/open/auth/token</p>
 <p><strong>Method：</strong> POST</p>
 <p><strong>接口描述：</strong></p>
 <h3 id="-15">请求参数</h3>
@@ -860,7 +860,7 @@ me1522055680xxxxxxxxxxxxxxxxx)<br>
 <a id=第一步，创建支付订单> </a></h2>
 <p></p>
 <h3 id="-17">基本信息</h3>
-<p><strong>Path：</strong> /open/opay/createThirdOrder</p>
+<p><strong>Path：</strong> /chainup/open/opay/createThirdOrder</p>
 <p><strong>Method：</strong> POST</p>
 <p><strong>接口描述：</strong></p>
 <h3 id="-18">请求参数</h3>
@@ -1110,7 +1110,7 @@ desc:商品描述<br>
 <a id=查询支付订单> </a></h2>
 <p></p>
 <h3 id="-26">基本信息</h3>
-<p><strong>Path：</strong> /open/opay/orderDetail</p>
+<p><strong>Path：</strong> /chainup/open/opay/orderDetail</p>
 <p><strong>Method：</strong> POST</p>
 <p><strong>接口描述：</strong></p>
 <h3 id="-27">请求参数</h3>
@@ -1183,7 +1183,7 @@ desc:商品描述<br>
 <a id=商家日贴对账单> </a></h2>
 <p></p>
 <h3 id="-29">基本信息</h3>
-<p><strong>Path：</strong> /open/opay/merchantBillingDay</p>
+<p><strong>Path：</strong> /chainup/open/opay/merchantBillingDay</p>
 <p><strong>Method：</strong> POST</p>
 <p><strong>接口描述：</strong></p>
 <h3 id="-30">请求参数</h3>
@@ -1279,7 +1279,7 @@ desc:商品描述<br>
 <a id=赠币接口> </a></h2>
 <p></p>
 <h3 id="-32">基本信息</h3>
-<p><strong>Path：</strong> /open/opay/refundOrder</p>
+<p><strong>Path：</strong> /chainup/open/opay/refundOrder</p>
 <p><strong>Method：</strong> POST</p>
 <p><strong>接口描述：</strong></p>
 <table>
@@ -1470,7 +1470,7 @@ desc:商品描述<br>
 <a id=手机号注册> </a></h2>
 <p></p>
 <h3 id="-35">基本信息</h3>
-<p><strong>Path：</strong> /open/user/mobile/register</p>
+<p><strong>Path：</strong> /chainup/open/user/mobile/register</p>
 <p><strong>Method：</strong> POST</p>
 <p><strong>接口描述：</strong></p>
 <h3 id="-36">请求参数</h3>
