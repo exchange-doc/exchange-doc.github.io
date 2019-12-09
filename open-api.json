@@ -16,7 +16,7 @@
         "type": "static",
         "req_body_is_json_schema": false,
         "res_body_is_json_schema": false,
-        "api_opened": false,
+        "api_opened": true,
         "index": 0,
         "tag": [],
         "_id": 1009,
@@ -28,7 +28,7 @@
         "req_headers": [
           {
             "required": "1",
-            "_id": "5ddddbd4e465640ff231d969",
+            "_id": "5dedc1eae465640ff231ddf6",
             "name": "Content-Type",
             "value": "application/x-www-form-urlencoded",
             "desc": ""
@@ -38,52 +38,44 @@
         "req_body_form": [
           {
             "required": "0",
-            "_id": "5ddddbd4e465640ff231d970",
+            "_id": "5dedc1eae465640ff231ddfc",
             "name": "mass_place",
             "type": "text",
             "desc": ""
           },
           {
             "required": "1",
-            "_id": "5ddddbd4e465640ff231d96f",
+            "_id": "5dedc1eae465640ff231ddfb",
             "name": "symbol",
             "type": "text",
             "desc": ""
           },
           {
             "required": "1",
-            "_id": "5ddddbd4e465640ff231d96e",
+            "_id": "5dedc1eae465640ff231ddfa",
             "name": "time",
             "type": "text",
             "desc": ""
           },
           {
             "required": "1",
-            "_id": "5ddddbd4e465640ff231d96d",
+            "_id": "5dedc1eae465640ff231ddf9",
             "name": "sign",
             "type": "text",
             "desc": ""
           },
           {
             "required": "1",
-            "_id": "5ddddbd4e465640ff231d96c",
+            "_id": "5dedc1eae465640ff231ddf8",
             "name": "api_key",
             "type": "text",
             "desc": ""
           },
           {
             "required": "0",
-            "_id": "5ddddbd4e465640ff231d96b",
+            "_id": "5dedc1eae465640ff231ddf7",
             "name": "mass_cancel",
             "type": "text",
-            "desc": ""
-          },
-          {
-            "required": "0",
-            "_id": "5ddddbd4e465640ff231d96a",
-            "name": "secretKey",
-            "type": "text",
-            "example": "",
             "desc": ""
           }
         ],
@@ -93,7 +85,7 @@
         "res_body_type": "json",
         "uid": 204,
         "add_time": 1567158008,
-        "up_time": 1574820820,
+        "up_time": 1575862762,
         "__v": 0,
         "markdown": "",
         "res_body": ""
@@ -108,7 +100,7 @@
         "type": "static",
         "req_body_is_json_schema": true,
         "res_body_is_json_schema": true,
-        "api_opened": false,
+        "api_opened": true,
         "index": 0,
         "tag": [],
         "_id": 991,
@@ -121,12 +113,12 @@
         "res_body_type": "json",
         "uid": 204,
         "add_time": 1567154938,
-        "up_time": 1574820797,
+        "up_time": 1575862751,
         "req_query": [],
         "req_headers": [
           {
             "required": "1",
-            "_id": "5ddddbbde465640ff231d950",
+            "_id": "5dedc1dfe465640ff231dde7",
             "name": "Content-Type",
             "value": "application/x-www-form-urlencoded"
           }
@@ -134,14 +126,14 @@
         "req_body_form": [
           {
             "required": "1",
-            "_id": "5ddddbbde465640ff231d959",
+            "_id": "5dedc1dfe465640ff231ddef",
             "name": "side",
             "type": "text",
             "example": "SELL"
           },
           {
             "required": "1",
-            "_id": "5ddddbbde465640ff231d958",
+            "_id": "5dedc1dfe465640ff231ddee",
             "name": "type",
             "type": "text",
             "example": "1",
@@ -149,7 +141,7 @@
           },
           {
             "required": "1",
-            "_id": "5ddddbbde465640ff231d957",
+            "_id": "5dedc1dfe465640ff231dded",
             "name": "volume",
             "type": "text",
             "example": "0.001",
@@ -157,7 +149,7 @@
           },
           {
             "required": "1",
-            "_id": "5ddddbbde465640ff231d956",
+            "_id": "5dedc1dfe465640ff231ddec",
             "name": "symbol",
             "type": "text",
             "example": "bchusdt",
@@ -165,7 +157,7 @@
           },
           {
             "required": "1",
-            "_id": "5ddddbbde465640ff231d955",
+            "_id": "5dedc1dfe465640ff231ddeb",
             "name": "time",
             "type": "text",
             "example": "1567415490190",
@@ -173,7 +165,7 @@
           },
           {
             "required": "1",
-            "_id": "5ddddbbde465640ff231d954",
+            "_id": "5dedc1dfe465640ff231ddea",
             "name": "api_key",
             "type": "text",
             "example": "1174082eaf4002419a0628d77439090c",
@@ -181,7 +173,7 @@
           },
           {
             "required": "1",
-            "_id": "5ddddbbde465640ff231d953",
+            "_id": "5dedc1dfe465640ff231dde9",
             "name": "sign",
             "type": "text",
             "example": "74da381312ba855f5b03b867ef6d44b4",
@@ -189,18 +181,10 @@
           },
           {
             "required": "1",
-            "_id": "5ddddbbde465640ff231d952",
+            "_id": "5dedc1dfe465640ff231dde8",
             "name": "price",
             "type": "text",
             "example": "1",
-            "desc": ""
-          },
-          {
-            "required": "0",
-            "_id": "5ddddbbde465640ff231d951",
-            "name": "secretKey",
-            "type": "text",
-            "example": "",
             "desc": ""
           }
         ],
@@ -221,7 +205,7 @@
         "type": "static",
         "req_body_is_json_schema": true,
         "res_body_is_json_schema": true,
-        "api_opened": false,
+        "api_opened": true,
         "index": 0,
         "tag": [],
         "_id": 997,
@@ -233,7 +217,7 @@
         "req_headers": [
           {
             "required": "1",
-            "_id": "5ddddbc6e465640ff231d95a",
+            "_id": "5dedc1e4e465640ff231ddf0",
             "name": "Content-Type",
             "value": "application/x-www-form-urlencoded"
           }
@@ -242,45 +226,37 @@
         "req_body_form": [
           {
             "required": "1",
-            "_id": "5ddddbc6e465640ff231d960",
+            "_id": "5dedc1e4e465640ff231ddf5",
             "name": "order_id",
             "type": "text",
             "example": "$582.body.data.order_id"
           },
           {
             "required": "1",
-            "_id": "5ddddbc6e465640ff231d95f",
+            "_id": "5dedc1e4e465640ff231ddf4",
             "name": "symbol",
             "type": "text",
             "example": "bchusdt"
           },
           {
             "required": "1",
-            "_id": "5ddddbc6e465640ff231d95e",
+            "_id": "5dedc1e4e465640ff231ddf3",
             "name": "api_key",
             "type": "text",
             "example": "1174082eaf4002419a0628d77439090c"
           },
           {
             "required": "1",
-            "_id": "5ddddbc6e465640ff231d95d",
+            "_id": "5dedc1e4e465640ff231ddf2",
             "name": "time",
             "type": "text",
             "example": "@time"
           },
           {
             "required": "1",
-            "_id": "5ddddbc6e465640ff231d95c",
+            "_id": "5dedc1e4e465640ff231ddf1",
             "name": "sign",
             "type": "text"
-          },
-          {
-            "required": "0",
-            "_id": "5ddddbc6e465640ff231d95b",
-            "name": "secretKey",
-            "type": "text",
-            "example": "",
-            "desc": ""
           }
         ],
         "project_id": 73,
@@ -289,108 +265,10 @@
         "res_body_type": "json",
         "uid": 204,
         "add_time": 1567158008,
-        "up_time": 1574820806,
+        "up_time": 1575862756,
         "__v": 0,
         "markdown": "",
         "res_body": "{\"type\":\"object\",\"title\":\"empty object\",\"properties\":{}}"
-      },
-      {
-        "query_path": {
-          "path": "/open/api/mass_replace",
-          "params": []
-        },
-        "edit_uid": 0,
-        "status": "undone",
-        "type": "static",
-        "req_body_is_json_schema": false,
-        "res_body_is_json_schema": false,
-        "api_opened": false,
-        "index": 0,
-        "tag": [],
-        "_id": 1003,
-        "title": "现货批量下单取消接口(下单)",
-        "path": "/open/api/mass_replace",
-        "method": "POST",
-        "desc": "<p>客户调用方法</p>\n",
-        "req_query": [],
-        "req_headers": [
-          {
-            "required": "1",
-            "_id": "5ddddbcde465640ff231d961",
-            "name": "Content-Type",
-            "value": "application/x-www-form-urlencoded",
-            "desc": ""
-          }
-        ],
-        "req_body_type": "form",
-        "req_body_form": [
-          {
-            "required": "0",
-            "_id": "5ddddbcde465640ff231d968",
-            "name": "mass_place",
-            "type": "text",
-            "example": "[{\"side\":\"SELL\",\"type\":\"1\",\"volume\":\"1\",\"price\":\"10\",\"fee_is_user_exchange_coin\":\"0\"}]"
-          },
-          {
-            "required": "1",
-            "_id": "5ddddbcde465640ff231d967",
-            "name": "symbol",
-            "type": "text",
-            "example": "{{symbol}}",
-            "desc": ""
-          },
-          {
-            "required": "1",
-            "_id": "5ddddbcde465640ff231d966",
-            "name": "time",
-            "type": "text",
-            "example": "{{time}}",
-            "desc": ""
-          },
-          {
-            "required": "1",
-            "_id": "5ddddbcde465640ff231d965",
-            "name": "sign",
-            "type": "text",
-            "example": "{{sign}}",
-            "desc": ""
-          },
-          {
-            "required": "1",
-            "_id": "5ddddbcde465640ff231d964",
-            "name": "api_key",
-            "type": "text",
-            "example": "{{api_key}}",
-            "desc": ""
-          },
-          {
-            "required": "0",
-            "_id": "5ddddbcde465640ff231d963",
-            "name": "mass_cancel",
-            "type": "text",
-            "example": "[78321,78322,78323]",
-            "desc": ""
-          },
-          {
-            "required": "0",
-            "_id": "5ddddbcde465640ff231d962",
-            "name": "secretKey",
-            "type": "text",
-            "example": "",
-            "desc": ""
-          }
-        ],
-        "project_id": 73,
-        "catid": 228,
-        "req_params": [],
-        "res_body_type": "json",
-        "uid": 204,
-        "add_time": 1567158008,
-        "up_time": 1574820813,
-        "__v": 0,
-        "markdown": "客户调用方法",
-        "res_body": "",
-        "req_body_other": ""
       },
       {
         "query_path": {
@@ -402,7 +280,7 @@
         "type": "static",
         "req_body_is_json_schema": false,
         "res_body_is_json_schema": false,
-        "api_opened": false,
+        "api_opened": true,
         "index": 0,
         "tag": [],
         "_id": 1015,
@@ -414,7 +292,7 @@
         "req_headers": [
           {
             "required": "1",
-            "_id": "5ddddbdbe465640ff231d971",
+            "_id": "5dedc1f0e465640ff231ddfd",
             "name": "Content-Type",
             "value": "application/x-www-form-urlencoded",
             "desc": ""
@@ -424,52 +302,44 @@
         "req_body_form": [
           {
             "required": "0",
-            "_id": "5ddddbdbe465640ff231d978",
+            "_id": "5dedc1f0e465640ff231de03",
             "name": "mass_place",
             "type": "text",
             "desc": ""
           },
           {
             "required": "1",
-            "_id": "5ddddbdbe465640ff231d977",
+            "_id": "5dedc1f0e465640ff231de02",
             "name": "symbol",
             "type": "text",
             "desc": ""
           },
           {
             "required": "1",
-            "_id": "5ddddbdbe465640ff231d976",
+            "_id": "5dedc1f0e465640ff231de01",
             "name": "time",
             "type": "text",
             "desc": ""
           },
           {
             "required": "1",
-            "_id": "5ddddbdbe465640ff231d975",
+            "_id": "5dedc1f0e465640ff231de00",
             "name": "sign",
             "type": "text",
             "desc": ""
           },
           {
             "required": "1",
-            "_id": "5ddddbdbe465640ff231d974",
+            "_id": "5dedc1f0e465640ff231ddff",
             "name": "api_key",
             "type": "text",
             "desc": ""
           },
           {
             "required": "0",
-            "_id": "5ddddbdbe465640ff231d973",
+            "_id": "5dedc1f0e465640ff231ddfe",
             "name": "mass_cancel",
             "type": "text",
-            "desc": ""
-          },
-          {
-            "required": "0",
-            "_id": "5ddddbdbe465640ff231d972",
-            "name": "secretKey",
-            "type": "text",
-            "example": "",
             "desc": ""
           }
         ],
@@ -479,7 +349,7 @@
         "res_body_type": "json",
         "uid": 204,
         "add_time": 1567158009,
-        "up_time": 1574820827,
+        "up_time": 1575862768,
         "__v": 0,
         "markdown": "",
         "res_body": ""
@@ -495,7 +365,7 @@
     "list": [
       {
         "query_path": {
-          "path": "/pub/trades",
+          "path": "/open/pub/trades",
           "params": []
         },
         "edit_uid": 0,
@@ -503,38 +373,38 @@
         "type": "static",
         "req_body_is_json_schema": false,
         "res_body_is_json_schema": true,
-        "api_opened": false,
+        "api_opened": true,
         "index": 0,
         "tag": [],
         "_id": 2427,
         "method": "GET",
         "catid": 628,
         "title": "交易列表接口(Trade)",
-        "path": "/pub/trades",
+        "path": "/open/pub/trades",
         "project_id": 73,
         "req_params": [],
         "res_body_type": "json",
         "uid": 247,
         "add_time": 1574754710,
-        "up_time": 1574767160,
+        "up_time": 1575862796,
         "req_query": [
           {
             "required": "1",
-            "_id": "5ddd0a38e465640ff231d930",
+            "_id": "5dedc20ce465640ff231de0b",
             "name": "base",
-            "example": "BTC",
+            "example": "btc",
             "desc": ""
           },
           {
             "required": "1",
-            "_id": "5ddd0a38e465640ff231d92f",
+            "_id": "5dedc20ce465640ff231de0a",
             "name": "quote",
-            "example": "USDT",
+            "example": "usdt",
             "desc": ""
           },
           {
             "required": "0",
-            "_id": "5ddd0a38e465640ff231d92e",
+            "_id": "5dedc20ce465640ff231de09",
             "name": "trades",
             "example": "100",
             "desc": "默认返回100条记录"
@@ -549,7 +419,7 @@
       },
       {
         "query_path": {
-          "path": "/pub/ticker",
+          "path": "/open/pub/ticker",
           "params": []
         },
         "edit_uid": 0,
@@ -557,20 +427,20 @@
         "type": "static",
         "req_body_is_json_schema": false,
         "res_body_is_json_schema": true,
-        "api_opened": false,
+        "api_opened": true,
         "index": 0,
         "tag": [],
         "_id": 2421,
         "method": "GET",
         "catid": 628,
         "title": "币对行情接口(Ticker)",
-        "path": "/pub/ticker",
+        "path": "/open/pub/ticker",
         "project_id": 73,
         "req_params": [],
         "res_body_type": "json",
         "uid": 247,
         "add_time": 1574754678,
-        "up_time": 1574842602,
+        "up_time": 1575862784,
         "req_query": [],
         "req_headers": [],
         "req_body_form": [],
@@ -581,7 +451,7 @@
       },
       {
         "query_path": {
-          "path": "/pub/asset",
+          "path": "/open/pub/asset",
           "params": []
         },
         "edit_uid": 0,
@@ -589,20 +459,20 @@
         "type": "static",
         "req_body_is_json_schema": false,
         "res_body_is_json_schema": true,
-        "api_opened": false,
+        "api_opened": true,
         "index": 0,
         "tag": [],
         "_id": 2418,
         "method": "GET",
         "catid": 628,
         "title": "币种列表接口(Asset)",
-        "path": "/pub/asset",
+        "path": "/open/pub/asset",
         "project_id": 73,
         "req_params": [],
         "res_body_type": "json",
         "uid": 247,
         "add_time": 1574754647,
-        "up_time": 1574842485,
+        "up_time": 1575862779,
         "req_query": [],
         "req_headers": [],
         "req_body_form": [],
@@ -613,7 +483,7 @@
       },
       {
         "query_path": {
-          "path": "/pub/orderbook",
+          "path": "/open/pub/orderbook",
           "params": []
         },
         "edit_uid": 0,
@@ -621,51 +491,52 @@
         "type": "static",
         "req_body_is_json_schema": false,
         "res_body_is_json_schema": true,
-        "api_opened": false,
+        "api_opened": true,
         "index": 0,
         "tag": [],
         "_id": 2424,
         "method": "GET",
         "catid": 628,
         "title": "盘口数据接口(OrderBook)",
-        "path": "/pub/orderbook",
+        "path": "/open/pub/orderbook",
         "project_id": 73,
         "req_params": [],
         "res_body_type": "json",
         "uid": 247,
         "add_time": 1574754695,
-        "up_time": 1574758566,
+        "up_time": 1575862789,
         "req_query": [
           {
             "required": "1",
-            "_id": "5ddce8a6e465640ff231d918",
+            "_id": "5dedc205e465640ff231de08",
             "name": "base",
-            "desc": "BTC"
+            "example": "btc",
+            "desc": "btc"
           },
           {
             "required": "1",
-            "_id": "5ddce8a6e465640ff231d917",
+            "_id": "5dedc205e465640ff231de07",
             "name": "quote",
-            "example": "",
-            "desc": "USDT"
+            "example": "usdt",
+            "desc": "usdt"
           },
           {
             "required": "0",
-            "_id": "5ddce8a6e465640ff231d916",
+            "_id": "5dedc205e465640ff231de06",
             "name": "depth",
             "example": "0,1,2",
             "desc": "不填默认为0"
           },
           {
             "required": "0",
-            "_id": "5ddce8a6e465640ff231d915",
+            "_id": "5dedc205e465640ff231de05",
             "name": "bids",
             "example": "150",
             "desc": ""
           },
           {
             "required": "0",
-            "_id": "5ddce8a6e465640ff231d914",
+            "_id": "5dedc205e465640ff231de04",
             "name": "asks",
             "example": "150",
             "desc": ""
