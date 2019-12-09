@@ -701,5 +701,103 @@
         "req_body_type": "form"
       }
     ]
+  },
+  {
+    "index": 6,
+    "name": "交易接口",
+    "desc": null,
+    "add_time": 1573548772,
+    "up_time": 1573548772,
+    "list": [
+      {
+        "query_path": {
+          "path": "/chainup/open/trade/getAll",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "undone",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": true,
+        "index": 0,
+        "tag": [],
+        "_id": 2589,
+        "method": "POST",
+        "catid": 532,
+        "title": "成交记录查询接口",
+        "path": "/chainup/open/trade/getAll",
+        "project_id": 146,
+        "req_params": [],
+        "res_body_type": "json",
+        "req_query": [],
+        "req_headers": [
+          {
+            "required": "1",
+            "_id": "5dedd471e465640ff231de13",
+            "name": "Content-Type",
+            "value": "application/x-www-form-urlencoded"
+          }
+        ],
+        "req_body_form": [
+          {
+            "required": "1",
+            "_id": "5dedd471e465640ff231de19",
+            "name": "symbol",
+            "type": "text",
+            "example": "btcusdt",
+            "desc": "市场标记"
+          },
+          {
+            "required": "0",
+            "_id": "5dedd471e465640ff231de18",
+            "name": "startDate",
+            "type": "text",
+            "example": "2019-12-02 00:00:00",
+            "desc": "开始时间，精确到秒“yyyy-MM-dd HH:mm:ss”"
+          },
+          {
+            "required": "1",
+            "_id": "5dedd471e465640ff231de17",
+            "name": "endDate",
+            "type": "text",
+            "example": "10000",
+            "desc": "结束时间，精确到秒“yyyy-MM-dd HH:mm:ss”"
+          },
+          {
+            "required": "0",
+            "_id": "5dedd471e465640ff231de16",
+            "name": "pageSize",
+            "type": "text",
+            "example": "1000",
+            "desc": "默认1000条"
+          },
+          {
+            "required": "0",
+            "_id": "5dedd471e465640ff231de15",
+            "name": "page",
+            "type": "text",
+            "example": "1",
+            "desc": ""
+          },
+          {
+            "required": "0",
+            "_id": "5dedd471e465640ff231de14",
+            "name": "sort",
+            "type": "text",
+            "example": "0",
+            "desc": "1表示倒序"
+          }
+        ],
+        "markdown": "",
+        "desc": "",
+        "res_body": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"code\":{\"type\":\"string\"},\"msg\":{\"type\":\"string\"},\"data\":{\"type\":\"object\",\"properties\":{\"count\":{\"type\":\"number\"},\"resultList\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"volume\":{\"type\":\"string\"},\"side\":{\"type\":\"string\"},\"feeCoin\":{\"type\":\"string\"},\"price\":{\"type\":\"string\"},\"fee\":{\"type\":\"string\"},\"ctime\":{\"type\":\"number\"},\"deal_price\":{\"type\":\"string\"},\"id\":{\"type\":\"number\"},\"type\":{\"type\":\"string\"},\"bid_id\":{\"type\":\"number\"},\"ask_id\":{\"type\":\"number\"},\"bid_user_id\":{\"type\":\"number\"},\"ask_user_id\":{\"type\":\"number\"}},\"required\":[\"volume\",\"side\",\"feeCoin\",\"price\",\"fee\",\"ctime\",\"deal_price\",\"id\",\"type\",\"bid_id\",\"ask_id\",\"bid_user_id\",\"ask_user_id\"]}}}}}}",
+        "req_body_type": "form",
+        "uid": 247,
+        "add_time": 1575553642,
+        "up_time": 1575867505,
+        "__v": 0
+      }
+    ]
   }
 ]

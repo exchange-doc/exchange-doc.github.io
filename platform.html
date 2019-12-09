@@ -359,8 +359,9 @@ body > pre {
       <body>
         <div class="m-header">
           <a href="#" style="display: inherit;"><svg class="svg" width="32px" height="32px" viewBox="0 0 64 64" version="1.1"><title>Icon</title><desc>Created with Sketch.</desc><defs><linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1"><stop stop-color="#FFFFFF" offset="0%"></stop><stop stop-color="#F2F2F2" offset="100%"></stop></linearGradient><circle id="path-2" cx="31.9988602" cy="31.9988602" r="2.92886048"></circle><filter x="-85.4%" y="-68.3%" width="270.7%" height="270.7%" filterUnits="objectBoundingBox" id="filter-3"><feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset><feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur><feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.159703351 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix></filter></defs><g id="首页" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="大屏幕"><g id="Icon"><circle id="Oval-1" fill="url(#linearGradient-1)" cx="32" cy="32" r="32"></circle><path d="M36.7078009,31.8054514 L36.7078009,51.7110548 C36.7078009,54.2844537 34.6258634,56.3695395 32.0579205,56.3695395 C29.4899777,56.3695395 27.4099998,54.0704461 27.4099998,51.7941246 L27.4099998,31.8061972 C27.4099998,29.528395 29.4909575,27.218453 32.0589004,27.230043 C34.6268432,27.241633 36.7078009,29.528395 36.7078009,31.8054514 Z" id="blue" fill="#2359F1" fill-rule="nonzero"></path><path d="M45.2586091,17.1026914 C45.2586091,17.1026914 45.5657231,34.0524383 45.2345291,37.01141 C44.9033351,39.9703817 43.1767091,41.6667796 40.6088126,41.6667796 C38.040916,41.6667796 35.9609757,39.3676862 35.9609757,37.0913646 L35.9609757,17.1034372 C35.9609757,14.825635 38.0418959,12.515693 40.6097924,12.527283 C43.177689,12.538873 45.2586091,14.825635 45.2586091,17.1026914 Z" id="green" fill="#57CF27" fill-rule="nonzero" transform="translate(40.674608, 27.097010) rotate(60.000000) translate(-40.674608, -27.097010) "></path><path d="M28.0410158,17.0465598 L28.0410158,36.9521632 C28.0410158,39.525562 25.9591158,41.6106479 23.3912193,41.6106479 C20.8233227,41.6106479 18.7433824,39.3115545 18.7433824,37.035233 L18.7433824,17.0473055 C18.7433824,14.7695034 20.8243026,12.4595614 23.3921991,12.4711513 C25.9600956,12.4827413 28.0410158,14.7695034 28.0410158,17.0465598 Z" id="red" fill="#FF561B" fill-rule="nonzero" transform="translate(23.392199, 27.040878) rotate(-60.000000) translate(-23.392199, -27.040878) "></path><g id="inner-round"><use fill="black" fill-opacity="1" filter="url(#filter-3)" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#path-2"></use><use fill="#F7F7F7" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#path-2"></use></g></g></g></g></svg></a>
-          <a href="#"><h1 class="title">接口文档</h1></a>
+          <a href="#"><h1 class="title">YAPI 接口文档</h1></a>
           <div class="nav">
+            <a href="https://yapi.ymfe.org/">YApi</a>
           </div>
         </div>
         <div class="g-doc">
@@ -373,7 +374,8 @@ body > pre {
 <a id=查询支付订单> </a></a></li><li><a href="#u5546u5bb6u65e5u8d34u5bf9u8d26u53550a3ca20id3du5546u5bb6u65e5u8d34u5bf9u8d26u53553e203ca3e">商家日贴对账单
 <a id=商家日贴对账单> </a></a></li></ul></li><li><a href="#u8d60u5e01">赠币</a><ul><li><a href="#u8d60u5e01u63a5u53e30a3ca20id3du8d60u5e01u63a5u53e33e203ca3e">赠币接口
 <a id=赠币接口> </a></a></li></ul></li><li><a href="#u7528u6237u63a5u53e3">用户接口</a><ul><li><a href="#u624bu673au53f7u6ce8u518c0a3ca20id3du624bu673au53f7u6ce8u518c3e203ca3e">手机号注册
-<a id=手机号注册> </a></a></li></ul></li></ul></div>
+<a id=手机号注册> </a></a></li></ul></li><li><a href="#u4ea4u6613u63a5u53e3">交易接口</a><ul><li><a href="#u6210u4ea4u8bb0u5f55u67e5u8be2u63a5u53e30a3ca20id3du6210u4ea4u8bb0u5f55u67e5u8be2u63a5u53e33e203ca3e">成交记录查询接口
+<a id=成交记录查询接口> </a></a></li></ul></li></ul></div>
           <div id="right" class="content-right">
            <h1 class="curproject-name"> SAAS交易所开放平台 </h1> 
 <h1 id="oauth">OAuth</h1>
@@ -1149,6 +1151,102 @@ desc:商品描述<br>
       <th key=name>名称</th><th key=type>类型</th><th key=required>是否必须</th><th key=default>默认值</th><th key=desc>备注</th><th key=sub>其他信息</th>
     </tr>
   </thead><tbody className="ant-table-tbody">
+               </tbody>
+              </table>
+<h1 id="u4ea4u6613u63a5u53e3">交易接口</h1>
+<p></p>
+<h2 id="u6210u4ea4u8bb0u5f55u67e5u8be2u63a5u53e30a3ca20id3du6210u4ea4u8bb0u5f55u67e5u8be2u63a5u53e33e203ca3e">成交记录查询接口
+<a id=成交记录查询接口> </a></h2>
+<p></p>
+<h3 id="-28">基本信息</h3>
+<p><strong>Path：</strong> /chainup/open/trade/getAll</p>
+<p><strong>Method：</strong> POST</p>
+<p><strong>接口描述：</strong></p>
+<h3 id="-29">请求参数</h3>
+<p><strong>Headers</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>参数值</th>
+<th>是否必须</th>
+<th>示例</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Content-Type</td>
+<td>application/x-www-form-urlencoded</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Body</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>参数类型</th>
+<th>是否必须</th>
+<th>示例</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>symbol</td>
+<td>text</td>
+<td>是</td>
+<td>btcusdt</td>
+<td>市场标记</td>
+</tr>
+<tr>
+<td>startDate</td>
+<td>text</td>
+<td>否</td>
+<td>2019-12-02 00:00:00</td>
+<td>开始时间，精确到秒“yyyy-MM-dd HH:mm:ss”</td>
+</tr>
+<tr>
+<td>endDate</td>
+<td>text</td>
+<td>是</td>
+<td>10000</td>
+<td>结束时间，精确到秒“yyyy-MM-dd HH:mm:ss”</td>
+</tr>
+<tr>
+<td>pageSize</td>
+<td>text</td>
+<td>否</td>
+<td>1000</td>
+<td>默认1000条</td>
+</tr>
+<tr>
+<td>page</td>
+<td>text</td>
+<td>否</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>sort</td>
+<td>text</td>
+<td>否</td>
+<td>0</td>
+<td>1表示倒序</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-30">返回数据</h3>
+<table>
+  <thead class="ant-table-thead">
+    <tr>
+      <th key=name>名称</th><th key=type>类型</th><th key=required>是否必须</th><th key=default>默认值</th><th key=desc>备注</th><th key=sub>其他信息</th>
+    </tr>
+  </thead><tbody className="ant-table-tbody"><tr key=0-0><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> code</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr><tr key=0-1><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> msg</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr><tr key=0-2><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> data</span></td><td key=1><span>object</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr><tr key=0-2-0><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> count</span></td><td key=1><span>number</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr><tr key=0-2-1><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> resultList</span></td><td key=1><span>object []</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5><p key=3><span style="font-weight: '700'">item 类型: </span><span>object</span></p></td></tr><tr key=0-2-1-0><td key=0><span style="padding-left: 40px"><span style="color: #8c8a8a">├─</span> volume</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr><tr key=0-2-1-1><td key=0><span style="padding-left: 40px"><span style="color: #8c8a8a">├─</span> side</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr><tr key=0-2-1-2><td key=0><span style="padding-left: 40px"><span style="color: #8c8a8a">├─</span> feeCoin</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr><tr key=0-2-1-3><td key=0><span style="padding-left: 40px"><span style="color: #8c8a8a">├─</span> price</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr><tr key=0-2-1-4><td key=0><span style="padding-left: 40px"><span style="color: #8c8a8a">├─</span> fee</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr><tr key=0-2-1-5><td key=0><span style="padding-left: 40px"><span style="color: #8c8a8a">├─</span> ctime</span></td><td key=1><span>number</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr><tr key=0-2-1-6><td key=0><span style="padding-left: 40px"><span style="color: #8c8a8a">├─</span> deal_price</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr><tr key=0-2-1-7><td key=0><span style="padding-left: 40px"><span style="color: #8c8a8a">├─</span> id</span></td><td key=1><span>number</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr><tr key=0-2-1-8><td key=0><span style="padding-left: 40px"><span style="color: #8c8a8a">├─</span> type</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr><tr key=0-2-1-9><td key=0><span style="padding-left: 40px"><span style="color: #8c8a8a">├─</span> bid_id</span></td><td key=1><span>number</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr><tr key=0-2-1-10><td key=0><span style="padding-left: 40px"><span style="color: #8c8a8a">├─</span> ask_id</span></td><td key=1><span>number</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr><tr key=0-2-1-11><td key=0><span style="padding-left: 40px"><span style="color: #8c8a8a">├─</span> bid_user_id</span></td><td key=1><span>number</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr><tr key=0-2-1-12><td key=0><span style="padding-left: 40px"><span style="color: #8c8a8a">├─</span> ask_user_id</span></td><td key=1><span>number</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr>
                </tbody>
               </table>
 
