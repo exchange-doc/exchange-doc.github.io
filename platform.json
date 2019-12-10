@@ -562,12 +562,12 @@
         "res_body_type": "json",
         "uid": 247,
         "add_time": 1573698822,
-        "up_time": 1575285987,
+        "up_time": 1575980673,
         "req_query": [],
         "req_headers": [
           {
             "required": "1",
-            "_id": "5de4f4e3e465640ff231dba9",
+            "_id": "5def8e81e465640ff231dec8",
             "name": "Content-Type",
             "value": "application/x-www-form-urlencoded"
           }
@@ -575,14 +575,14 @@
         "req_body_form": [
           {
             "required": "1",
-            "_id": "5de4f4e3e465640ff231dbb2",
+            "_id": "5def8e81e465640ff231ded1",
             "name": "appKey",
             "type": "text",
             "example": ""
           },
           {
             "required": "1",
-            "_id": "5de4f4e3e465640ff231dbb1",
+            "_id": "5def8e81e465640ff231ded0",
             "name": "payCoinSymbol",
             "type": "text",
             "example": "",
@@ -590,7 +590,7 @@
           },
           {
             "required": "1",
-            "_id": "5de4f4e3e465640ff231dbb0",
+            "_id": "5def8e81e465640ff231decf",
             "name": "openId",
             "type": "text",
             "example": "",
@@ -598,7 +598,7 @@
           },
           {
             "required": "1",
-            "_id": "5de4f4e3e465640ff231dbaf",
+            "_id": "5def8e81e465640ff231dece",
             "name": "userId",
             "type": "text",
             "example": "",
@@ -606,23 +606,23 @@
           },
           {
             "required": "1",
-            "_id": "5de4f4e3e465640ff231dbae",
-            "name": "assetType\t\t",
+            "_id": "5def8e81e465640ff231decd",
+            "name": "assetType",
             "type": "text",
             "example": "",
             "desc": "支付账户类型：AB的AB部分，默认到可用账户"
           },
           {
             "required": "1",
-            "_id": "5de4f4e3e465640ff231dbad",
-            "name": "orderSceneType\t",
+            "_id": "5def8e81e465640ff231decc",
+            "name": "orderSceneType",
             "type": "text",
             "example": "",
             "desc": "订单的场景类型，数字枚举；"
           },
           {
             "required": "1",
-            "_id": "5de4f4e3e465640ff231dbac",
+            "_id": "5def8e81e465640ff231decb",
             "name": "orderAmount",
             "type": "text",
             "example": "",
@@ -630,7 +630,7 @@
           },
           {
             "required": "1",
-            "_id": "5de4f4e3e465640ff231dbab",
+            "_id": "5def8e81e465640ff231deca",
             "name": "appOrderId",
             "type": "text",
             "example": "",
@@ -638,7 +638,7 @@
           },
           {
             "required": "1",
-            "_id": "5de4f4e3e465640ff231dbaa",
+            "_id": "5def8e81e465640ff231dec9",
             "name": "sign",
             "type": "text",
             "example": "",
@@ -734,7 +734,7 @@
         "req_headers": [
           {
             "required": "1",
-            "_id": "5dedd471e465640ff231de13",
+            "_id": "5dede66fe465640ff231de1a",
             "name": "Content-Type",
             "value": "application/x-www-form-urlencoded"
           }
@@ -742,7 +742,7 @@
         "req_body_form": [
           {
             "required": "1",
-            "_id": "5dedd471e465640ff231de19",
+            "_id": "5dede66fe465640ff231de20",
             "name": "symbol",
             "type": "text",
             "example": "btcusdt",
@@ -750,7 +750,7 @@
           },
           {
             "required": "0",
-            "_id": "5dedd471e465640ff231de18",
+            "_id": "5dede66fe465640ff231de1f",
             "name": "startDate",
             "type": "text",
             "example": "2019-12-02 00:00:00",
@@ -758,15 +758,15 @@
           },
           {
             "required": "1",
-            "_id": "5dedd471e465640ff231de17",
+            "_id": "5dede66fe465640ff231de1e",
             "name": "endDate",
             "type": "text",
-            "example": "10000",
+            "example": "2019-12-03 00:00:00",
             "desc": "结束时间，精确到秒“yyyy-MM-dd HH:mm:ss”"
           },
           {
             "required": "0",
-            "_id": "5dedd471e465640ff231de16",
+            "_id": "5dede66fe465640ff231de1d",
             "name": "pageSize",
             "type": "text",
             "example": "1000",
@@ -774,7 +774,7 @@
           },
           {
             "required": "0",
-            "_id": "5dedd471e465640ff231de15",
+            "_id": "5dede66fe465640ff231de1c",
             "name": "page",
             "type": "text",
             "example": "1",
@@ -782,7 +782,7 @@
           },
           {
             "required": "0",
-            "_id": "5dedd471e465640ff231de14",
+            "_id": "5dede66fe465640ff231de1b",
             "name": "sort",
             "type": "text",
             "example": "0",
@@ -795,7 +795,7 @@
         "req_body_type": "form",
         "uid": 247,
         "add_time": 1575553642,
-        "up_time": 1575867505,
+        "up_time": 1575872111,
         "__v": 0
       }
     ]
