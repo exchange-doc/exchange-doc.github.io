@@ -734,7 +734,7 @@ window.platform = [
         "req_headers": [
           {
             "required": "1",
-            "_id": "5dede66fe465640ff231de1a",
+            "_id": "5df0688de465640ff231deeb",
             "name": "Content-Type",
             "value": "application/x-www-form-urlencoded"
           }
@@ -742,7 +742,7 @@ window.platform = [
         "req_body_form": [
           {
             "required": "1",
-            "_id": "5dede66fe465640ff231de20",
+            "_id": "5df0688de465640ff231def3",
             "name": "symbol",
             "type": "text",
             "example": "btcusdt",
@@ -750,7 +750,7 @@ window.platform = [
           },
           {
             "required": "0",
-            "_id": "5dede66fe465640ff231de1f",
+            "_id": "5df0688de465640ff231def2",
             "name": "startDate",
             "type": "text",
             "example": "2019-12-02 00:00:00",
@@ -758,7 +758,7 @@ window.platform = [
           },
           {
             "required": "1",
-            "_id": "5dede66fe465640ff231de1e",
+            "_id": "5df0688de465640ff231def1",
             "name": "endDate",
             "type": "text",
             "example": "2019-12-03 00:00:00",
@@ -766,7 +766,7 @@ window.platform = [
           },
           {
             "required": "0",
-            "_id": "5dede66fe465640ff231de1d",
+            "_id": "5df0688de465640ff231def0",
             "name": "pageSize",
             "type": "text",
             "example": "1000",
@@ -774,7 +774,7 @@ window.platform = [
           },
           {
             "required": "0",
-            "_id": "5dede66fe465640ff231de1c",
+            "_id": "5df0688de465640ff231deef",
             "name": "page",
             "type": "text",
             "example": "1",
@@ -782,11 +782,27 @@ window.platform = [
           },
           {
             "required": "0",
-            "_id": "5dede66fe465640ff231de1b",
+            "_id": "5df0688de465640ff231deee",
             "name": "sort",
             "type": "text",
             "example": "0",
             "desc": "1表示倒序"
+          },
+          {
+            "required": "1",
+            "_id": "5df0688de465640ff231deed",
+            "name": "sign",
+            "type": "text",
+            "example": "",
+            "desc": "签名"
+          },
+          {
+            "required": "1",
+            "_id": "5df0688de465640ff231deec",
+            "name": "appKey",
+            "type": "text",
+            "example": "",
+            "desc": ""
           }
         ],
         "markdown": "",
@@ -795,7 +811,7 @@ window.platform = [
         "req_body_type": "form",
         "uid": 247,
         "add_time": 1575553642,
-        "up_time": 1575872111,
+        "up_time": 1576036493,
         "__v": 0
       }
     ]
