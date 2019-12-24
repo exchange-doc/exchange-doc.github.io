@@ -1,4 +1,4 @@
-window.openapi = [
+window.platform = [
   {
     "index": 0,
     "name": "订单服务",
@@ -868,6 +868,350 @@ window.openapi = [
         "markdown": "",
         "desc": "",
         "res_body": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"code\":{\"type\":\"string\",\"mock\":{\"mock\":\"0\"}},\"msg\":{\"type\":\"string\",\"mock\":{\"mock\":\"suc\"}},\"data\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"id\":{\"type\":\"number\",\"description\":\"成交id\"},\"amount\":{\"type\":\"number\",\"description\":\"成交数量\"},\"price\":{\"type\":\"number\",\"description\":\"成交价格\"},\"type\":{\"type\":\"string\",\"description\":\"主动单方向\"},\"ts\":{\"type\":\"number\",\"description\":\"成交时间（时间戳）\"},\"ds\":{\"type\":\"string\",\"description\":\"成交时间（日期格式）\"}},\"required\":[\"id\",\"amount\",\"price\",\"type\",\"ts\",\"ds\"]}}}}"
+      }
+    ]
+  },
+  {
+    "index": 0,
+    "name": "币币委托",
+    "desc": null,
+    "add_time": 1575886983,
+    "up_time": 1575886983,
+    "list": [
+      {
+        "query_path": {
+          "path": "/open/api/v2/all_order",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "undone",
+        "type": "static",
+        "req_body_is_json_schema": false,
+        "res_body_is_json_schema": true,
+        "api_opened": true,
+        "index": 0,
+        "tag": [],
+        "_id": 2613,
+        "method": "GET",
+        "catid": 706,
+        "title": "获取全部委托",
+        "path": "/open/api/v2/all_order",
+        "project_id": 73,
+        "req_params": [],
+        "res_body_type": "json",
+        "uid": 303,
+        "add_time": 1575950672,
+        "up_time": 1577168513,
+        "req_query": [
+          {
+            "required": "1",
+            "_id": "5e01ae81e465640ff231e0a4",
+            "name": "symbol",
+            "example": "btcusdt",
+            "desc": "市场标记，btcusdt"
+          },
+          {
+            "required": "0",
+            "_id": "5e01ae81e465640ff231e0a3",
+            "name": "startDate",
+            "example": "2019-12-10 12:00:01",
+            "desc": "开始时间，精确到秒\"yyyy-MM-dd mm:hh:ss\""
+          },
+          {
+            "required": "0",
+            "_id": "5e01ae81e465640ff231e0a2",
+            "name": "endDate",
+            "example": "2019-12-10 18:00:01",
+            "desc": "结束时间，精确到秒\"yyyy-MM-dd mm:hh:ss\""
+          },
+          {
+            "required": "0",
+            "_id": "5e01ae81e465640ff231e0a1",
+            "name": "pageSize",
+            "example": "20",
+            "desc": "页面大小"
+          },
+          {
+            "required": "0",
+            "_id": "5e01ae81e465640ff231e0a0",
+            "name": "page",
+            "example": "1",
+            "desc": "页码"
+          },
+          {
+            "required": "1",
+            "_id": "5e01ae81e465640ff231e09f",
+            "name": "api_key",
+            "example": "api_key",
+            "desc": "api_key"
+          },
+          {
+            "required": "1",
+            "_id": "5e01ae81e465640ff231e09e",
+            "name": "time",
+            "example": "1575887255534",
+            "desc": "时间戳"
+          },
+          {
+            "required": "1",
+            "_id": "5e01ae81e465640ff231e09d",
+            "name": "sign",
+            "example": "sign",
+            "desc": "签名"
+          }
+        ],
+        "req_headers": [],
+        "req_body_form": [],
+        "__v": 0,
+        "markdown": "",
+        "desc": "",
+        "res_body": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"code\":{\"type\":\"string\"},\"msg\":{\"type\":\"string\"},\"data\":{\"type\":\"object\",\"properties\":{\"count\":{\"type\":\"number\"},\"orderList\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"id\":{\"type\":\"number\",\"description\":\"订单id\"},\"side\":{\"type\":\"string\",\"description\":\"买卖方向\"},\"side_msg\":{\"type\":\"string\",\"description\":\"买卖方向信息\"},\"status\":{\"type\":\"number\",\"description\":\"订单状态\"},\"status_msg\":{\"type\":\"string\",\"description\":\"订单状态信息\"},\"created_at\":{\"type\":\"number\",\"description\":\"创建时间\"},\"price\":{\"type\":\"string\",\"description\":\"限价单挂单价格\"},\"volume\":{\"type\":\"string\",\"description\":\"挂单总数量\"},\"type\":{\"type\":\"number\",\"description\":\"委托订单类型\"},\"source\":{\"type\":\"number\",\"description\":\"订单来源\"},\"source_msg\":{\"type\":\"string\",\"description\":\"订单来源信息\"},\"total_price\":{\"type\":\"string\",\"description\":\"订单总金额\"},\"remain_volume\":{\"type\":\"string\",\"description\":\"未成交数量\"},\"deal_volume\":{\"type\":\"string\",\"description\":\"成交数量\"},\"avg_price\":{\"type\":\"string\",\"description\":\"成交均价\"},\"baseCoin\":{\"type\":\"string\",\"description\":\"基础货币\"},\"countCoin\":{\"type\":\"string\",\"description\":\"计价货币\"}},\"required\":[\"id\",\"side\",\"side_msg\",\"status\",\"status_msg\",\"created_at\",\"price\",\"volume\",\"type\",\"source\",\"source_msg\",\"total_price\",\"remain_volume\",\"deal_volume\",\"avg_price\",\"baseCoin\",\"countCoin\"]}}}}}}"
+      },
+      {
+        "query_path": {
+          "path": "/open/api/all_trade",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "undone",
+        "type": "static",
+        "req_body_is_json_schema": false,
+        "res_body_is_json_schema": true,
+        "api_opened": true,
+        "index": 0,
+        "tag": [],
+        "_id": 2637,
+        "method": "GET",
+        "catid": 706,
+        "title": "获取全部成交记录",
+        "path": "/open/api/all_trade",
+        "project_id": 73,
+        "req_params": [],
+        "res_body_type": "json",
+        "uid": 303,
+        "add_time": 1576049770,
+        "up_time": 1577168584,
+        "req_query": [
+          {
+            "required": "1",
+            "_id": "5e01aec8e465640ff231e0b2",
+            "name": "symbol",
+            "example": "btcusdt",
+            "desc": "市场标记，btcusdt"
+          },
+          {
+            "required": "0",
+            "_id": "5e01aec8e465640ff231e0b1",
+            "name": "startDate",
+            "example": "2019-12-10 12:00:01",
+            "desc": "开始时间，精确到秒“yyyy-MM-dd HH:mm:ss”"
+          },
+          {
+            "required": "0",
+            "_id": "5e01aec8e465640ff231e0b0",
+            "name": "endDate",
+            "example": "2019-12-10 18:00:01",
+            "desc": "结束时间，精确到秒“yyyy-MM-dd HH:mm:ss”"
+          },
+          {
+            "required": "0",
+            "_id": "5e01aec8e465640ff231e0af",
+            "name": "pageSize",
+            "example": "20",
+            "desc": "页面大小"
+          },
+          {
+            "required": "0",
+            "_id": "5e01aec8e465640ff231e0ae",
+            "name": "page",
+            "example": "1",
+            "desc": "页码"
+          },
+          {
+            "required": "1",
+            "_id": "5e01aec8e465640ff231e0ad",
+            "name": "api_key",
+            "example": "api_key",
+            "desc": "api_key"
+          },
+          {
+            "required": "1",
+            "_id": "5e01aec8e465640ff231e0ac",
+            "name": "time",
+            "example": "1575887255534",
+            "desc": "时间戳"
+          },
+          {
+            "required": "1",
+            "_id": "5e01aec8e465640ff231e0ab",
+            "name": "sign",
+            "example": "sign",
+            "desc": "签名"
+          },
+          {
+            "required": "0",
+            "_id": "5e01aec8e465640ff231e0aa",
+            "name": "sort",
+            "example": "1",
+            "desc": "1表示id倒序（需要id倒序可以使用）"
+          }
+        ],
+        "req_headers": [],
+        "req_body_form": [],
+        "__v": 0,
+        "markdown": "",
+        "desc": "",
+        "res_body": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"code\":{\"type\":\"string\",\"mock\":{\"mock\":\"0\"}},\"msg\":{\"type\":\"string\",\"mock\":{\"mock\":\"suc\"}},\"data\":{\"type\":\"object\",\"properties\":{\"count\":{\"type\":\"number\"},\"resultList\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"id\":{\"type\":\"number\",\"description\":\"成交id\"},\"side\":{\"type\":\"string\",\"description\":\"买卖方向\"},\"ask_user_id\":{\"type\":\"number\",\"description\":\"卖方用户id\"},\"bid_user_id\":{\"type\":\"number\",\"description\":\"买方用户id\"},\"type\":{\"type\":\"string\",\"description\":\"买卖方向信息\"},\"bid_id\":{\"type\":\"number\",\"description\":\"买单id\"},\"ask_id\":{\"type\":\"number\",\"description\":\"卖单id\"},\"price\":{\"type\":\"string\",\"description\":\"成交价格\"},\"volume\":{\"type\":\"string\",\"description\":\"成交数量\"},\"deal_price\":{\"type\":\"string\",\"description\":\"成交金额（price*volume）\"},\"fee\":{\"type\":\"string\",\"description\":\"买或卖单手续费\"},\"feeCoin\":{\"type\":\"string\",\"description\":\"买或卖单支付手续费的币种\"},\"ctime\":{\"type\":\"number\",\"description\":\"成交时间\"}}}}}}}}"
+      },
+      {
+        "query_path": {
+          "path": "/open/api/v3/new_order",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "undone",
+        "type": "static",
+        "req_body_is_json_schema": false,
+        "res_body_is_json_schema": true,
+        "api_opened": true,
+        "index": 0,
+        "tag": [],
+        "_id": 2640,
+        "method": "GET",
+        "catid": 706,
+        "title": "获取当前委托v3",
+        "path": "/open/api/v3/new_order",
+        "project_id": 73,
+        "req_params": [],
+        "res_body_type": "json",
+        "req_query": [
+          {
+            "required": "1",
+            "_id": "5e01aed6e465640ff231e0b9",
+            "name": "symbol",
+            "example": "btcusdt",
+            "desc": "市场标记，btcusdt"
+          },
+          {
+            "required": "0",
+            "_id": "5e01aed6e465640ff231e0b8",
+            "name": "pageSize",
+            "example": "20",
+            "desc": "页面大小"
+          },
+          {
+            "required": "0",
+            "_id": "5e01aed6e465640ff231e0b7",
+            "name": "page",
+            "example": "1",
+            "desc": "页码"
+          },
+          {
+            "required": "1",
+            "_id": "5e01aed6e465640ff231e0b6",
+            "name": "api_key",
+            "example": "api_key",
+            "desc": "api_key"
+          },
+          {
+            "required": "1",
+            "_id": "5e01aed6e465640ff231e0b5",
+            "name": "time",
+            "example": "1575887255534",
+            "desc": "时间戳"
+          },
+          {
+            "required": "1",
+            "_id": "5e01aed6e465640ff231e0b4",
+            "name": "sign",
+            "example": "sign",
+            "desc": "签名"
+          },
+          {
+            "required": "1",
+            "_id": "5e01aed6e465640ff231e0b3",
+            "name": "pendingCancel",
+            "example": "0",
+            "desc": "0表示排除待撤单状态订单"
+          }
+        ],
+        "req_headers": [],
+        "req_body_form": [],
+        "markdown": "",
+        "desc": "",
+        "res_body": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"code\":{\"type\":\"string\",\"mock\":{\"mock\":\"0\"}},\"msg\":{\"type\":\"string\",\"mock\":{\"mock\":\"suc\"}},\"data\":{\"type\":\"object\",\"properties\":{\"count\":{\"type\":\"number\"},\"resultList\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"id\":{\"type\":\"number\",\"description\":\"订单id\"},\"side\":{\"type\":\"string\",\"description\":\"买卖方向\"},\"side_msg\":{\"type\":\"string\",\"description\":\"买卖方向信息\"},\"status\":{\"type\":\"number\",\"description\":\"订单状态\"},\"status_msg\":{\"type\":\"string\",\"description\":\"订单状态信息\"},\"created_at\":{\"type\":\"number\",\"description\":\"订单创建时间\"},\"price\":{\"type\":\"string\",\"description\":\"限价单挂单价格\"},\"volume\":{\"type\":\"string\",\"description\":\"挂单总数量\"},\"type\":{\"type\":\"number\",\"description\":\"委托订单类型\"},\"source\":{\"type\":\"number\",\"description\":\"订单来源\"},\"source_msg\":{\"type\":\"string\",\"description\":\"订单来源信息\"},\"total_price\":{\"type\":\"string\",\"description\":\"订单总金额\"},\"remain_volume\":{\"type\":\"string\",\"description\":\"未成交数量\"},\"deal_volume\":{\"type\":\"string\",\"description\":\"成交数量\"},\"avg_price\":{\"type\":\"string\",\"description\":\"成交均价\"},\"baseCoin\":{\"type\":\"string\",\"description\":\"基础货币\"},\"countCoin\":{\"type\":\"string\",\"description\":\"计价货币\"}},\"required\":[\"id\",\"side\",\"side_msg\",\"status\",\"status_msg\",\"created_at\",\"price\",\"volume\",\"type\",\"source\",\"source_msg\",\"total_price\",\"remain_volume\",\"deal_volume\",\"avg_price\",\"baseCoin\",\"countCoin\"]}}}}}}",
+        "uid": 303,
+        "add_time": 1576054876,
+        "up_time": 1577168598,
+        "__v": 0
+      },
+      {
+        "query_path": {
+          "path": "/open/api/order_info",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "undone",
+        "type": "static",
+        "req_body_is_json_schema": false,
+        "res_body_is_json_schema": true,
+        "api_opened": true,
+        "index": 0,
+        "tag": [],
+        "_id": 2631,
+        "method": "GET",
+        "catid": 706,
+        "title": "获取订单详情",
+        "path": "/open/api/order_info",
+        "project_id": 73,
+        "req_params": [],
+        "res_body_type": "json",
+        "uid": 303,
+        "add_time": 1575959923,
+        "up_time": 1577168563,
+        "req_query": [
+          {
+            "required": "1",
+            "_id": "5e01aeb3e465640ff231e0a9",
+            "name": "order_id",
+            "example": "orderId",
+            "desc": "订单Id"
+          },
+          {
+            "required": "1",
+            "_id": "5e01aeb3e465640ff231e0a8",
+            "name": "symbol",
+            "example": "btcusdt",
+            "desc": "市场标记，btcusdt"
+          },
+          {
+            "required": "1",
+            "_id": "5e01aeb3e465640ff231e0a7",
+            "name": "api_key",
+            "example": "api_key",
+            "desc": "api_key"
+          },
+          {
+            "required": "1",
+            "_id": "5e01aeb3e465640ff231e0a6",
+            "name": "time",
+            "example": "1575887255534",
+            "desc": "时间戳"
+          },
+          {
+            "required": "1",
+            "_id": "5e01aeb3e465640ff231e0a5",
+            "name": "sign",
+            "example": "sign",
+            "desc": "签名"
+          }
+        ],
+        "req_headers": [],
+        "req_body_form": [],
+        "__v": 0,
+        "markdown": "",
+        "desc": "",
+        "res_body": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"code\":{\"type\":\"string\",\"mock\":{\"mock\":\"0\"}},\"msg\":{\"type\":\"string\",\"mock\":{\"mock\":\"suc\"}},\"data\":{\"type\":\"object\",\"properties\":{\"trade_list\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"volume\":{\"type\":\"string\",\"description\":\"成交数量\"},\"feeCoin\":{\"type\":\"string\",\"description\":\"买或卖单支付手续费的币种\"},\"price\":{\"type\":\"string\",\"description\":\"成交价格\"},\"fee\":{\"type\":\"string\",\"description\":\"买或卖单手续费\"},\"ctime\":{\"type\":\"number\",\"description\":\"成交时间\"},\"deal_price\":{\"type\":\"string\",\"description\":\"成交金额（volume*price）\"},\"id\":{\"type\":\"number\",\"description\":\"成交id\"},\"type\":{\"type\":\"string\",\"description\":\"买入或卖出信息\"}}},\"description\":\"成交信息\"},\"order_info\":{\"type\":\"object\",\"properties\":{\"id\":{\"type\":\"number\",\"description\":\"订单id\"},\"side\":{\"type\":\"string\",\"description\":\"买卖方向\"},\"side_msg\":{\"type\":\"string\",\"description\":\"买卖方向信息\"},\"status\":{\"type\":\"number\",\"description\":\"订单状态\"},\"status_msg\":{\"type\":\"string\",\"description\":\"订单状态信息\"},\"created_at\":{\"type\":\"number\",\"description\":\"订单创建时间\"},\"price\":{\"type\":\"string\",\"description\":\"限价单挂单价格\"},\"volume\":{\"type\":\"string\",\"description\":\"挂单总数量\"},\"type\":{\"type\":\"number\",\"description\":\"委托订单类型\"},\"source\":{\"type\":\"number\",\"description\":\"订单来源\"},\"source_msg\":{\"type\":\"string\",\"description\":\"订单来源信息\"},\"total_price\":{\"type\":\"string\",\"description\":\"订单总金额\"},\"remain_volume\":{\"type\":\"string\",\"description\":\"未成交数量\"},\"deal_volume\":{\"type\":\"string\",\"description\":\"成交数量\"},\"avg_price\":{\"type\":\"string\",\"description\":\"成交均价\"},\"baseCoin\":{\"type\":\"string\",\"description\":\"基础货币\"},\"countCoin\":{\"type\":\"string\",\"description\":\"计价货币\"},\"tradeList\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"volume\":{\"type\":\"string\"},\"feeCoin\":{\"type\":\"string\"},\"price\":{\"type\":\"string\"},\"fee\":{\"type\":\"string\"},\"ctime\":{\"type\":\"number\"},\"deal_price\":{\"type\":\"string\"},\"id\":{\"type\":\"number\"},\"type\":{\"type\":\"string\"}}},\"description\":\"成交信息（冗余）\"}},\"description\":\"订单信息\"}}}}}"
       }
     ]
   },
