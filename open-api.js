@@ -1,4 +1,4 @@
-window.platform = [
+window.openapi = [
   {
     "index": 0,
     "name": "订单服务",
