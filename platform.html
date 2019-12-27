@@ -364,7 +364,7 @@ body > pre {
           </div>
         </div>
         <div class="g-doc">
-          <div class="table-of-contents"><ul><li><a href="#u65b0u624bu6307u5f15">新手指引</a><ul><li><a href="#u63a5u5165u6d41u7a0b0a3ca20id3du63a5u5165u6d41u7a0b3e203ca3e">接入流程
+          <div class="table-of-contents"><ul><li><label style="color:red">修改时间2019-12-27</label><br><a href="#u65b0u624bu6307u5f15">新手指引</a><ul><li><a href="#u63a5u5165u6d41u7a0b0a3ca20id3du63a5u5165u6d41u7a0b3e203ca3e">接入流程
 <a id=接入流程> </a></a></li><li><a href="#u6d4bu8bd5u5de5u5177u5e2eu52a9u624bu518c0a3ca20id3du6d4bu8bd5u5de5u5177u5e2eu52a9u624bu518c3e203ca3e">测试工具帮助手册
 <a id=测试工具帮助手册> </a></a></li><li><a href="#u9519u8befu78010a3ca20id3du9519u8befu78013e203ca3e">错误码
 <a id=错误码> </a></a></li><li><a href="#u8d26u6237u7c7bu578b0a3ca20id3du8d26u6237u7c7bu578b3e203ca3e">账户类型
@@ -823,7 +823,7 @@ me1522055680xxxxxxxxxxxxxxxxx)<br>
 <tbody>
 <tr>
 <td>Content-Type</td>
-<td>application/x-www-form-urlencoded</td>
+<td>application/json</td>
 <td>是</td>
 <td></td>
 <td></td>
@@ -832,39 +832,13 @@ me1522055680xxxxxxxxxxxxxxxxx)<br>
 </table>
 <p><strong>Body</strong></p>
 <table>
-<thead>
-<tr>
-<th>参数名称</th>
-<th>参数类型</th>
-<th>是否必须</th>
-<th>示例</th>
-<th>备注</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>appKey</td>
-<td>text</td>
-<td>是</td>
-<td></td>
-<td>商家唯一key</td>
-</tr>
-<tr>
-<td>code</td>
-<td>text</td>
-<td>是</td>
-<td></td>
-<td>用户登录授权时返回的code</td>
-</tr>
-<tr>
-<td>sign</td>
-<td>text</td>
-<td>是</td>
-<td></td>
-<td>MD5(Sort(Param) + secret)</td>
-</tr>
-</tbody>
-</table>
+  <thead class="ant-table-thead">
+    <tr>
+      <th key=name>名称</th><th key=type>类型</th><th key=required>是否必须</th><th key=default>默认值</th><th key=desc>备注</th><th key=sub>其他信息</th>
+    </tr>
+  </thead><tbody className="ant-table-tbody"><tr key=0-0><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> appKey</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">商家唯一key</span></td><td key=5></td></tr><tr key=0-1><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> appOrderId</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">用户登录授权时返回的code</span></td><td key=5></td></tr><tr key=0-2><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> assetType</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">MD5(Sort(Param) + secret)</span></td><td key=5></td></tr>
+               </tbody>
+              </table>
 <h3 id="-19">返回数据</h3>
 <table>
   <thead class="ant-table-thead">
@@ -898,7 +872,7 @@ me1522055680xxxxxxxxxxxxxxxxx)<br>
 <tbody>
 <tr>
 <td>Content-Type</td>
-<td>application/x-www-form-urlencoded</td>
+<td>application/json</td>
 <td>是</td>
 <td></td>
 <td></td>
@@ -907,105 +881,13 @@ me1522055680xxxxxxxxxxxxxxxxx)<br>
 </table>
 <p><strong>Body</strong></p>
 <table>
-<thead>
-<tr>
-<th>参数名称</th>
-<th>参数类型</th>
-<th>是否必须</th>
-<th>示例</th>
-<th>备注</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>appKey</td>
-<td>text</td>
-<td>是</td>
-<td></td>
-<td>商家唯一编号</td>
-</tr>
-<tr>
-<td>payCoinSymbol</td>
-<td>text</td>
-<td>是</td>
-<td></td>
-<td>支付币种，大写如BTCappKey</td>
-</tr>
-<tr>
-<td>openId</td>
-<td>text</td>
-<td>是</td>
-<td></td>
-<td>付款用户的唯一id</td>
-</tr>
-<tr>
-<td>userId</td>
-<td>text</td>
-<td>是</td>
-<td></td>
-<td>付款用户uid(与openid必须存在一个)</td>
-</tr>
-<tr>
-<td>returnPage</td>
-<td>text</td>
-<td>是</td>
-<td></td>
-<td>前台跳转商家的页面</td>
-</tr>
-<tr>
-<td>notifyPage</td>
-<td>text</td>
-<td>是</td>
-<td></td>
-<td>后台通知商家的地址</td>
-</tr>
-<tr>
-<td>appOrderId</td>
-<td>text</td>
-<td>是</td>
-<td></td>
-<td>商家端订单id</td>
-</tr>
-<tr>
-<td>orderSceneType</td>
-<td>text</td>
-<td>是</td>
-<td></td>
-<td>订单的场景类型，数字枚举；</td>
-</tr>
-<tr>
-<td>orderAmount</td>
-<td>text</td>
-<td>是</td>
-<td></td>
-<td>支付金额</td>
-</tr>
-<tr>
-<td>token</td>
-<td>text</td>
-<td>是</td>
-<td></td>
-<td>授权的token</td>
-</tr>
-<tr>
-<td>sign</td>
-<td>text</td>
-<td>是</td>
-<td></td>
-<td>MD5(Sort(Param) + secret)</td>
-</tr>
-<tr>
-<td>goods</td>
-<td>text</td>
-<td>否</td>
-<td></td>
-<td>商品描述信息，可不传，传入必须为合法的json格式，否则订单创建失败 ；json中的子字段为</td>
-</tr>
-</tbody>
-</table>
-<p>name : 商品名称<br>
-desc:商品描述<br>
-例：[{&quot;name&quot;:&quot;商品1&quot;,&quot;desc&quot;:&quot;商品信息123balabala&quot;},{&quot;name&quot;:&quot;商品2&quot;,&quot;desc&quot;:&quot;商品信息23balabala&quot;},{&quot;name&quot;:&quot;商品3&quot;,&quot;desc&quot;:&quot;商品信息33balabala&quot;}] |</p>
+  <thead class="ant-table-thead">
+    <tr>
+      <th key=name>名称</th><th key=type>类型</th><th key=required>是否必须</th><th key=default>默认值</th><th key=desc>备注</th><th key=sub>其他信息</th>
+    </tr>
+  </thead><tbody className="ant-table-tbody"><tr key=0-0><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> appKey</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">商家唯一编号</span></td><td key=5></td></tr><tr key=0-1><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> appOrderId</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">商家端订单id</span></td><td key=5></td></tr><tr key=0-2><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> openId</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">付款用户的唯一id</span></td><td key=5></td></tr><tr key=0-3><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> userId</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">付款用户uid(与openid必须存在一个) ||同时存在优先取openid</span></td><td key=5></td></tr><tr key=0-4><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> orderAmount</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">支付金额</span></td><td key=5></td></tr><tr key=0-5><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> orderSceneType</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">订单的场景类型，数字枚举；</span></td><td key=5></td></tr><tr key=0-6><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> payCoinSymbol</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">支付币种，大写如BTCappKey</span></td><td key=5></td></tr><tr key=0-7><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> returnPage</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">前台跳转商家的页面</span></td><td key=5></td></tr><tr key=0-8><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> notifyPage</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">后台通知商家的地址</span></td><td key=5></td></tr><tr key=0-9><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> token</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">授权的token</span></td><td key=5></td></tr><tr key=0-10><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> sign</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">MD5(Sort(Param) + secret)</span></td><td key=5></td></tr><tr key=0-11><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> goods</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">商品描述信息，可不传，传入必须为合法的json格式，否则订单创建失败 ；json中的子字段为 name : 商品名称 desc:商品描述 例：[{"name":"商品1","desc":"商品信息123balabala"},{"name":"商品2","desc":"商品信息23balabala"},{"name":"商品3","desc":"商品信息33balabala"}]</span></td><td key=5></td></tr>
+               </tbody>
+              </table>
 <h3 id="-22">返回数据</h3>
 <table>
   <thead class="ant-table-thead">
@@ -1148,7 +1030,7 @@ desc:商品描述<br>
 <tbody>
 <tr>
 <td>Content-Type</td>
-<td>application/x-www-form-urlencoded</td>
+<td>application/json</td>
 <td>是</td>
 <td></td>
 <td></td>
@@ -1157,39 +1039,13 @@ desc:商品描述<br>
 </table>
 <p><strong>Body</strong></p>
 <table>
-<thead>
-<tr>
-<th>参数名称</th>
-<th>参数类型</th>
-<th>是否必须</th>
-<th>示例</th>
-<th>备注</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>appKey</td>
-<td>text</td>
-<td>是</td>
-<td></td>
-<td>商家唯一编号</td>
-</tr>
-<tr>
-<td>orderNum</td>
-<td>text</td>
-<td>是</td>
-<td></td>
-<td>平台方订单编号</td>
-</tr>
-<tr>
-<td>token</td>
-<td>text</td>
-<td>是</td>
-<td></td>
-<td>授权的token</td>
-</tr>
-</tbody>
-</table>
+  <thead class="ant-table-thead">
+    <tr>
+      <th key=name>名称</th><th key=type>类型</th><th key=required>是否必须</th><th key=default>默认值</th><th key=desc>备注</th><th key=sub>其他信息</th>
+    </tr>
+  </thead><tbody className="ant-table-tbody"><tr key=0-0><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> appKey</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">商家唯一编号</span></td><td key=5></td></tr><tr key=0-1><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> orderNum</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">平台方订单编号</span></td><td key=5></td></tr><tr key=0-2><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> token</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">授权的token</span></td><td key=5></td></tr>
+               </tbody>
+              </table>
 <h3 id="-31">返回数据</h3>
 <table>
   <thead class="ant-table-thead">
@@ -1221,7 +1077,7 @@ desc:商品描述<br>
 <tbody>
 <tr>
 <td>Content-Type</td>
-<td>application/x-www-form-urlencoded</td>
+<td>application/json</td>
 <td>是</td>
 <td></td>
 <td></td>
@@ -1230,60 +1086,13 @@ desc:商品描述<br>
 </table>
 <p><strong>Body</strong></p>
 <table>
-<thead>
-<tr>
-<th>参数名称</th>
-<th>参数类型</th>
-<th>是否必须</th>
-<th>示例</th>
-<th>备注</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>appKey</td>
-<td>text</td>
-<td>是</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>orderType</td>
-<td>text</td>
-<td>是</td>
-<td></td>
-<td>订单类型（1=支付订单；11=划转订单），不传查询所有订单</td>
-</tr>
-<tr>
-<td>day</td>
-<td>text</td>
-<td>是</td>
-<td></td>
-<td>统计的日期，格式：yyyy-MM-dd，不符合格式参数异常；不传查询当日订单</td>
-</tr>
-<tr>
-<td>pageNum</td>
-<td>text</td>
-<td>是</td>
-<td></td>
-<td>查询第几页，同分页逻辑；不传查所有</td>
-</tr>
-<tr>
-<td>pageSize</td>
-<td>text</td>
-<td>是</td>
-<td></td>
-<td>每页大小，同分页逻辑；不传查2000（最大为2000，数据超过2000请分页查询）</td>
-</tr>
-<tr>
-<td>sign</td>
-<td>text</td>
-<td>是</td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+  <thead class="ant-table-thead">
+    <tr>
+      <th key=name>名称</th><th key=type>类型</th><th key=required>是否必须</th><th key=default>默认值</th><th key=desc>备注</th><th key=sub>其他信息</th>
+    </tr>
+  </thead><tbody className="ant-table-tbody"><tr key=0-0><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> appKey</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr><tr key=0-1><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> orderType</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">订单类型（1=支付订单；11=划转订单），不传查询所有订单</span></td><td key=5></td></tr><tr key=0-2><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> day</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">统计的日期，格式：yyyy-MM-dd，不符合格式参数异常；不传查询当日订单</span></td><td key=5></td></tr><tr key=0-3><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> pageNum</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">查询第几页，同分页逻辑；不传查所有</span></td><td key=5></td></tr><tr key=0-4><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> pageSize</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">每页大小，同分页逻辑；不传查2000（最大为2000，数据超过2000请分页查询）</span></td><td key=5></td></tr><tr key=0-5><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> sign</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr>
+               </tbody>
+              </table>
 <h3 id="-34">返回数据</h3>
 <table>
   <thead class="ant-table-thead">
@@ -1391,7 +1200,7 @@ desc:商品描述<br>
 <tbody>
 <tr>
 <td>Content-Type</td>
-<td>application/x-www-form-urlencoded</td>
+<td>application/json</td>
 <td>是</td>
 <td></td>
 <td></td>
@@ -1400,81 +1209,13 @@ desc:商品描述<br>
 </table>
 <p><strong>Body</strong></p>
 <table>
-<thead>
-<tr>
-<th>参数名称</th>
-<th>参数类型</th>
-<th>是否必须</th>
-<th>示例</th>
-<th>备注</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>appKey</td>
-<td>text</td>
-<td>是</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>payCoinSymbol</td>
-<td>text</td>
-<td>是</td>
-<td></td>
-<td>支付币种，大写如BTCappKey</td>
-</tr>
-<tr>
-<td>openId</td>
-<td>text</td>
-<td>是</td>
-<td></td>
-<td>用户的唯一id</td>
-</tr>
-<tr>
-<td>userId</td>
-<td>text</td>
-<td>是</td>
-<td></td>
-<td>付款用户uid(与openid必须存在一个)</td>
-</tr>
-<tr>
-<td>assetType</td>
-<td>text</td>
-<td>是</td>
-<td></td>
-<td>支付账户类型：AB的AB部分，默认到可用账户</td>
-</tr>
-<tr>
-<td>orderSceneType</td>
-<td>text</td>
-<td>是</td>
-<td></td>
-<td>订单的场景类型，数字枚举；</td>
-</tr>
-<tr>
-<td>orderAmount</td>
-<td>text</td>
-<td>是</td>
-<td></td>
-<td>金额</td>
-</tr>
-<tr>
-<td>appOrderId</td>
-<td>text</td>
-<td>是</td>
-<td></td>
-<td>商家端订单id，全局唯一</td>
-</tr>
-<tr>
-<td>sign</td>
-<td>text</td>
-<td>是</td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+  <thead class="ant-table-thead">
+    <tr>
+      <th key=name>名称</th><th key=type>类型</th><th key=required>是否必须</th><th key=default>默认值</th><th key=desc>备注</th><th key=sub>其他信息</th>
+    </tr>
+  </thead><tbody className="ant-table-tbody"><tr key=0-0><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> appKey</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr><tr key=0-1><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> appOrderId</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">商家端订单id，全局唯一</span></td><td key=5></td></tr><tr key=0-2><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> assetType</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">支付账户类型：AB的AB部分，默认到可用账户</span></td><td key=5></td></tr><tr key=0-3><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> openId</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">用户的唯一id</span></td><td key=5></td></tr><tr key=0-4><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> userId</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">付款用户uid(与openid必须存在一个) ||同时存在优先取openid</span></td><td key=5></td></tr><tr key=0-5><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> orderAmount</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">金额</span></td><td key=5></td></tr><tr key=0-6><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> orderSceneType</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">订单的场景类型，数字枚举；</span></td><td key=5></td></tr><tr key=0-7><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> payCoinSymbol</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">支付币种，大写如BTC</span></td><td key=5></td></tr><tr key=0-8><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> sign</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr>
+               </tbody>
+              </table>
 <h3 id="-37">返回数据</h3>
 <table>
   <thead class="ant-table-thead">

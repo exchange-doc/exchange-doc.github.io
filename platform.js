@@ -83,27 +83,27 @@ window.platform = [
         "res_body_type": "json",
         "uid": 247,
         "add_time": 1573698588,
-        "up_time": 1575287379,
+        "up_time": 1577431805,
         "req_query": [],
         "req_headers": [
           {
             "required": "1",
-            "_id": "5de4fa53e465640ff231dbb5",
+            "_id": "5e05b2fde465640ff231e111",
             "name": "Content-Type",
-            "value": "application/x-www-form-urlencoded"
+            "value": "application/json"
           }
         ],
         "req_body_form": [
           {
             "required": "1",
-            "_id": "5de4fa53e465640ff231dbb8",
+            "_id": "5e05b2fde465640ff231e114",
             "name": "appKey",
             "type": "text",
             "desc": "商家唯一key"
           },
           {
             "required": "1",
-            "_id": "5de4fa53e465640ff231dbb7",
+            "_id": "5e05b2fde465640ff231e113",
             "name": "code",
             "type": "text",
             "example": "",
@@ -111,7 +111,7 @@ window.platform = [
           },
           {
             "required": "1",
-            "_id": "5de4fa53e465640ff231dbb6",
+            "_id": "5e05b2fde465640ff231e112",
             "name": "sign",
             "type": "text",
             "example": "",
@@ -122,7 +122,8 @@ window.platform = [
         "markdown": "",
         "desc": "",
         "res_body": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"code\":{\"type\":\"number\",\"description\":\"返回code\"},\"msg\":{\"type\":\"string\",\"description\":\"成功或失败提示信息\"},\"data\":{\"type\":\"object\",\"properties\":{\"openId\":{\"type\":\"string\",\"description\":\"该授权用户所属该商户下的唯一openId\"},\"expireIn\":{\"type\":\"string\",\"description\":\"token过期时间，秒\"},\"refreshToken\":{\"type\":\"string\",\"description\":\"刷新token所需的token\"},\"token\":{\"type\":\"string\",\"description\":\"授权的token\"}}}}}",
-        "req_body_type": "form"
+        "req_body_type": "json",
+        "req_body_other": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"appKey\":{\"type\":\"string\",\"description\":\"商家唯一key\"},\"appOrderId\":{\"type\":\"string\",\"description\":\"用户登录授权时返回的code\"},\"assetType\":{\"type\":\"string\",\"description\":\"MD5(Sort(Param) + secret)\"}},\"required\":[\"appKey\",\"appOrderId\",\"assetType\"]}"
       }
     ]
   },
@@ -156,20 +157,20 @@ window.platform = [
         "res_body_type": "json",
         "uid": 247,
         "add_time": 1573698363,
-        "up_time": 1575287447,
+        "up_time": 1577432652,
         "req_query": [],
         "req_headers": [
           {
             "required": "1",
-            "_id": "5de4fa97e465640ff231dbcd",
+            "_id": "5e05b64ce465640ff231e11a",
             "name": "Content-Type",
-            "value": "application/x-www-form-urlencoded"
+            "value": "application/json"
           }
         ],
         "req_body_form": [
           {
             "required": "1",
-            "_id": "5de4fa97e465640ff231dbd9",
+            "_id": "5e05b64ce465640ff231e126",
             "name": "appKey",
             "type": "text",
             "example": "",
@@ -177,7 +178,7 @@ window.platform = [
           },
           {
             "required": "1",
-            "_id": "5de4fa97e465640ff231dbd8",
+            "_id": "5e05b64ce465640ff231e125",
             "name": "payCoinSymbol",
             "type": "text",
             "example": "",
@@ -185,7 +186,7 @@ window.platform = [
           },
           {
             "required": "1",
-            "_id": "5de4fa97e465640ff231dbd7",
+            "_id": "5e05b64ce465640ff231e124",
             "name": "openId",
             "type": "text",
             "example": "",
@@ -193,7 +194,7 @@ window.platform = [
           },
           {
             "required": "1",
-            "_id": "5de4fa97e465640ff231dbd6",
+            "_id": "5e05b64ce465640ff231e123",
             "name": "userId",
             "type": "text",
             "example": "",
@@ -201,7 +202,7 @@ window.platform = [
           },
           {
             "required": "1",
-            "_id": "5de4fa97e465640ff231dbd5",
+            "_id": "5e05b64ce465640ff231e122",
             "name": "returnPage",
             "type": "text",
             "example": "",
@@ -209,7 +210,7 @@ window.platform = [
           },
           {
             "required": "1",
-            "_id": "5de4fa97e465640ff231dbd4",
+            "_id": "5e05b64ce465640ff231e121",
             "name": "notifyPage",
             "type": "text",
             "example": "",
@@ -217,7 +218,7 @@ window.platform = [
           },
           {
             "required": "1",
-            "_id": "5de4fa97e465640ff231dbd3",
+            "_id": "5e05b64ce465640ff231e120",
             "name": "appOrderId",
             "type": "text",
             "example": "",
@@ -225,7 +226,7 @@ window.platform = [
           },
           {
             "required": "1",
-            "_id": "5de4fa97e465640ff231dbd2",
+            "_id": "5e05b64ce465640ff231e11f",
             "name": "orderSceneType",
             "type": "text",
             "example": "",
@@ -233,7 +234,7 @@ window.platform = [
           },
           {
             "required": "1",
-            "_id": "5de4fa97e465640ff231dbd1",
+            "_id": "5e05b64ce465640ff231e11e",
             "name": "orderAmount",
             "type": "text",
             "example": "",
@@ -241,7 +242,7 @@ window.platform = [
           },
           {
             "required": "1",
-            "_id": "5de4fa97e465640ff231dbd0",
+            "_id": "5e05b64ce465640ff231e11d",
             "name": "token",
             "type": "text",
             "example": "",
@@ -249,7 +250,7 @@ window.platform = [
           },
           {
             "required": "1",
-            "_id": "5de4fa97e465640ff231dbcf",
+            "_id": "5e05b64ce465640ff231e11c",
             "name": "sign",
             "type": "text",
             "example": "",
@@ -257,7 +258,7 @@ window.platform = [
           },
           {
             "required": "0",
-            "_id": "5de4fa97e465640ff231dbce",
+            "_id": "5e05b64ce465640ff231e11b",
             "name": "goods",
             "type": "text",
             "example": "",
@@ -268,7 +269,8 @@ window.platform = [
         "markdown": "",
         "desc": "",
         "res_body": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"code\":{\"type\":\"number\"},\"msg\":{\"type\":\"string\"},\"data\":{\"type\":\"object\",\"properties\":{\"sign\":{\"type\":\"string\"},\"orderNum\":{\"type\":\"string\"}}}}}",
-        "req_body_type": "form"
+        "req_body_type": "json",
+        "req_body_other": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"appKey\":{\"type\":\"string\",\"description\":\"商家唯一编号\"},\"appOrderId\":{\"type\":\"string\",\"description\":\"商家端订单id\"},\"openId\":{\"type\":\"string\",\"description\":\"付款用户的唯一id\"},\"userId\":{\"type\":\"string\",\"description\":\"付款用户uid(与openid必须存在一个) ||同时存在优先取openid\"},\"orderAmount\":{\"type\":\"string\",\"description\":\"支付金额\"},\"orderSceneType\":{\"type\":\"string\",\"description\":\"订单的场景类型，数字枚举；\"},\"payCoinSymbol\":{\"type\":\"string\",\"description\":\"支付币种，大写如BTCappKey\"},\"returnPage\":{\"type\":\"string\",\"description\":\"前台跳转商家的页面\"},\"notifyPage\":{\"type\":\"string\",\"description\":\"后台通知商家的地址\"},\"token\":{\"type\":\"string\",\"description\":\"授权的token\"},\"sign\":{\"type\":\"string\",\"description\":\"MD5(Sort(Param) + secret)\"},\"goods\":{\"type\":\"string\",\"description\":\"商品描述信息，可不传，传入必须为合法的json格式，否则订单创建失败 ；json中的子字段为 name : 商品名称 desc:商品描述 例：[{\\\"name\\\":\\\"商品1\\\",\\\"desc\\\":\\\"商品信息123balabala\\\"},{\\\"name\\\":\\\"商品2\\\",\\\"desc\\\":\\\"商品信息23balabala\\\"},{\\\"name\\\":\\\"商品3\\\",\\\"desc\\\":\\\"商品信息33balabala\\\"}]\"}},\"required\":[\"appKey\",\"appOrderId\",\"openId\",\"orderAmount\",\"orderSceneType\",\"payCoinSymbol\",\"token\",\"sign\",\"userId\",\"returnPage\",\"notifyPage\"]}"
       },
       {
         "query_path": {
@@ -401,27 +403,27 @@ window.platform = [
         "res_body_type": "json",
         "uid": 247,
         "add_time": 1573698426,
-        "up_time": 1575287471,
+        "up_time": 1577433009,
         "req_query": [],
         "req_headers": [
           {
             "required": "1",
-            "_id": "5de4faafe465640ff231dbda",
+            "_id": "5e05b7b1e465640ff231e129",
             "name": "Content-Type",
-            "value": "application/x-www-form-urlencoded"
+            "value": "application/json"
           }
         ],
         "req_body_form": [
           {
             "required": "1",
-            "_id": "5de4faafe465640ff231dbdd",
+            "_id": "5e05b7b1e465640ff231e12c",
             "name": "appKey",
             "type": "text",
             "desc": "商家唯一编号"
           },
           {
             "required": "1",
-            "_id": "5de4faafe465640ff231dbdc",
+            "_id": "5e05b7b1e465640ff231e12b",
             "name": "orderNum",
             "type": "text",
             "example": "",
@@ -429,7 +431,7 @@ window.platform = [
           },
           {
             "required": "1",
-            "_id": "5de4faafe465640ff231dbdb",
+            "_id": "5e05b7b1e465640ff231e12a",
             "name": "token",
             "type": "text",
             "example": "",
@@ -440,7 +442,8 @@ window.platform = [
         "markdown": "",
         "desc": "",
         "res_body": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"code\":{\"type\":\"integer\"},\"msg\":{\"type\":\"string\"},\"data\":{\"type\":\"object\",\"properties\":{\"totalAccount\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"accountName\":{\"type\":\"string\",\"description\":\"账户名称(下拉菜单中显示)\"},\"accountType\":{\"type\":\"integer\",\"description\":\"账户类型(id)需要回传给后端的相当于id字段\"},\"accountBalance\":{\"type\":\"number\",\"description\":\"支付用户该账户的余额\"}},\"required\":[\"accountName\",\"accountType\",\"accountBalance\"]},\"description\":\"商户支持的所有账户list\"},\"googleStatus\":{\"type\":\"number\",\"description\":\"是否开启google验证；0-未开启,1-开启\"},\"appOrderId\":{\"type\":\"string\",\"description\":\"商家订单id\"},\"sign\":{\"type\":\"string\",\"description\":\"签名\"},\"orderNum\":{\"type\":\"string\",\"description\":\"订单编号\"},\"orderStatus\":{\"type\":\"string\",\"description\":\"订单状态：1=待支付；3=支付成功\"},\"userId\":{\"type\":\"integer\",\"description\":\"用户id\"},\"isOpenMobileCheck\":{\"type\":\"string\",\"description\":\"是否开启手机短信效验；0-未开启,1-开启\"},\"orderAmount\":{\"type\":\"string\",\"description\":\"订单金额\"},\"payCoinSymbol\":{\"type\":\"string\",\"description\":\"支付币种\"},\"ctime\":{\"type\":\"string\"},\"appKey\":{\"type\":\"string\"},\"showPrecision\":{\"type\":\"string\",\"description\":\"显示的精度\"}}}}}",
-        "req_body_type": "form"
+        "req_body_type": "json",
+        "req_body_other": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"appKey\":{\"type\":\"string\",\"description\":\"商家唯一编号\"},\"orderNum\":{\"type\":\"string\",\"description\":\"平台方订单编号\"},\"token\":{\"type\":\"string\",\"description\":\"授权的token\"}},\"required\":[]}"
       },
       {
         "query_path": {
@@ -465,27 +468,27 @@ window.platform = [
         "res_body_type": "json",
         "uid": 247,
         "add_time": 1573698652,
-        "up_time": 1575287482,
+        "up_time": 1577434241,
         "req_query": [],
         "req_headers": [
           {
             "required": "1",
-            "_id": "5de4fabae465640ff231dbde",
+            "_id": "5e05bc81e465640ff231e13e",
             "name": "Content-Type",
-            "value": "application/x-www-form-urlencoded"
+            "value": "application/json"
           }
         ],
         "req_body_form": [
           {
             "required": "1",
-            "_id": "5de4fabae465640ff231dbe4",
+            "_id": "5e05bc81e465640ff231e144",
             "name": "appKey",
             "type": "text",
             "example": ""
           },
           {
             "required": "1",
-            "_id": "5de4fabae465640ff231dbe3",
+            "_id": "5e05bc81e465640ff231e143",
             "name": "orderType",
             "type": "text",
             "example": "",
@@ -493,7 +496,7 @@ window.platform = [
           },
           {
             "required": "1",
-            "_id": "5de4fabae465640ff231dbe2",
+            "_id": "5e05bc81e465640ff231e142",
             "name": "day",
             "type": "text",
             "example": "",
@@ -501,7 +504,7 @@ window.platform = [
           },
           {
             "required": "1",
-            "_id": "5de4fabae465640ff231dbe1",
+            "_id": "5e05bc81e465640ff231e141",
             "name": "pageNum",
             "type": "text",
             "example": "",
@@ -509,7 +512,7 @@ window.platform = [
           },
           {
             "required": "1",
-            "_id": "5de4fabae465640ff231dbe0",
+            "_id": "5e05bc81e465640ff231e140",
             "name": "pageSize",
             "type": "text",
             "example": "",
@@ -517,7 +520,7 @@ window.platform = [
           },
           {
             "required": "1",
-            "_id": "5de4fabae465640ff231dbdf",
+            "_id": "5e05bc81e465640ff231e13f",
             "name": "sign",
             "type": "text",
             "example": "",
@@ -528,7 +531,8 @@ window.platform = [
         "markdown": "",
         "desc": "",
         "res_body": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"code\":{\"type\":\"string\"},\"msg\":{\"type\":\"string\"},\"data\":{\"type\":\"object\",\"properties\":{\"count\":{\"type\":\"number\",\"description\":\"当日记录总数；\"},\"list\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"merchantUserId\":{\"type\":\"number\",\"description\":\"商家收款用户id；\"},\"appOrderId\":{\"type\":\"string\",\"description\":\"商家端订单id；\"},\"payCoinSymbol\":{\"type\":\"string\",\"description\":\"支付使用币种；\"},\"orderAmount\":{\"type\":\"number\",\"description\":\"订单操作数量；\"},\"orderType\":{\"type\":\"number\",\"description\":\"订单类型(1、支付订单;11、划转(退款)订单)\"},\"userId\":{\"type\":\"number\",\"description\":\"付款用户id；付款用户id；\"},\"openId\":{\"type\":\"string\",\"description\":\"付款用户openid；\"},\"createTime\":{\"type\":\"string\",\"description\":\"下单时间，到毫秒；\"},\"payTime\":{\"type\":\"string\",\"description\":\"实际支付完成时间，到毫秒；\"}}}}}}}}",
-        "req_body_type": "form"
+        "req_body_type": "json",
+        "req_body_other": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"appKey\":{\"type\":\"string\"},\"orderType\":{\"type\":\"string\",\"description\":\"订单类型（1=支付订单；11=划转订单），不传查询所有订单\"},\"day\":{\"type\":\"string\",\"description\":\"统计的日期，格式：yyyy-MM-dd，不符合格式参数异常；不传查询当日订单\"},\"pageNum\":{\"type\":\"string\",\"description\":\"查询第几页，同分页逻辑；不传查所有\"},\"pageSize\":{\"type\":\"string\",\"description\":\"每页大小，同分页逻辑；不传查2000（最大为2000，数据超过2000请分页查询）\"},\"sign\":{\"type\":\"string\"}},\"required\":[\"appKey\",\"orderType\",\"day\",\"pageNum\",\"pageSize\",\"sign\"]}"
       }
     ]
   },
@@ -562,27 +566,27 @@ window.platform = [
         "res_body_type": "json",
         "uid": 247,
         "add_time": 1573698822,
-        "up_time": 1575980673,
+        "up_time": 1577434424,
         "req_query": [],
         "req_headers": [
           {
             "required": "1",
-            "_id": "5def8e81e465640ff231dec8",
+            "_id": "5e05bd38e465640ff231e14b",
             "name": "Content-Type",
-            "value": "application/x-www-form-urlencoded"
+            "value": "application/json"
           }
         ],
         "req_body_form": [
           {
             "required": "1",
-            "_id": "5def8e81e465640ff231ded1",
+            "_id": "5e05bd38e465640ff231e154",
             "name": "appKey",
             "type": "text",
             "example": ""
           },
           {
             "required": "1",
-            "_id": "5def8e81e465640ff231ded0",
+            "_id": "5e05bd38e465640ff231e153",
             "name": "payCoinSymbol",
             "type": "text",
             "example": "",
@@ -590,7 +594,7 @@ window.platform = [
           },
           {
             "required": "1",
-            "_id": "5def8e81e465640ff231decf",
+            "_id": "5e05bd38e465640ff231e152",
             "name": "openId",
             "type": "text",
             "example": "",
@@ -598,7 +602,7 @@ window.platform = [
           },
           {
             "required": "1",
-            "_id": "5def8e81e465640ff231dece",
+            "_id": "5e05bd38e465640ff231e151",
             "name": "userId",
             "type": "text",
             "example": "",
@@ -606,7 +610,7 @@ window.platform = [
           },
           {
             "required": "1",
-            "_id": "5def8e81e465640ff231decd",
+            "_id": "5e05bd38e465640ff231e150",
             "name": "assetType",
             "type": "text",
             "example": "",
@@ -614,7 +618,7 @@ window.platform = [
           },
           {
             "required": "1",
-            "_id": "5def8e81e465640ff231decc",
+            "_id": "5e05bd38e465640ff231e14f",
             "name": "orderSceneType",
             "type": "text",
             "example": "",
@@ -622,7 +626,7 @@ window.platform = [
           },
           {
             "required": "1",
-            "_id": "5def8e81e465640ff231decb",
+            "_id": "5e05bd38e465640ff231e14e",
             "name": "orderAmount",
             "type": "text",
             "example": "",
@@ -630,7 +634,7 @@ window.platform = [
           },
           {
             "required": "1",
-            "_id": "5def8e81e465640ff231deca",
+            "_id": "5e05bd38e465640ff231e14d",
             "name": "appOrderId",
             "type": "text",
             "example": "",
@@ -638,7 +642,7 @@ window.platform = [
           },
           {
             "required": "1",
-            "_id": "5def8e81e465640ff231dec9",
+            "_id": "5e05bd38e465640ff231e14c",
             "name": "sign",
             "type": "text",
             "example": "",
@@ -649,7 +653,8 @@ window.platform = [
         "markdown": "| ****assetType**** | **常用资产类型** |\n| --------- | ------ |\n| <span class=\"colour\" style=\"color:rgb(0, 128, 0)\">201</span> | <span class=\"colour\" style=\"color:rgb(0, 128, 0)\">正常余额</span> |\n| <span class=\"colour\" style=\"color:rgb(0, 128, 0)\">202</span> | <span class=\"colour\" style=\"color:rgb(0, 128, 0)\">冻结</span> |\n| <span class=\"colour\" style=\"color:rgb(0, 128, 0)\">203</span> | <span class=\"colour\" style=\"color:rgb(0, 128, 0)\">提现中</span> |\n| <span class=\"colour\" style=\"color:rgb(0, 128, 0)\">206</span> | <span class=\"colour\" style=\"color:rgb(0, 128, 0)\">赠币账户</span> |\n| <span class=\"colour\" style=\"color:rgb(0, 128, 0)\">207</span> | <span class=\"colour\" style=\"color:rgb(0, 128, 0)\">锁仓账户</span> |\n| <span class=\"colour\" style=\"color:rgb(0, 128, 0)\">208</span> | <span class=\"colour\" style=\"color:rgb(0, 128, 0)\">储值锁仓账户</span> |\n| <span class=\"colour\" style=\"color:rgb(0, 128, 0)\">209</span> | <span class=\"colour\" style=\"color:rgb(0, 128, 0)\">储值账户</span> |\n| <span class=\"colour\" style=\"color:rgb(0, 128, 0)\">210</span> | <span class=\"colour\" style=\"color:rgb(0, 128, 0)\">场外商户保证金账户</span> |\n| <span class=\"colour\" style=\"color:rgb(0, 128, 0)\">216</span> | <span class=\"colour\" style=\"color:rgb(0, 128, 0)\">合约保证金账户</span> |\n| <span class=\"colour\" style=\"color:rgb(0, 128, 0)\">217</span> | <span class=\"colour\" style=\"color:rgb(0, 128, 0)\">场外正常余额</span> |\n| <span class=\"colour\" style=\"color:rgb(0, 128, 0)\">218</span> | <span class=\"colour\" style=\"color:rgb(0, 128, 0)\">场外冻结</span> |\n| <span class=\"colour\" style=\"color:rgb(0, 128, 0)\">220</span> | <span class=\"colour\" style=\"color:rgb(0, 128, 0)\">代币锁仓账户</span> |\n| <span class=\"colour\" style=\"color:rgb(0, 128, 0)\">221</span> | <span class=\"colour\" style=\"color:rgb(0, 128, 0)\">申购冻结</span> |\n| <span class=\"colour\" style=\"color:rgb(0, 128, 0)\">222</span> | <span class=\"colour\" style=\"color:rgb(0, 128, 0)\">代币锁仓账户 V2</span> |\n| <span class=\"colour\" style=\"color:rgb(0, 128, 0)\">241</span> | <span class=\"colour\" style=\"color:rgb(0, 128, 0)\">开放平台 - 支付可用账户</span> |\n| <span class=\"colour\" style=\"color:rgb(0, 128, 0)\">242</span> | <span class=\"colour\" style=\"color:rgb(0, 128, 0)\">开放平台 - 收款冻结账户</span> |",
         "desc": "<table>\n<thead>\n<tr>\n<th><strong><strong>assetType</strong></strong></th>\n<th><strong>常用资产类型</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><span class=\"colour\" style=\"color:rgb(0, 128, 0)\">201</span></td>\n<td><span class=\"colour\" style=\"color:rgb(0, 128, 0)\">正常余额</span></td>\n</tr>\n<tr>\n<td><span class=\"colour\" style=\"color:rgb(0, 128, 0)\">202</span></td>\n<td><span class=\"colour\" style=\"color:rgb(0, 128, 0)\">冻结</span></td>\n</tr>\n<tr>\n<td><span class=\"colour\" style=\"color:rgb(0, 128, 0)\">203</span></td>\n<td><span class=\"colour\" style=\"color:rgb(0, 128, 0)\">提现中</span></td>\n</tr>\n<tr>\n<td><span class=\"colour\" style=\"color:rgb(0, 128, 0)\">206</span></td>\n<td><span class=\"colour\" style=\"color:rgb(0, 128, 0)\">赠币账户</span></td>\n</tr>\n<tr>\n<td><span class=\"colour\" style=\"color:rgb(0, 128, 0)\">207</span></td>\n<td><span class=\"colour\" style=\"color:rgb(0, 128, 0)\">锁仓账户</span></td>\n</tr>\n<tr>\n<td><span class=\"colour\" style=\"color:rgb(0, 128, 0)\">208</span></td>\n<td><span class=\"colour\" style=\"color:rgb(0, 128, 0)\">储值锁仓账户</span></td>\n</tr>\n<tr>\n<td><span class=\"colour\" style=\"color:rgb(0, 128, 0)\">209</span></td>\n<td><span class=\"colour\" style=\"color:rgb(0, 128, 0)\">储值账户</span></td>\n</tr>\n<tr>\n<td><span class=\"colour\" style=\"color:rgb(0, 128, 0)\">210</span></td>\n<td><span class=\"colour\" style=\"color:rgb(0, 128, 0)\">场外商户保证金账户</span></td>\n</tr>\n<tr>\n<td><span class=\"colour\" style=\"color:rgb(0, 128, 0)\">216</span></td>\n<td><span class=\"colour\" style=\"color:rgb(0, 128, 0)\">合约保证金账户</span></td>\n</tr>\n<tr>\n<td><span class=\"colour\" style=\"color:rgb(0, 128, 0)\">217</span></td>\n<td><span class=\"colour\" style=\"color:rgb(0, 128, 0)\">场外正常余额</span></td>\n</tr>\n<tr>\n<td><span class=\"colour\" style=\"color:rgb(0, 128, 0)\">218</span></td>\n<td><span class=\"colour\" style=\"color:rgb(0, 128, 0)\">场外冻结</span></td>\n</tr>\n<tr>\n<td><span class=\"colour\" style=\"color:rgb(0, 128, 0)\">220</span></td>\n<td><span class=\"colour\" style=\"color:rgb(0, 128, 0)\">代币锁仓账户</span></td>\n</tr>\n<tr>\n<td><span class=\"colour\" style=\"color:rgb(0, 128, 0)\">221</span></td>\n<td><span class=\"colour\" style=\"color:rgb(0, 128, 0)\">申购冻结</span></td>\n</tr>\n<tr>\n<td><span class=\"colour\" style=\"color:rgb(0, 128, 0)\">222</span></td>\n<td><span class=\"colour\" style=\"color:rgb(0, 128, 0)\">代币锁仓账户 V2</span></td>\n</tr>\n<tr>\n<td><span class=\"colour\" style=\"color:rgb(0, 128, 0)\">241</span></td>\n<td><span class=\"colour\" style=\"color:rgb(0, 128, 0)\">开放平台 - 支付可用账户</span></td>\n</tr>\n<tr>\n<td><span class=\"colour\" style=\"color:rgb(0, 128, 0)\">242</span></td>\n<td><span class=\"colour\" style=\"color:rgb(0, 128, 0)\">开放平台 - 收款冻结账户</span></td>\n</tr>\n</tbody>\n</table>\n",
         "res_body": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"code\":{\"type\":\"string\"},\"msg\":{\"type\":\"string\"},\"data\":{\"type\":\"object\",\"properties\":{\"orderNum\":{\"type\":\"string\"}}}}}",
-        "req_body_type": "form"
+        "req_body_type": "json",
+        "req_body_other": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"appKey\":{\"type\":\"string\"},\"appOrderId\":{\"type\":\"string\",\"description\":\"商家端订单id，全局唯一\"},\"assetType\":{\"type\":\"string\",\"description\":\"支付账户类型：AB的AB部分，默认到可用账户\"},\"openId\":{\"type\":\"string\",\"description\":\"用户的唯一id\"},\"userId\":{\"type\":\"string\",\"description\":\"付款用户uid(与openid必须存在一个) ||同时存在优先取openid\"},\"orderAmount\":{\"type\":\"string\",\"description\":\"金额\"},\"orderSceneType\":{\"type\":\"string\",\"description\":\"订单的场景类型，数字枚举；\"},\"payCoinSymbol\":{\"type\":\"string\",\"description\":\"支付币种，大写如BTC\"},\"sign\":{\"type\":\"string\"}},\"required\":[\"appKey\",\"appOrderId\",\"assetType\",\"openId\",\"userId\",\"orderAmount\",\"orderSceneType\",\"payCoinSymbol\",\"sign\"]}"
       }
     ]
   },
