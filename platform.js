@@ -83,12 +83,12 @@ window.platform = [
         "res_body_type": "json",
         "uid": 247,
         "add_time": 1573698588,
-        "up_time": 1577431805,
+        "up_time": 1577509439,
         "req_query": [],
         "req_headers": [
           {
             "required": "1",
-            "_id": "5e05b2fde465640ff231e111",
+            "_id": "5e06e23fe465640ff231e175",
             "name": "Content-Type",
             "value": "application/json"
           }
@@ -96,14 +96,14 @@ window.platform = [
         "req_body_form": [
           {
             "required": "1",
-            "_id": "5e05b2fde465640ff231e114",
+            "_id": "5e06e23fe465640ff231e178",
             "name": "appKey",
             "type": "text",
             "desc": "商家唯一key"
           },
           {
             "required": "1",
-            "_id": "5e05b2fde465640ff231e113",
+            "_id": "5e06e23fe465640ff231e177",
             "name": "code",
             "type": "text",
             "example": "",
@@ -111,7 +111,7 @@ window.platform = [
           },
           {
             "required": "1",
-            "_id": "5e05b2fde465640ff231e112",
+            "_id": "5e06e23fe465640ff231e176",
             "name": "sign",
             "type": "text",
             "example": "",
@@ -123,7 +123,7 @@ window.platform = [
         "desc": "",
         "res_body": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"code\":{\"type\":\"number\",\"description\":\"返回code\"},\"msg\":{\"type\":\"string\",\"description\":\"成功或失败提示信息\"},\"data\":{\"type\":\"object\",\"properties\":{\"openId\":{\"type\":\"string\",\"description\":\"该授权用户所属该商户下的唯一openId\"},\"expireIn\":{\"type\":\"string\",\"description\":\"token过期时间，秒\"},\"refreshToken\":{\"type\":\"string\",\"description\":\"刷新token所需的token\"},\"token\":{\"type\":\"string\",\"description\":\"授权的token\"}}}}}",
         "req_body_type": "json",
-        "req_body_other": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"appKey\":{\"type\":\"string\",\"description\":\"商家唯一key\"},\"appOrderId\":{\"type\":\"string\",\"description\":\"用户登录授权时返回的code\"},\"assetType\":{\"type\":\"string\",\"description\":\"MD5(Sort(Param) + secret)\"}},\"required\":[\"appKey\",\"appOrderId\",\"assetType\"]}"
+        "req_body_other": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"appKey\":{\"type\":\"string\",\"description\":\"商家唯一key\"},\"code\":{\"type\":\"string\",\"description\":\"用户登录授权时返回的code\"},\"sign\":{\"type\":\"string\",\"description\":\"MD5(Sort(Param) + secret)\"}},\"required\":[\"appKey\",\"code\",\"sign\"]}"
       }
     ]
   },
