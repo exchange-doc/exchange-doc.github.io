@@ -1,4 +1,4 @@
-window.platform = [
+window.platform =[
   {
     "index": 1,
     "name": "OAuth",
@@ -688,22 +688,64 @@ window.platform = [
         "res_body_type": "json",
         "uid": 247,
         "add_time": 1573698308,
-        "up_time": 1575285997,
+        "up_time": 1584425650,
         "req_query": [],
         "req_headers": [
           {
             "required": "1",
-            "_id": "5de4f4ede465640ff231dbb3",
+            "_id": "5e706ab2b1bfaf14a321d191",
             "name": "Content-Type",
-            "value": "application/x-www-form-urlencoded"
+            "value": "application/json"
           }
         ],
         "req_body_form": [],
         "__v": 0,
         "markdown": "",
         "desc": "",
-        "res_body": "{\"type\":\"object\",\"title\":\"empty object\",\"properties\":{}}",
-        "req_body_type": "form"
+        "res_body": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"code\":{\"type\":\"string\",\"mock\":{\"mock\":\"0\"},\"description\":\"0：成功\"},\"msg\":{\"type\":\"string\"},\"data\":{\"type\":\"object\",\"properties\":{\"uid\":{\"type\":\"string\"}}}}}",
+        "req_body_type": "json",
+        "req_body_other": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"countryCode\":{\"type\":\"string\"},\"mobileNumber\":{\"type\":\"string\"},\"password\":{\"type\":\"string\"},\"invitedCode\":{\"type\":\"string\"},\"appKey\":{\"type\":\"string\"},\"sign\":{\"type\":\"string\"},\"time\":{\"type\":\"string\"}},\"required\":[\"countryCode\",\"mobileNumber\",\"password\",\"appKey\",\"sign\",\"time\"]}"
+      },
+      {
+        "query_path": {
+          "path": "/chainup/open/user/reg_and_login",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "undone",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": true,
+        "index": 0,
+        "tag": [],
+        "_id": 3234,
+        "method": "POST",
+        "catid": 526,
+        "title": "注册+登录综合接口",
+        "path": "/chainup/open/user/reg_and_login",
+        "project_id": 146,
+        "req_params": [],
+        "res_body_type": "json",
+        "req_query": [],
+        "req_headers": [
+          {
+            "required": "1",
+            "_id": "5e707f56b1bfaf14a321d199",
+            "name": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "req_body_form": [],
+        "markdown": "当账号不存在时，会自动注册账号，并返回登录状态\n当账号存在时，如果账号密码正确，返回登录状态",
+        "desc": "<p>当账号不存在时，会自动注册账号，并返回登录状态<br>\n当账号存在时，如果账号密码正确，返回登录状态</p>\n",
+        "res_body": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"code\":{\"type\":\"string\",\"mock\":{\"mock\":\"0\"},\"description\":\"0：成功\"},\"msg\":{\"type\":\"string\"},\"data\":{\"type\":\"object\",\"properties\":{\"uid\":{\"type\":\"string\",\"description\":\"用户唯一标识\"},\"token\":{\"type\":\"string\",\"description\":\"用户登录状态token，需要存放到当前根域名下的COOKIE中\"}},\"required\":[\"token\",\"uid\"]}}}",
+        "req_body_type": "json",
+        "req_body_other": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"countryCode\":{\"type\":\"string\",\"description\":\"如果手机号注册为必填项\"},\"mobileNumber\":{\"type\":\"string\",\"description\":\"邮箱和手机号至少需要填一个\"},\"email\":{\"type\":\"string\",\"description\":\"邮箱和手机号至少需要填一个\"},\"password\":{\"type\":\"string\"},\"invitedCode\":{\"type\":\"string\",\"description\":\"邀请码\"},\"ip\":{\"type\":\"string\",\"description\":\"用户真实ip地址\"},\"appKey\":{\"type\":\"string\"},\"sign\":{\"type\":\"string\"},\"time\":{\"type\":\"string\"}},\"required\":[\"password\",\"appKey\",\"sign\",\"time\",\"ip\"]}",
+        "uid": 247,
+        "add_time": 1584426925,
+        "up_time": 1584430934,
+        "__v": 0
       }
     ]
   },
