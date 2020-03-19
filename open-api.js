@@ -1,4 +1,4 @@
-window.openapi = [
+window.openapi =[
   {
     "index": 0,
     "name": "订单服务",
@@ -28,7 +28,7 @@ window.openapi = [
         "req_headers": [
           {
             "required": "1",
-            "_id": "5df4906fe465640ff231dfe8",
+            "_id": "5e01be7ee465640ff231e0c1",
             "name": "Content-Type",
             "value": "application/x-www-form-urlencoded",
             "desc": ""
@@ -38,15 +38,15 @@ window.openapi = [
         "req_body_form": [
           {
             "required": "0",
-            "_id": "5df4906fe465640ff231dfee",
+            "_id": "5e01be7ee465640ff231e0c7",
             "name": "mass_place",
             "type": "text",
             "example": "[{\"side\":\"SELL\",\"type\":\"1\",\"volume\":\"1\",\"price\":\"10\",\"fee_is_user_exchange_coin\":\"0\"}]",
-            "desc": "mass_place:下单参数。side：方向（买卖方向BUY、SELL）\n--------------------------------type：类型（1:限价委托、2:市价委托）\n--------------------------------volume：购买数量（多义，复用字段） type=1:表示买卖数量type=2:买则表示总价格，卖表示总数量\n--------------------------------price：委托单价，type=2不需要此参数\n--------------------------------fee_is_user_exchange_coin：(冗余字段)当交易所有平台币时，此参数表示是否使用用平台币支付手续费，0否，1是"
+            "desc": "mass_place:下单参数。side：方向（买卖方向BUY、SELL）\n--------------------------------type：类型（1:限价委托、2:市价委托）\n--------------------------------volume：购买数量（多义，复用字段） type=1:表示买卖数量type=2:买则表示总价格，卖表示总数量\n--------------------------------price：委托单价，type=2不需要此参数\n--------------------------------fee_is_user_exchange_coin：(冗余字段)当交易所有平台币时，此参数表示是否使用用平台币"
           },
           {
             "required": "1",
-            "_id": "5df4906fe465640ff231dfed",
+            "_id": "5e01be7ee465640ff231e0c6",
             "name": "symbol",
             "type": "text",
             "example": "btcusdt",
@@ -54,7 +54,7 @@ window.openapi = [
           },
           {
             "required": "1",
-            "_id": "5df4906fe465640ff231dfec",
+            "_id": "5e01be7ee465640ff231e0c5",
             "name": "time",
             "type": "text",
             "example": "1567415490190",
@@ -62,7 +62,7 @@ window.openapi = [
           },
           {
             "required": "1",
-            "_id": "5df4906fe465640ff231dfeb",
+            "_id": "5e01be7ee465640ff231e0c4",
             "name": "sign",
             "type": "text",
             "example": "sign",
@@ -70,7 +70,7 @@ window.openapi = [
           },
           {
             "required": "1",
-            "_id": "5df4906fe465640ff231dfea",
+            "_id": "5e01be7ee465640ff231e0c3",
             "name": "api_key",
             "type": "text",
             "example": "api_key",
@@ -78,7 +78,7 @@ window.openapi = [
           },
           {
             "required": "0",
-            "_id": "5df4906fe465640ff231dfe9",
+            "_id": "5e01be7ee465640ff231e0c2",
             "name": "mass_cancel",
             "type": "text",
             "example": "[78321,78322,78323]",
@@ -91,7 +91,7 @@ window.openapi = [
         "res_body_type": "json",
         "uid": 204,
         "add_time": 1567158008,
-        "up_time": 1576308847,
+        "up_time": 1577172606,
         "__v": 0,
         "markdown": "",
         "res_body": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"code\":{\"type\":\"string\",\"mock\":{\"mock\":\"0\"}},\"msg\":{\"type\":\"string\",\"mock\":{\"mock\":\"success\"}},\"data\":{\"type\":\"object\",\"properties\":{\"mass_cancel\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"msg\":{\"type\":\"string\"},\"code\":{\"type\":\"string\"},\"order_id\":{\"type\":\"number\",\"description\":\"撤销订单id\"}},\"required\":[\"msg\",\"code\",\"order_id\"]},\"description\":\"批量撤单信息\"},\"mass_place\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"msg\":{\"type\":\"string\"},\"code\":{\"type\":\"string\"},\"order_id\":{\"type\":\"number\",\"description\":\"订单id\"}},\"required\":[\"msg\",\"code\",\"order_id\"]},\"description\":\"批量下单信息\"}}}},\"required\":[\"code\",\"msg\"]}"
@@ -435,6 +435,38 @@ window.openapi = [
         "markdown": "```\n{\n\t\"code\": \"0\",\n\t\"msg\": \"suc\",\n\t\"message\": null,\n\t\"data\": {\n\t\t\"date\": 1574735405297,\n\t\t\"trades\": [\n                        {\n\t\t\t\t\"tradeID\": 3523643,\n\t\t\t\t\"price\": \"0.01\",\n\t\t\t\t\"base_volume\": \"569000\",\n\t\t\t\t\"quote_volume\": \"0.01000000\",\n\t\t\t\t\"trade_timestamp\": \"1566360780\",\n\t\t\t\t\"type\": \"sell\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"tradeID\": 3523642,\n\t\t\t\t\"price\": \"0.01\",\n\t\t\t\t\"base_volume\": \"569000\",\n\t\t\t\t\"quote_volume\": \"0.01000000\",\n\t\t\t\t\"trade_timestamp\": \"1566360780\",\n\t\t\t\t\"type\": \"sell\"\n\t\t\t}\n\t\t]\n\t}\n}\n```",
         "desc": "<pre><code>{\n\t\"code\": \"0\",\n\t\"msg\": \"suc\",\n\t\"message\": null,\n\t\"data\": {\n\t\t\"date\": 1574735405297,\n\t\t\"trades\": [\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{\n\t\t\t\t\"tradeID\": 3523643,\n\t\t\t\t\"price\": \"0.01\",\n\t\t\t\t\"base_volume\": \"569000\",\n\t\t\t\t\"quote_volume\": \"0.01000000\",\n\t\t\t\t\"trade_timestamp\": \"1566360780\",\n\t\t\t\t\"type\": \"sell\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"tradeID\": 3523642,\n\t\t\t\t\"price\": \"0.01\",\n\t\t\t\t\"base_volume\": \"569000\",\n\t\t\t\t\"quote_volume\": \"0.01000000\",\n\t\t\t\t\"trade_timestamp\": \"1566360780\",\n\t\t\t\t\"type\": \"sell\"\n\t\t\t}\n\t\t]\n\t}\n}\n</code></pre>\n",
         "res_body": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"code\":{\"type\":\"string\"},\"msg\":{\"type\":\"string\"},\"message\":{\"type\":\"null\"},\"data\":{\"type\":\"object\",\"properties\":{\"date\":{\"type\":\"number\"},\"trades\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"tradeID\":{\"type\":\"number\",\"description\":\"交易记录ID\"},\"price\":{\"type\":\"string\",\"description\":\"价格\"},\"base_volume\":{\"type\":\"string\",\"description\":\"基础货币交易量\"},\"quote_volume\":{\"type\":\"string\",\"description\":\"计价货币交易量\"},\"trade_timestamp\":{\"type\":\"string\",\"description\":\"交易时间 时间戳\"},\"type\":{\"type\":\"string\",\"description\":\"交易方向（sell/buy）\"}},\"required\":[\"tradeID\",\"price\",\"base_volume\",\"quote_volume\",\"trade_timestamp\",\"type\"]}}}}}}"
+      },
+      {
+        "query_path": {
+          "path": "/open/pub/summary",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "undone",
+        "type": "static",
+        "req_body_is_json_schema": false,
+        "res_body_is_json_schema": true,
+        "api_opened": true,
+        "index": 0,
+        "tag": [],
+        "_id": 2931,
+        "method": "GET",
+        "catid": 628,
+        "title": "交易摘要（Summary）",
+        "path": "/open/pub/summary",
+        "project_id": 73,
+        "req_params": [],
+        "res_body_type": "json",
+        "uid": 361,
+        "add_time": 1581403931,
+        "up_time": 1584329310,
+        "req_query": [],
+        "req_headers": [],
+        "req_body_form": [],
+        "__v": 0,
+        "markdown": "```\n## **注意！！！  接口中的24h均指今日0点到现在时间。**\n{\n\t\"code\": \"200\",\n\t\"msg\": \"success\",\n\t\"data\": {\n\t\t\"BAT_USDT\": {\n\t\t\t\"id\": \"52\",\n\t\t\t\"last\": \"0.2842\",\n\t\t\t\"lowestAsk\": \"0.2855\",\n\t\t\t\"highestBid\": \"0.2816\",\n\t\t\t\"percentChange\": \"7.81\",\n\t\t\t\"baseVolume\": \"373477.94\",\n\t\t\t\"quoteVolume\": \"106142.43\",\n\t\t\t\"isFrozen\": \"0\",\n\t\t\t\"high24hr\": \"0.2883\",\n\t\t\t\"low24hr\": \"0.2525\"\n\t\t}\n\t},\n\t\"coins\": {\n\t\t\"ENJ\": {\n\t\t\t\"name\": \" EnjinCoin\",\n\t\t\t\"withdraw\": \"ON\",\n\t\t\t\"deposit\": \"ON\"\n\t\t}\n\t}\n}\n```",
+        "desc": "<pre><code>## **注意！！！&nbsp; 接口中的24h均指今日0点到现在时间。**\n{\n\t\"code\": \"200\",\n\t\"msg\": \"success\",\n\t\"data\": {\n\t\t\"BAT_USDT\": {\n\t\t\t\"id\": \"52\",\n\t\t\t\"last\": \"0.2842\",\n\t\t\t\"lowestAsk\": \"0.2855\",\n\t\t\t\"highestBid\": \"0.2816\",\n\t\t\t\"percentChange\": \"7.81\",\n\t\t\t\"baseVolume\": \"373477.94\",\n\t\t\t\"quoteVolume\": \"106142.43\",\n\t\t\t\"isFrozen\": \"0\",\n\t\t\t\"high24hr\": \"0.2883\",\n\t\t\t\"low24hr\": \"0.2525\"\n\t\t}\n\t},\n\t\"coins\": {\n\t\t\"ENJ\": {\n\t\t\t\"name\": \" EnjinCoin\",\n\t\t\t\"withdraw\": \"ON\",\n\t\t\t\"deposit\": \"ON\"\n\t\t}\n\t}\n}\n</code></pre>\n",
+        "res_body": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"code\":{\"type\":\"string\"},\"msg\":{\"type\":\"string\"},\"data\":{\"type\":\"object\",\"properties\":{\"arr\":{\"type\":\"object\",\"properties\":{\"id\":{\"type\":\"string\"},\"last\":{\"type\":\"string\",\"description\":\"最新成交价格\"},\"lowestAsk\":{\"type\":\"string\",\"description\":\"24h内买方最低价格\"},\"highestBid\":{\"type\":\"string\",\"description\":\"24h内卖方最高价格\"},\"percentChange\":{\"type\":\"string\",\"description\":\"24h涨跌幅\"},\"baseVolume\":{\"type\":\"string\",\"description\":\"24h交易数量\"},\"quoteVolume\":{\"type\":\"string\",\"description\":\"24h交易金额\"},\"isFrozen\":{\"type\":\"string\",\"description\":\"是否被关闭\"},\"high24hr\":{\"type\":\"string\",\"description\":\"24h成交最高价\"},\"low24hr\":{\"type\":\"string\",\"description\":\"24h成交最低价\"}},\"description\":\"币对信息\"}},\"required\":[]},\"coins\":{\"type\":\"object\",\"properties\":{\"arr\":{\"type\":\"object\",\"properties\":{\"name\":{\"type\":\"string\",\"description\":\"币种简称\"},\"withdraw\":{\"type\":\"string\",\"description\":\"是否开启提现\"},\"deposit\":{\"type\":\"string\",\"description\":\"是否开启充值\"}}}},\"required\":[]}}}"
       },
       {
         "query_path": {
