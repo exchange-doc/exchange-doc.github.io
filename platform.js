@@ -1,4 +1,4 @@
-window.platform =[
+window.platform = [
   {
     "index": 1,
     "name": "OAuth",
@@ -688,22 +688,77 @@ window.platform =[
         "res_body_type": "json",
         "uid": 247,
         "add_time": 1573698308,
-        "up_time": 1584425650,
+        "up_time": 1584697976,
         "req_query": [],
         "req_headers": [
           {
             "required": "1",
-            "_id": "5e706ab2b1bfaf14a321d191",
+            "_id": "5e749278b1bfaf14a321d392",
             "name": "Content-Type",
-            "value": "application/json"
+            "value": "application/x-www-form-urlencoded"
           }
         ],
-        "req_body_form": [],
+        "req_body_form": [
+          {
+            "required": "1",
+            "_id": "5e749278b1bfaf14a321d399",
+            "name": "countryCode",
+            "type": "text"
+          },
+          {
+            "required": "1",
+            "_id": "5e749278b1bfaf14a321d398",
+            "name": "mobileNumber",
+            "type": "text",
+            "example": "",
+            "desc": ""
+          },
+          {
+            "required": "1",
+            "_id": "5e749278b1bfaf14a321d397",
+            "name": "password",
+            "type": "text",
+            "example": "",
+            "desc": ""
+          },
+          {
+            "required": "0",
+            "_id": "5e749278b1bfaf14a321d396",
+            "name": "invitedCode",
+            "type": "text",
+            "example": "",
+            "desc": ""
+          },
+          {
+            "required": "1",
+            "_id": "5e749278b1bfaf14a321d395",
+            "name": "appKey",
+            "type": "text",
+            "example": "",
+            "desc": ""
+          },
+          {
+            "required": "1",
+            "_id": "5e749278b1bfaf14a321d394",
+            "name": "sign",
+            "type": "text",
+            "example": "",
+            "desc": ""
+          },
+          {
+            "required": "1",
+            "_id": "5e749278b1bfaf14a321d393",
+            "name": "time",
+            "type": "text",
+            "example": "",
+            "desc": ""
+          }
+        ],
         "__v": 0,
         "markdown": "",
         "desc": "",
         "res_body": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"code\":{\"type\":\"string\",\"mock\":{\"mock\":\"0\"},\"description\":\"0：成功\"},\"msg\":{\"type\":\"string\"},\"data\":{\"type\":\"object\",\"properties\":{\"uid\":{\"type\":\"string\"}}}}}",
-        "req_body_type": "json",
+        "req_body_type": "form",
         "req_body_other": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"countryCode\":{\"type\":\"string\"},\"mobileNumber\":{\"type\":\"string\"},\"password\":{\"type\":\"string\"},\"invitedCode\":{\"type\":\"string\"},\"appKey\":{\"type\":\"string\"},\"sign\":{\"type\":\"string\"},\"time\":{\"type\":\"string\"}},\"required\":[\"countryCode\",\"mobileNumber\",\"password\",\"appKey\",\"sign\",\"time\"]}"
       },
       {
@@ -731,20 +786,91 @@ window.platform =[
         "req_headers": [
           {
             "required": "1",
-            "_id": "5e707f56b1bfaf14a321d199",
+            "_id": "5e749d3ab1bfaf14a321d39a",
             "name": "Content-Type",
-            "value": "application/json"
+            "value": "application/x-www-form-urlencoded"
           }
         ],
-        "req_body_form": [],
-        "markdown": "当账号不存在时，会自动注册账号，并返回登录状态\n当账号存在时，如果账号密码正确，返回登录状态",
-        "desc": "<p>当账号不存在时，会自动注册账号，并返回登录状态<br>\n当账号存在时，如果账号密码正确，返回登录状态</p>\n",
+        "req_body_form": [
+          {
+            "required": "0",
+            "_id": "5e749d3ab1bfaf14a321d3a3",
+            "name": "countryCode",
+            "type": "text"
+          },
+          {
+            "required": "0",
+            "_id": "5e749d3ab1bfaf14a321d3a2",
+            "name": "mobileNumber",
+            "type": "text",
+            "example": "",
+            "desc": ""
+          },
+          {
+            "required": "0",
+            "_id": "5e749d3ab1bfaf14a321d3a1",
+            "name": "email",
+            "type": "text",
+            "example": "",
+            "desc": ""
+          },
+          {
+            "required": "1",
+            "_id": "5e749d3ab1bfaf14a321d3a0",
+            "name": "password",
+            "type": "text",
+            "example": "",
+            "desc": ""
+          },
+          {
+            "required": "0",
+            "_id": "5e749d3ab1bfaf14a321d39f",
+            "name": "invitedCode",
+            "type": "text",
+            "example": "",
+            "desc": ""
+          },
+          {
+            "required": "1",
+            "_id": "5e749d3ab1bfaf14a321d39e",
+            "name": "ip",
+            "type": "text",
+            "example": "",
+            "desc": ""
+          },
+          {
+            "required": "1",
+            "_id": "5e749d3ab1bfaf14a321d39d",
+            "name": "appKey",
+            "type": "text",
+            "example": "",
+            "desc": ""
+          },
+          {
+            "required": "1",
+            "_id": "5e749d3ab1bfaf14a321d39c",
+            "name": "sign",
+            "type": "text",
+            "example": "",
+            "desc": ""
+          },
+          {
+            "required": "1",
+            "_id": "5e749d3ab1bfaf14a321d39b",
+            "name": "time",
+            "type": "text",
+            "example": "",
+            "desc": ""
+          }
+        ],
+        "markdown": "当账号不存在时：\n    创建账号，并返回登录状态\n\n当账号存在时：\n    如果账号密码正确，返回登录状态，并发送登录成功短信\n    如果密码输入错误超过5次，冻结该账号，24小时禁止登录",
+        "desc": "<p>当账号不存在时：<br>\n&nbsp;&nbsp;&nbsp;&nbsp;创建账号，并返回登录状态</p>\n<p>当账号存在时：<br>\n&nbsp;&nbsp;&nbsp;&nbsp;如果账号密码正确，返回登录状态，并发送登录成功短信<br>\n&nbsp; &nbsp; 如果密码输入错误超过5次，冻结该账号，24小时禁止登录</p>\n",
         "res_body": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"code\":{\"type\":\"string\",\"mock\":{\"mock\":\"0\"},\"description\":\"0：成功\"},\"msg\":{\"type\":\"string\"},\"data\":{\"type\":\"object\",\"properties\":{\"uid\":{\"type\":\"string\",\"description\":\"用户唯一标识\"},\"token\":{\"type\":\"string\",\"description\":\"用户登录状态token，需要存放到当前根域名下的COOKIE中\"}},\"required\":[\"token\",\"uid\"]}}}",
-        "req_body_type": "json",
+        "req_body_type": "form",
         "req_body_other": "{\"$schema\":\"http://json-schema.org/draft-04/schema#\",\"type\":\"object\",\"properties\":{\"countryCode\":{\"type\":\"string\",\"description\":\"如果手机号注册为必填项\"},\"mobileNumber\":{\"type\":\"string\",\"description\":\"邮箱和手机号至少需要填一个\"},\"email\":{\"type\":\"string\",\"description\":\"邮箱和手机号至少需要填一个\"},\"password\":{\"type\":\"string\"},\"invitedCode\":{\"type\":\"string\",\"description\":\"邀请码\"},\"ip\":{\"type\":\"string\",\"description\":\"用户真实ip地址\"},\"appKey\":{\"type\":\"string\"},\"sign\":{\"type\":\"string\"},\"time\":{\"type\":\"string\"}},\"required\":[\"password\",\"appKey\",\"sign\",\"time\",\"ip\"]}",
         "uid": 247,
         "add_time": 1584426925,
-        "up_time": 1584430934,
+        "up_time": 1584700730,
         "__v": 0
       }
     ]
