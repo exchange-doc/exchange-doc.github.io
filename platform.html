@@ -380,10 +380,8 @@ body > pre {
 <a id=3.如何实现支付功能--第三步（支付回调）> </a></a></li><li><a href="#3u5982u4f55u5b9eu73b0u652fu4ed8u529fu80fd-u7b2cu4e09u6b65uff08u67e5u8be2u652fu4ed8u8ba2u5355uff090a3ca20id3d3u5982u4f55u5b9eu73b0u652fu4ed8u529fu80fd-u7b2cu4e09u6b65uff08u67e5u8be2u652fu4ed8u8ba2u5355uff093e203ca3e">3.如何实现支付功能--第三步（查询支付订单）
 <a id=3.如何实现支付功能--第三步（查询支付订单）> </a></a></li><li><a href="#3u5982u4f55u5b9eu73b0u652fu4ed8u529fu80fd-u7b2cu4e8cu6b65uff08u6784u5efau652fu4ed8u9875u9762uff090a3ca20id3d3u5982u4f55u5b9eu73b0u652fu4ed8u529fu80fd-u7b2cu4e8cu6b65uff08u6784u5efau652fu4ed8u9875u9762uff093e203ca3e">3.如何实现支付功能--第二步（构建支付页面）
 <a id=3.如何实现支付功能--第二步（构建支付页面）> </a></a></li></ul></li><li><a href="#app20oauthu6388u6743">APP OAuth授权</a><ul><li><a href="#appu6388u6743u767bu5f55u98750a3ca20id3dappu6388u6743u767bu5f55u98753e203ca3e">App授权登录页
-<a id=App授权登录页> </a></a></li><li><a href="#u6821u9a8cu662fu5426u5df2u6388u6743uff08u65e0u9700u5b9eu540duff090a3ca20id3du6821u9a8cu662fu5426u5df2u6388u6743uff08u65e0u9700u5b9eu540duff093e203ca3e">校验是否已授权（无需实名）
-<a id=校验是否已授权（无需实名）> </a></a></li><li><a href="#u6821u9a8cu662fu5426u5df2u6388u6743uff08u9700u8981u5b9eu540duff090a3ca20id3du6821u9a8cu662fu5426u5df2u6388u6743uff08u9700u8981u5b9eu540duff093e203ca3e">校验是否已授权（需要实名）
-<a id=校验是否已授权（需要实名）> </a></a></li><li><a href="#u786eu8ba4u6388u6743u767bu5f550a3ca20id3du786eu8ba4u6388u6743u767bu5f553e203ca3e">确认授权登录
-<a id=确认授权登录> </a></a></li></ul></li><li><a href="#oauth">OAuth</a><ul><li><a href="#u7b2cu4e00u6b65uff0coauthu6388u6743u767bu5f55u98750a3ca20id3du7b2cu4e00u6b65uff0coauthu6388u6743u767bu5f55u98753e203ca3e">第一步，OAuth授权登录页
+<a id=App授权登录页> </a></a></li><li><a href="#oauthu6388u6743u767bu5f55u987528u4e0du9700u8981u5b9eu540d290a3ca20id3doauthu6388u6743u767bu5f55u987528u4e0du9700u8981u5b9eu540d293e203ca3e">OAuth授权登录页(不需要实名)
+<a id=OAuth授权登录页(不需要实名)> </a></a></li></ul></li><li><a href="#oauth">OAuth</a><ul><li><a href="#u7b2cu4e00u6b65uff0coauthu6388u6743u767bu5f55u98750a3ca20id3du7b2cu4e00u6b65uff0coauthu6388u6743u767bu5f55u98753e203ca3e">第一步，OAuth授权登录页
 <a id=第一步，OAuth授权登录页> </a></a></li><li><a href="#u7b2cu4e8cu6b65uff0cu4f7fu7528codeu6362u53d6tokenu3001openidu63a5u53e30a3ca20id3du7b2cu4e8cu6b65uff0cu4f7fu7528codeu6362u53d6tokenu3001openidu63a5u53e33e203ca3e">第二步，使用code换取token、openId接口
 <a id=第二步，使用code换取token、openId接口> </a></a></li><li><a href="#u5237u65b0token0a3ca20id3du5237u65b0token3e203ca3e">刷新token
 <a id=刷新token> </a></a></li></ul></li><li><a href="#u652fu4ed8">支付</a><ul><li><a href="#u7b2cu4e00u6b65uff0cu521bu5efau652fu4ed8u8ba2u53550a3ca20id3du7b2cu4e00u6b65uff0cu521bu5efau652fu4ed8u8ba2u53553e203ca3e">第一步，创建支付订单
@@ -391,7 +389,8 @@ body > pre {
 <a id=第二步，支付页面> </a></a></li><li><a href="#u7b2cu4e09u6b65uff0cu652fu4ed8u7ed3u679cu56deu8c03u63a5u53e30a3ca20id3du7b2cu4e09u6b65uff0cu652fu4ed8u7ed3u679cu56deu8c03u63a5u53e33e203ca3e">第三步，支付结果回调接口
 <a id=第三步，支付结果回调接口> </a></a></li><li><a href="#u67e5u8be2u652fu4ed8u8ba2u53550a3ca20id3du67e5u8be2u652fu4ed8u8ba2u53553e203ca3e">查询支付订单
 <a id=查询支付订单> </a></a></li><li><a href="#u5546u5bb6u65e5u8d34u5bf9u8d26u53550a3ca20id3du5546u5bb6u65e5u8d34u5bf9u8d26u53553e203ca3e">商家日贴对账单
-<a id=商家日贴对账单> </a></a></li></ul></li><li><a href="#u8d60u5e01">赠币</a><ul><li><a href="#u8d60u5e01u63a5u53e30a3ca20id3du8d60u5e01u63a5u53e33e203ca3e">赠币接口
+<a id=商家日贴对账单> </a></a></li><li><a href="#u53d6u6d88u5f85u652fu4ed8u8ba2u53550a3ca20id3du53d6u6d88u5f85u652fu4ed8u8ba2u53553e203ca3e">取消待支付订单
+<a id=取消待支付订单> </a></a></li></ul></li><li><a href="#u8d60u5e01">赠币</a><ul><li><a href="#u8d60u5e01u63a5u53e30a3ca20id3du8d60u5e01u63a5u53e33e203ca3e">赠币接口
 <a id=赠币接口> </a></a></li></ul></li><li><a href="#u7528u6237u4fe1u606fu63a5u53e3">用户信息接口</a><ul><li><a href="#u9080u8bf7u5173u7cfbu67e5u8be2-u4e0au7ea70a3ca20id3du9080u8bf7u5173u7cfbu67e5u8be2-u4e0au7ea73e203ca3e">邀请关系查询-上级
 <a id=邀请关系查询-上级> </a></a></li><li><a href="#u9080u8bf7u5173u7cfbu67e5u8be2-u4e0bu7ea70a3ca20id3du9080u8bf7u5173u7cfbu67e5u8be2-u4e0bu7ea73e203ca3e">邀请关系查询-下级
 <a id=邀请关系查询-下级> </a></a></li></ul></li><li><a href="#u7528u6237u8d44u4ea7u63a5u53e3">用户资产接口</a><ul><li><a href="#u7528u6237u8d44u4ea7u67e5u8be2uff08u5355u5e01u79cduff090a3ca20id3du7528u6237u8d44u4ea7u67e5u8be2uff08u5355u5e01u79cduff093e203ca3e">用户资产查询（单币种）
@@ -1152,22 +1151,19 @@ POSTMAN 工具调用接口示意图:</p>
   </thead><tbody className="ant-table-tbody">
                </tbody>
               </table>
-<h2 id="u6821u9a8cu662fu5426u5df2u6388u6743uff08u65e0u9700u5b9eu540duff090a3ca20id3du6821u9a8cu662fu5426u5df2u6388u6743uff08u65e0u9700u5b9eu540duff093e203ca3e">校验是否已授权（无需实名）
-<a id=校验是否已授权（无需实名）> </a></h2>
+<h2 id="oauthu6388u6743u767bu5f55u987528u4e0du9700u8981u5b9eu540d290a3ca20id3doauthu6388u6743u767bu5f55u987528u4e0du9700u8981u5b9eu540d293e203ca3e">OAuth授权登录页(不需要实名)
+<a id=OAuth授权登录页(不需要实名)> </a></h2>
 <p></p>
 <h3 id="-39">基本信息</h3>
-<p><strong>Path：</strong> /platformapi/chainup/open/auth/check_auth_code_noKyc</p>
-<p><strong>Method：</strong> POST</p>
+<p><strong>Path：</strong> /platform/authorized_nokyc.html?appKey=xxx&amp;redirectUrl=xxx&amp;state=xxx&amp;lan=en_US</p>
+<p><strong>Method：</strong> GET</p>
 <p><strong>接口描述：</strong></p>
-<p><span class="colour" style="color:rgb(85, 85, 85)">校验是否已授权，已授权直接返回code</span><br>
-<span class="colour" style="color:rgb(85, 85, 85)">未授权，调用确认授权登录获取code</span></p>
 <h3 id="-40">请求参数</h3>
-<p><strong>Headers</strong></p>
+<p><strong>Query</strong></p>
 <table>
 <thead>
 <tr>
 <th>参数名称</th>
-<th>参数值</th>
 <th>是否必须</th>
 <th>示例</th>
 <th>备注</th>
@@ -1175,126 +1171,38 @@ POSTMAN 工具调用接口示意图:</p>
 </thead>
 <tbody>
 <tr>
-<td>Content-Type</td>
-<td>application/json</td>
+<td>appKey</td>
 <td>是</td>
-<td></td>
-<td></td>
+<td>test</td>
+<td>商家key</td>
+</tr>
+<tr>
+<td>redirectUrl</td>
+<td>是</td>
+<td>https://www.baidu.com</td>
+<td>授权成功后跳转页面</td>
+</tr>
+<tr>
+<td>state</td>
+<td>否</td>
+<td>1</td>
+<td>商家传入状态字段</td>
+</tr>
+<tr>
+<td>lan</td>
+<td>是</td>
+<td>zh_CN</td>
+<td>后台配置app入口url时语言环境字段（支持zh_CN en_US）</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Body</strong></p>
-<table>
-  <thead class="ant-table-thead">
-    <tr>
-      <th key=name>名称</th><th key=type>类型</th><th key=required>是否必须</th><th key=default>默认值</th><th key=desc>备注</th><th key=sub>其他信息</th>
-    </tr>
-  </thead><tbody className="ant-table-tbody"><tr key=0-0><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> appKey</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">商家key</span></td><td key=5></td></tr><tr key=0-1><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> redirectUrl</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">授权成功后跳转页面</span></td><td key=5></td></tr><tr key=0-2><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> state</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr>
-               </tbody>
-              </table>
 <h3 id="-41">返回数据</h3>
 <table>
   <thead class="ant-table-thead">
     <tr>
       <th key=name>名称</th><th key=type>类型</th><th key=required>是否必须</th><th key=default>默认值</th><th key=desc>备注</th><th key=sub>其他信息</th>
     </tr>
-  </thead><tbody className="ant-table-tbody"><tr key=0-0><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> code</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">0成功</span></td><td key=5></td></tr><tr key=0-1><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> msg</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr><tr key=0-2><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> data</span></td><td key=1><span>object</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr><tr key=0-2-0><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> is_auth</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">0未授权 1已授权</span></td><td key=5></td></tr><tr key=0-2-1><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> token</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">is_auth为0时返回token</span></td><td key=5></td></tr><tr key=0-2-2><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> code</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">is_auth为1时返回code</span></td><td key=5></td></tr><tr key=0-2-3><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> redirectUrl</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">is_auth为1时返回redirectUrl</span></td><td key=5></td></tr><tr key=0-2-4><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> appKey</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">is_auth为1时返回appKey</span></td><td key=5></td></tr><tr key=0-2-5><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> state</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">is_auth为1时返回state</span></td><td key=5></td></tr>
-               </tbody>
-              </table>
-<h2 id="u6821u9a8cu662fu5426u5df2u6388u6743uff08u9700u8981u5b9eu540duff090a3ca20id3du6821u9a8cu662fu5426u5df2u6388u6743uff08u9700u8981u5b9eu540duff093e203ca3e">校验是否已授权（需要实名）
-<a id=校验是否已授权（需要实名）> </a></h2>
-<p></p>
-<h3 id="-42">基本信息</h3>
-<p><strong>Path：</strong> /platformapi/chainup/open/auth/check_auth_code</p>
-<p><strong>Method：</strong> POST</p>
-<p><strong>接口描述：</strong></p>
-<p>校验是否已授权，已授权直接返回code<br>
-未授权，调用确认授权登录获取code</p>
-<h3 id="-43">请求参数</h3>
-<p><strong>Headers</strong></p>
-<table>
-<thead>
-<tr>
-<th>参数名称</th>
-<th>参数值</th>
-<th>是否必须</th>
-<th>示例</th>
-<th>备注</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Content-Type</td>
-<td>application/json</td>
-<td>是</td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Body</strong></p>
-<table>
-  <thead class="ant-table-thead">
-    <tr>
-      <th key=name>名称</th><th key=type>类型</th><th key=required>是否必须</th><th key=default>默认值</th><th key=desc>备注</th><th key=sub>其他信息</th>
-    </tr>
-  </thead><tbody className="ant-table-tbody"><tr key=0-0><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> appKey</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">商家key</span></td><td key=5></td></tr><tr key=0-1><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> redirectUrl</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">授权成功后跳转页面</span></td><td key=5></td></tr><tr key=0-2><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> state</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr>
-               </tbody>
-              </table>
-<h3 id="-44">返回数据</h3>
-<table>
-  <thead class="ant-table-thead">
-    <tr>
-      <th key=name>名称</th><th key=type>类型</th><th key=required>是否必须</th><th key=default>默认值</th><th key=desc>备注</th><th key=sub>其他信息</th>
-    </tr>
-  </thead><tbody className="ant-table-tbody"><tr key=0-0><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> code</span></td><td key=1><span>number</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">0成功</span></td><td key=5></td></tr><tr key=0-1><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> msg</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr><tr key=0-2><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> data</span></td><td key=1><span>object</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr><tr key=0-2-0><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> is_auth</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">0未授权 1已授权</span></td><td key=5></td></tr><tr key=0-2-1><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> token</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">is_auth为0时返回token</span></td><td key=5></td></tr><tr key=0-2-2><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> code</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">is_auth为1时返回code</span></td><td key=5></td></tr><tr key=0-2-3><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> redirectUrl</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">is_auth为1时返回redirectUrl</span></td><td key=5></td></tr><tr key=0-2-4><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> appKey</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">is_auth为1时返回appKey</span></td><td key=5></td></tr><tr key=0-2-5><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> state</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">is_auth为1时返回state</span></td><td key=5></td></tr>
-               </tbody>
-              </table>
-<h2 id="u786eu8ba4u6388u6743u767bu5f550a3ca20id3du786eu8ba4u6388u6743u767bu5f553e203ca3e">确认授权登录
-<a id=确认授权登录> </a></h2>
-<p></p>
-<h3 id="-45">基本信息</h3>
-<p><strong>Path：</strong> /platformapi/chainup/open/auth/auth_confirm</p>
-<p><strong>Method：</strong> POST</p>
-<p><strong>接口描述：</strong></p>
-<h3 id="-46">请求参数</h3>
-<p><strong>Headers</strong></p>
-<table>
-<thead>
-<tr>
-<th>参数名称</th>
-<th>参数值</th>
-<th>是否必须</th>
-<th>示例</th>
-<th>备注</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Content-Type</td>
-<td>application/json</td>
-<td>是</td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Body</strong></p>
-<table>
-  <thead class="ant-table-thead">
-    <tr>
-      <th key=name>名称</th><th key=type>类型</th><th key=required>是否必须</th><th key=default>默认值</th><th key=desc>备注</th><th key=sub>其他信息</th>
-    </tr>
-  </thead><tbody className="ant-table-tbody"><tr key=0-0><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> appKey</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">商家key</span></td><td key=5></td></tr><tr key=0-1><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> redirectUrl</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">授权成功后跳转页面</span></td><td key=5></td></tr><tr key=0-2><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> state</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr><tr key=0-3><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> token</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">两步操作token</span></td><td key=5></td></tr>
-               </tbody>
-              </table>
-<h3 id="-47">返回数据</h3>
-<table>
-  <thead class="ant-table-thead">
-    <tr>
-      <th key=name>名称</th><th key=type>类型</th><th key=required>是否必须</th><th key=default>默认值</th><th key=desc>备注</th><th key=sub>其他信息</th>
-    </tr>
-  </thead><tbody className="ant-table-tbody"><tr key=0-0><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> code</span></td><td key=1><span>number</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">0成功</span></td><td key=5></td></tr><tr key=0-1><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> msg</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr><tr key=0-2><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> data</span></td><td key=1><span>object</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr><tr key=0-2-0><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> code</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">换取openId</span></td><td key=5></td></tr><tr key=0-2-1><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> redirectUrl</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr><tr key=0-2-2><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> appKey</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr><tr key=0-2-3><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> state</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr>
+  </thead><tbody className="ant-table-tbody">
                </tbody>
               </table>
 <h1 id="oauth">OAuth</h1>
@@ -1302,14 +1210,14 @@ POSTMAN 工具调用接口示意图:</p>
 <h2 id="u7b2cu4e00u6b65uff0coauthu6388u6743u767bu5f55u98750a3ca20id3du7b2cu4e00u6b65uff0coauthu6388u6743u767bu5f55u98753e203ca3e">第一步，OAuth授权登录页
 <a id=第一步，OAuth授权登录页> </a></h2>
 <p></p>
-<h3 id="-48">基本信息</h3>
+<h3 id="-42">基本信息</h3>
 <p><strong>Path：</strong> /platform/login.html</p>
 <p><strong>Method：</strong> GET</p>
 <p><strong>接口描述：</strong></p>
 <p>最后登录页拼接完成后为:<br>
 <a href="https://platform.xxx.com/login.html?appKey=xxx&amp;redirectUrl=xxx&amp;state=xxx">https://service.xxx.com/login.html?appKey=xxx&amp;redirectUrl=xxx&amp;state=xxx</a><br>
 授权登录成功后携带code重定向到redirectUrl</p>
-<h3 id="-49">请求参数</h3>
+<h3 id="-43">请求参数</h3>
 <p><strong>Query</strong></p>
 <table>
 <thead>
@@ -1341,7 +1249,7 @@ POSTMAN 工具调用接口示意图:</p>
 </tr>
 </tbody>
 </table>
-<h3 id="-50">返回数据</h3>
+<h3 id="-44">返回数据</h3>
 <table>
   <thead class="ant-table-thead">
     <tr>
@@ -1353,11 +1261,11 @@ POSTMAN 工具调用接口示意图:</p>
 <h2 id="u7b2cu4e8cu6b65uff0cu4f7fu7528codeu6362u53d6tokenu3001openidu63a5u53e30a3ca20id3du7b2cu4e8cu6b65uff0cu4f7fu7528codeu6362u53d6tokenu3001openidu63a5u53e33e203ca3e">第二步，使用code换取token、openId接口
 <a id=第二步，使用code换取token、openId接口> </a></h2>
 <p></p>
-<h3 id="-51">基本信息</h3>
+<h3 id="-45">基本信息</h3>
 <p><strong>Path：</strong> /platformapi/chainup/open/auth/token</p>
 <p><strong>Method：</strong> POST</p>
 <p><strong>接口描述：</strong></p>
-<h3 id="-52">请求参数</h3>
+<h3 id="-46">请求参数</h3>
 <p><strong>Headers</strong></p>
 <table>
 <thead>
@@ -1388,7 +1296,7 @@ POSTMAN 工具调用接口示意图:</p>
   </thead><tbody className="ant-table-tbody"><tr key=0-0><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> appKey</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">商家唯一key</span></td><td key=5></td></tr><tr key=0-1><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> code</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">用户登录授权时返回的code</span></td><td key=5></td></tr><tr key=0-2><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> sign</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">MD5(Sort(Param) + secret)</span></td><td key=5></td></tr>
                </tbody>
               </table>
-<h3 id="-53">返回数据</h3>
+<h3 id="-47">返回数据</h3>
 <table>
   <thead class="ant-table-thead">
     <tr>
@@ -1400,11 +1308,11 @@ POSTMAN 工具调用接口示意图:</p>
 <h2 id="u5237u65b0token0a3ca20id3du5237u65b0token3e203ca3e">刷新token
 <a id=刷新token> </a></h2>
 <p></p>
-<h3 id="-54">基本信息</h3>
+<h3 id="-48">基本信息</h3>
 <p><strong>Path：</strong> /platformapi/chainup/open/auth/refreshToken</p>
 <p><strong>Method：</strong> POST</p>
 <p><strong>接口描述：</strong></p>
-<h3 id="-55">请求参数</h3>
+<h3 id="-49">请求参数</h3>
 <p><strong>Headers</strong></p>
 <table>
 <thead>
@@ -1435,7 +1343,7 @@ POSTMAN 工具调用接口示意图:</p>
   </thead><tbody className="ant-table-tbody"><tr key=0-0><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> appKey</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr><tr key=0-1><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> refreshToken</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">获取token时收到的 refresh_token</span></td><td key=5></td></tr><tr key=0-2><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> token</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">token之前授权的token</span></td><td key=5></td></tr><tr key=0-3><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> openId</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr>
                </tbody>
               </table>
-<h3 id="-56">返回数据</h3>
+<h3 id="-50">返回数据</h3>
 <table>
   <thead class="ant-table-thead">
     <tr>
@@ -1449,11 +1357,11 @@ POSTMAN 工具调用接口示意图:</p>
 <h2 id="u7b2cu4e00u6b65uff0cu521bu5efau652fu4ed8u8ba2u53550a3ca20id3du7b2cu4e00u6b65uff0cu521bu5efau652fu4ed8u8ba2u53553e203ca3e">第一步，创建支付订单
 <a id=第一步，创建支付订单> </a></h2>
 <p></p>
-<h3 id="-57">基本信息</h3>
+<h3 id="-51">基本信息</h3>
 <p><strong>Path：</strong> /platformapi/chainup/open/opay/createThirdOrder</p>
 <p><strong>Method：</strong> POST</p>
 <p><strong>接口描述：</strong></p>
-<h3 id="-58">请求参数</h3>
+<h3 id="-52">请求参数</h3>
 <p><strong>Headers</strong></p>
 <table>
 <thead>
@@ -1484,7 +1392,7 @@ POSTMAN 工具调用接口示意图:</p>
   </thead><tbody className="ant-table-tbody"><tr key=0-0><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> appKey</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">商家唯一编号</span></td><td key=5></td></tr><tr key=0-1><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> appOrderId</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">商家端订单id</span></td><td key=5></td></tr><tr key=0-2><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> openId</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">付款用户的唯一id</span></td><td key=5></td></tr><tr key=0-3><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> userId</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">付款用户uid(与openid必须存在一个) ||同时存在优先取openid</span></td><td key=5></td></tr><tr key=0-4><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> orderAmount</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">支付金额</span></td><td key=5></td></tr><tr key=0-5><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> orderSceneType</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">订单的场景类型，数字枚举；</span></td><td key=5></td></tr><tr key=0-6><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> payCoinSymbol</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">支付币种，大写如BTCappKey</span></td><td key=5></td></tr><tr key=0-7><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> returnPage</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">前台跳转商家的页面</span></td><td key=5></td></tr><tr key=0-8><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> notifyPage</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">后台通知商家的地址</span></td><td key=5></td></tr><tr key=0-9><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> token</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">授权的token</span></td><td key=5></td></tr><tr key=0-10><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> sign</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">MD5(Sort(Param) + secret)</span></td><td key=5></td></tr><tr key=0-11><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> goods</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">商品描述信息，可不传，传入必须为合法的json格式，否则订单创建失败 ；json中的子字段为 name : 商品名称 desc:商品描述 例：[{"name":"商品1","desc":"商品信息123balabala"},{"name":"商品2","desc":"商品信息23balabala"},{"name":"商品3","desc":"商品信息33balabala"}]</span></td><td key=5></td></tr>
                </tbody>
               </table>
-<h3 id="-59">返回数据</h3>
+<h3 id="-53">返回数据</h3>
 <table>
   <thead class="ant-table-thead">
     <tr>
@@ -1496,13 +1404,13 @@ POSTMAN 工具调用接口示意图:</p>
 <h2 id="u7b2cu4e8cu6b65uff0cu652fu4ed8u9875u97620a3ca20id3du7b2cu4e8cu6b65uff0cu652fu4ed8u9875u97623e203ca3e">第二步，支付页面
 <a id=第二步，支付页面> </a></h2>
 <p></p>
-<h3 id="-60">基本信息</h3>
+<h3 id="-54">基本信息</h3>
 <p><strong>Path：</strong> /platform/pay.html</p>
 <p><strong>Method：</strong> GET</p>
 <p><strong>接口描述：</strong></p>
 <p>最后支付页瓶装完成后为:<br>
 <a href="https://platform.xxx.com/pay.html?appKey=xxx&amp;openId=xxx&amp;token=xxx&amp;orderNum=xxx">https://platform.xxx.com/pay.html?appKey=xxx&amp;openId=xxx&amp;token=xxx&amp;orderNum=xxx</a></p>
-<h3 id="-61">请求参数</h3>
+<h3 id="-55">请求参数</h3>
 <p><strong>Query</strong></p>
 <table>
 <thead>
@@ -1546,7 +1454,7 @@ POSTMAN 工具调用接口示意图:</p>
 </tr>
 </tbody>
 </table>
-<h3 id="-62">返回数据</h3>
+<h3 id="-56">返回数据</h3>
 <table>
   <thead class="ant-table-thead">
     <tr>
@@ -1558,13 +1466,13 @@ POSTMAN 工具调用接口示意图:</p>
 <h2 id="u7b2cu4e09u6b65uff0cu652fu4ed8u7ed3u679cu56deu8c03u63a5u53e30a3ca20id3du7b2cu4e09u6b65uff0cu652fu4ed8u7ed3u679cu56deu8c03u63a5u53e33e203ca3e">第三步，支付结果回调接口
 <a id=第三步，支付结果回调接口> </a></h2>
 <p></p>
-<h3 id="-63">基本信息</h3>
+<h3 id="-57">基本信息</h3>
 <p><strong>Path：</strong> /notifyPage</p>
 <p><strong>Method：</strong> POST</p>
 <p><strong>接口描述：</strong></p>
 <p>该接口URL由对接商户提供，第一步创建订单时传出的参数：notifyPage<br>
 支付完成后，支付结果会通过notifyPage对应的URL进行通知</p>
-<h3 id="-64">请求参数</h3>
+<h3 id="-58">请求参数</h3>
 <p><strong>Headers</strong></p>
 <table>
 <thead>
@@ -1595,7 +1503,7 @@ POSTMAN 工具调用接口示意图:</p>
   </thead><tbody className="ant-table-tbody"><tr key=0-0><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> appKey</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">商家唯一key</span></td><td key=5></td></tr><tr key=0-1><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> outOrderId</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">商家端订单编号</span></td><td key=5></td></tr><tr key=0-2><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> orderNum</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">开放平台订单编号</span></td><td key=5></td></tr><tr key=0-3><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> orderStatus</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">订单状态(1 待支付； 2 支付失败；3 支付成功； 0 已关闭)</span></td><td key=5></td></tr><tr key=0-4><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> payAmount</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">订单金额</span></td><td key=5></td></tr><tr key=0-5><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> returnUrl</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">同步通知页面(下单接口传入)</span></td><td key=5></td></tr><tr key=0-6><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> sign</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr>
                </tbody>
               </table>
-<h3 id="-65">返回数据</h3>
+<h3 id="-59">返回数据</h3>
 <table>
   <thead class="ant-table-thead">
     <tr>
@@ -1607,11 +1515,11 @@ POSTMAN 工具调用接口示意图:</p>
 <h2 id="u67e5u8be2u652fu4ed8u8ba2u53550a3ca20id3du67e5u8be2u652fu4ed8u8ba2u53553e203ca3e">查询支付订单
 <a id=查询支付订单> </a></h2>
 <p></p>
-<h3 id="-66">基本信息</h3>
+<h3 id="-60">基本信息</h3>
 <p><strong>Path：</strong> /platformapi/chainup/open/opay/orderDetail</p>
 <p><strong>Method：</strong> POST</p>
 <p><strong>接口描述：</strong></p>
-<h3 id="-67">请求参数</h3>
+<h3 id="-61">请求参数</h3>
 <p><strong>Headers</strong></p>
 <table>
 <thead>
@@ -1642,7 +1550,7 @@ POSTMAN 工具调用接口示意图:</p>
   </thead><tbody className="ant-table-tbody"><tr key=0-0><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> appKey</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">商家唯一编号</span></td><td key=5></td></tr><tr key=0-1><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> orderNum</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">平台方订单编号</span></td><td key=5></td></tr><tr key=0-2><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> token</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">授权的token</span></td><td key=5></td></tr>
                </tbody>
               </table>
-<h3 id="-68">返回数据</h3>
+<h3 id="-62">返回数据</h3>
 <table>
   <thead class="ant-table-thead">
     <tr>
@@ -1654,11 +1562,11 @@ POSTMAN 工具调用接口示意图:</p>
 <h2 id="u5546u5bb6u65e5u8d34u5bf9u8d26u53550a3ca20id3du5546u5bb6u65e5u8d34u5bf9u8d26u53553e203ca3e">商家日贴对账单
 <a id=商家日贴对账单> </a></h2>
 <p></p>
-<h3 id="-69">基本信息</h3>
+<h3 id="-63">基本信息</h3>
 <p><strong>Path：</strong> /platformapi/chainup/open/opay/merchantBillingDay</p>
 <p><strong>Method：</strong> POST</p>
 <p><strong>接口描述：</strong></p>
-<h3 id="-70">请求参数</h3>
+<h3 id="-64">请求参数</h3>
 <p><strong>Headers</strong></p>
 <table>
 <thead>
@@ -1689,7 +1597,7 @@ POSTMAN 工具调用接口示意图:</p>
   </thead><tbody className="ant-table-tbody"><tr key=0-0><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> appKey</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr><tr key=0-1><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> orderType</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">订单类型（1=支付订单；11=划转订单），不传查询所有订单</span></td><td key=5></td></tr><tr key=0-2><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> day</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">统计的日期，格式：yyyy-MM-dd，不符合格式参数异常；不传查询当日订单</span></td><td key=5></td></tr><tr key=0-3><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> pageNum</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">查询第几页，同分页逻辑；不传查所有</span></td><td key=5></td></tr><tr key=0-4><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> pageSize</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">每页大小，同分页逻辑；不传查2000（最大为2000，数据超过2000请分页查询）</span></td><td key=5></td></tr><tr key=0-5><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> sign</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr>
                </tbody>
               </table>
-<h3 id="-71">返回数据</h3>
+<h3 id="-65">返回数据</h3>
 <table>
   <thead class="ant-table-thead">
     <tr>
@@ -1698,12 +1606,78 @@ POSTMAN 工具调用接口示意图:</p>
   </thead><tbody className="ant-table-tbody"><tr key=0-0><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> code</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr><tr key=0-1><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> msg</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr><tr key=0-2><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> data</span></td><td key=1><span>object</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr><tr key=0-2-0><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> count</span></td><td key=1><span>number</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">当日记录总数；</span></td><td key=5></td></tr><tr key=0-2-1><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> list</span></td><td key=1><span>object []</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5><p key=3><span style="font-weight: '700'">item 类型: </span><span>object</span></p></td></tr><tr key=0-2-1-0><td key=0><span style="padding-left: 40px"><span style="color: #8c8a8a">├─</span> merchantUserId</span></td><td key=1><span>number</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">商家收款用户id；</span></td><td key=5></td></tr><tr key=0-2-1-1><td key=0><span style="padding-left: 40px"><span style="color: #8c8a8a">├─</span> appOrderId</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">商家端订单id；</span></td><td key=5></td></tr><tr key=0-2-1-2><td key=0><span style="padding-left: 40px"><span style="color: #8c8a8a">├─</span> payCoinSymbol</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">支付使用币种；</span></td><td key=5></td></tr><tr key=0-2-1-3><td key=0><span style="padding-left: 40px"><span style="color: #8c8a8a">├─</span> orderAmount</span></td><td key=1><span>number</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">订单操作数量；</span></td><td key=5></td></tr><tr key=0-2-1-4><td key=0><span style="padding-left: 40px"><span style="color: #8c8a8a">├─</span> orderType</span></td><td key=1><span>number</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">订单类型(1、支付订单;11、划转(退款)订单)</span></td><td key=5></td></tr><tr key=0-2-1-5><td key=0><span style="padding-left: 40px"><span style="color: #8c8a8a">├─</span> userId</span></td><td key=1><span>number</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">付款用户id；付款用户id；</span></td><td key=5></td></tr><tr key=0-2-1-6><td key=0><span style="padding-left: 40px"><span style="color: #8c8a8a">├─</span> openId</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">付款用户openid；</span></td><td key=5></td></tr><tr key=0-2-1-7><td key=0><span style="padding-left: 40px"><span style="color: #8c8a8a">├─</span> createTime</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">下单时间，到毫秒；</span></td><td key=5></td></tr><tr key=0-2-1-8><td key=0><span style="padding-left: 40px"><span style="color: #8c8a8a">├─</span> payTime</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">实际支付完成时间，到毫秒；</span></td><td key=5></td></tr>
                </tbody>
               </table>
+<h2 id="u53d6u6d88u5f85u652fu4ed8u8ba2u53550a3ca20id3du53d6u6d88u5f85u652fu4ed8u8ba2u53553e203ca3e">取消待支付订单
+<a id=取消待支付订单> </a></h2>
+<p></p>
+<h3 id="-66">基本信息</h3>
+<p><strong>Path：</strong> /opay/cancel</p>
+<p><strong>Method：</strong> POST</p>
+<p><strong>接口描述：</strong></p>
+<h3 id="-67">请求参数</h3>
+<p><strong>Headers</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>参数值</th>
+<th>是否必须</th>
+<th>示例</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Content-Type</td>
+<td>application/x-www-form-urlencoded</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Body</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>参数类型</th>
+<th>是否必须</th>
+<th>示例</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>appKey</td>
+<td>text</td>
+<td>是</td>
+<td></td>
+<td>xfnh_1234</td>
+</tr>
+<tr>
+<td>orderNum</td>
+<td>text</td>
+<td>是</td>
+<td></td>
+<td>99999999999</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-68">返回数据</h3>
+<table>
+  <thead class="ant-table-thead">
+    <tr>
+      <th key=name>名称</th><th key=type>类型</th><th key=required>是否必须</th><th key=default>默认值</th><th key=desc>备注</th><th key=sub>其他信息</th>
+    </tr>
+  </thead><tbody className="ant-table-tbody"><tr key=0-0><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> code</span></td><td key=1><span>number</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr><tr key=0-1><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> msg</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr>
+               </tbody>
+              </table>
 <h1 id="u8d60u5e01">赠币</h1>
 <p></p>
 <h2 id="u8d60u5e01u63a5u53e30a3ca20id3du8d60u5e01u63a5u53e33e203ca3e">赠币接口
 <a id=赠币接口> </a></h2>
 <p></p>
-<h3 id="-72">基本信息</h3>
+<h3 id="-69">基本信息</h3>
 <p><strong>Path：</strong> /platformapi/chainup/open/opay/refundOrder</p>
 <p><strong>Method：</strong> POST</p>
 <p><strong>接口描述：</strong></p>
@@ -1721,7 +1695,7 @@ POSTMAN 工具调用接口示意图:</p>
 </tr>
 </tbody>
 </table>
-<h3 id="-73">请求参数</h3>
+<h3 id="-70">请求参数</h3>
 <p><strong>Headers</strong></p>
 <table>
 <thead>
@@ -1752,7 +1726,7 @@ POSTMAN 工具调用接口示意图:</p>
   </thead><tbody className="ant-table-tbody"><tr key=0-0><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> appKey</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr><tr key=0-1><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> appOrderId</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">商家端订单id，全局唯一</span></td><td key=5></td></tr><tr key=0-2><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> assetType</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">支付账户类型：AB的AB部分，默认到可用账户</span></td><td key=5></td></tr><tr key=0-3><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> openId</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">收款用户的唯一id，开放平台授权给应用的用户唯一标识</span></td><td key=5></td></tr><tr key=0-4><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> userId</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">收款用户uid(与openid必须存在一个) ||同时存在优先取openid</span></td><td key=5></td></tr><tr key=0-5><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> orderAmount</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">金额</span></td><td key=5></td></tr><tr key=0-6><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> orderSceneType</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">订单的场景类型，数字枚举；</span></td><td key=5></td></tr><tr key=0-7><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> payCoinSymbol</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">支付币种，大写如BTC</span></td><td key=5></td></tr><tr key=0-8><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> sign</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr>
                </tbody>
               </table>
-<h3 id="-74">返回数据</h3>
+<h3 id="-71">返回数据</h3>
 <table>
   <thead class="ant-table-thead">
     <tr>
@@ -1766,7 +1740,7 @@ POSTMAN 工具调用接口示意图:</p>
 <h2 id="u9080u8bf7u5173u7cfbu67e5u8be2-u4e0au7ea70a3ca20id3du9080u8bf7u5173u7cfbu67e5u8be2-u4e0au7ea73e203ca3e">邀请关系查询-上级
 <a id=邀请关系查询-上级> </a></h2>
 <p></p>
-<h3 id="-75">基本信息</h3>
+<h3 id="-72">基本信息</h3>
 <p><strong>Path：</strong> /platformapi/chainup/open/user/user_superior</p>
 <p><strong>Method：</strong> POST</p>
 <p><strong>接口描述：</strong></p>
@@ -1776,7 +1750,7 @@ POSTMAN 工具调用接口示意图:</p>
 <p>以下邀请关系为<br>
 uid:5037287 --&gt; uid:4930639<br>
 <img src="data:image/png;base64,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srIet5NRECBAgAABAgQIEFidwGaEFc+srO6O0BIBAgQIECBAgACBNREQVtZkIgyDAAECBAgQIECAAIG+wGaEFV9d3J9V7wgQIECAAAECBAhsgMAzDyv+KOQG3IMugQABAgQIECBAgMCowDMPK6PX5CABAgQIECBAgAABAhsgIKxswCS6BAIECBAgQIAAAQKbKCCsbOKsuiYCBAgQIECAAAECGyCw8rCyASYugQABAgQIECBAgACBNRAQVtZgEgyBAAECBAgQIECAAIFZAWFl1sQRAgQIECBAgAABAgTWQEBYWYNJMAQCBAgQIECAAAECBGYFhJVZE0cIECBAgAABAgQIEFgDAWFlDSbBEAgQIECAAAECBAgQmBUQVmZNHCFAgAABAgQIECBAYA0EhJU1mARDIECAAAECBAgQIEBgVkBYmTVxhAABAgQIECBAgACBNRCYfPnyJfwwcA+4B9wD7gH3gHvAPeAecA+4B9btHrCysgaJ0RAIECBAgAABAgQIEJgVEFZmTRwhQIAAAQIECBAgQGANBISVNZgEQyBAgAABAgQIECBAYFZAWJk1cYQAAQIECBAgQIAAgTUQEFbWYBIMgQABAgQIECBAgACBWQFhZdbEEQIECBAgQIAAAQIE1kBAWFmDSTAEAgQIECBAgAABAgRmBf4/2MOn3RXC6e4AAAAASUVORK5CYII=" alt="image.png"></p>
-<h3 id="-76">请求参数</h3>
+<h3 id="-73">请求参数</h3>
 <p><strong>Headers</strong></p>
 <table>
 <thead>
@@ -1807,7 +1781,7 @@ uid:5037287 --&gt; uid:4930639<br>
   </thead><tbody className="ant-table-tbody"><tr key=0-0><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> uid</span></td><td key=1><span>number</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">用户uid,与openId和emailOrPhone三选一,优先uid</span></td><td key=5><p key=5><span style="font-weight: '700'">mock: </span><span>10002181</span></p></td></tr><tr key=0-1><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> openId</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">openid,用户uid,与openId和emailOrPhone三选一,优先uid</span></td><td key=5><p key=5><span style="font-weight: '700'">mock: </span><span>32432423</span></p></td></tr><tr key=0-2><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> emailOrPhone</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">邮箱或地址, 与uid,openid二选一</span></td><td key=5><p key=5><span style="font-weight: '700'">mock: </span><span>18310479050</span></p></td></tr><tr key=0-3><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> sign</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr><tr key=0-4><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> appKey</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr>
                </tbody>
               </table>
-<h3 id="-77">返回数据</h3>
+<h3 id="-74">返回数据</h3>
 <table>
   <thead class="ant-table-thead">
     <tr>
@@ -1819,11 +1793,11 @@ uid:5037287 --&gt; uid:4930639<br>
 <h2 id="u9080u8bf7u5173u7cfbu67e5u8be2-u4e0bu7ea70a3ca20id3du9080u8bf7u5173u7cfbu67e5u8be2-u4e0bu7ea73e203ca3e">邀请关系查询-下级
 <a id=邀请关系查询-下级> </a></h2>
 <p></p>
-<h3 id="-78">基本信息</h3>
+<h3 id="-75">基本信息</h3>
 <p><strong>Path：</strong> /platformapi/chainup/open/user/user_invite</p>
 <p><strong>Method：</strong> POST</p>
 <p><strong>接口描述：</strong></p>
-<h3 id="-79">请求参数</h3>
+<h3 id="-76">请求参数</h3>
 <p><strong>Headers</strong></p>
 <table>
 <thead>
@@ -1854,7 +1828,7 @@ uid:5037287 --&gt; uid:4930639<br>
   </thead><tbody className="ant-table-tbody"><tr key=0-0><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> uid</span></td><td key=1><span>number</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">用户uid,与openId和emailOrPhone三选一,优先uid</span></td><td key=5><p key=5><span style="font-weight: '700'">mock: </span><span>10002181</span></p></td></tr><tr key=0-1><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> openId</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">openid,用户uid,与openId和emailOrPhone三选一,优先uid</span></td><td key=5><p key=5><span style="font-weight: '700'">mock: </span><span>32432423</span></p></td></tr><tr key=0-2><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> emailOrPhone</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">邮箱或地址, 与uid,openid二选一</span></td><td key=5><p key=5><span style="font-weight: '700'">mock: </span><span>18310479050</span></p></td></tr><tr key=0-3><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> page</span></td><td key=1><span>number</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">翻页页数,不填默认为1</span></td><td key=5><p key=5><span style="font-weight: '700'">mock: </span><span>1</span></p></td></tr><tr key=0-4><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> pageSize</span></td><td key=1><span>number</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">每页数量,不填默认为100</span></td><td key=5><p key=5><span style="font-weight: '700'">mock: </span><span>100</span></p></td></tr><tr key=0-5><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> sign</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr><tr key=0-6><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> appKey</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr>
                </tbody>
               </table>
-<h3 id="-80">返回数据</h3>
+<h3 id="-77">返回数据</h3>
 <table>
   <thead class="ant-table-thead">
     <tr>
@@ -1868,11 +1842,11 @@ uid:5037287 --&gt; uid:4930639<br>
 <h2 id="u7528u6237u8d44u4ea7u67e5u8be2uff08u5355u5e01u79cduff090a3ca20id3du7528u6237u8d44u4ea7u67e5u8be2uff08u5355u5e01u79cduff093e203ca3e">用户资产查询（单币种）
 <a id=用户资产查询（单币种）> </a></h2>
 <p></p>
-<h3 id="-81">基本信息</h3>
+<h3 id="-78">基本信息</h3>
 <p><strong>Path：</strong> /platformapi/chainup/open/ouser/userAccounts</p>
 <p><strong>Method：</strong> POST</p>
 <p><strong>接口描述：</strong></p>
-<h3 id="-82">请求参数</h3>
+<h3 id="-79">请求参数</h3>
 <p><strong>Headers</strong></p>
 <table>
 <thead>
@@ -1903,7 +1877,7 @@ uid:5037287 --&gt; uid:4930639<br>
   </thead><tbody className="ant-table-tbody"><tr key=0-0><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> appKey</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">商家唯一编号</span></td><td key=5></td></tr><tr key=0-1><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> openId</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">openId，userId必传一个，同时传递，取openId</span></td><td key=5></td></tr><tr key=0-2><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> userId</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">openId，userId必传一个，同时传递，取openId</span></td><td key=5></td></tr><tr key=0-3><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> coinSymbols</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">货币类型：如 ：BTC、USDT、BIKI、等；参考交易所内币种配置；多个币种用逗号分隔：例："USDT,BTC,ETH"</span></td><td key=5></td></tr><tr key=0-4><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> assetType</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">常用类型："201" ：普通账户余额</span></td><td key=5></td></tr><tr key=0-5><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> sign</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">签名</span></td><td key=5></td></tr>
                </tbody>
               </table>
-<h3 id="-83">返回数据</h3>
+<h3 id="-80">返回数据</h3>
 <table>
   <thead class="ant-table-thead">
     <tr>
@@ -1915,11 +1889,11 @@ uid:5037287 --&gt; uid:4930639<br>
 <h2 id="u7528u6237u8d26u6237u4f59u989duff08u5168u5e01u79cduff090a3ca20id3du7528u6237u8d26u6237u4f59u989duff08u5168u5e01u79cduff093e203ca3e">用户账户余额（全币种）
 <a id=用户账户余额（全币种）> </a></h2>
 <p></p>
-<h3 id="-84">基本信息</h3>
+<h3 id="-81">基本信息</h3>
 <p><strong>Path：</strong> /platformapi/chainup/open/user/accountBalance</p>
 <p><strong>Method：</strong> POST</p>
 <p><strong>接口描述：</strong></p>
-<h3 id="-85">请求参数</h3>
+<h3 id="-82">请求参数</h3>
 <p><strong>Headers</strong></p>
 <table>
 <thead>
@@ -1950,7 +1924,7 @@ uid:5037287 --&gt; uid:4930639<br>
   </thead><tbody className="ant-table-tbody"><tr key=0-0><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> appKey</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">appkey</span></td><td key=5></td></tr><tr key=0-1><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> openId</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">openId</span></td><td key=5></td></tr><tr key=0-2><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> userId</span></td><td key=1><span>number</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">用户id</span></td><td key=5></td></tr><tr key=0-3><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> mobileNumber</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">手机号码</span></td><td key=5></td></tr><tr key=0-4><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> email</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">用户邮箱(openId,userId,mobileNumber,email)四选一必填</span></td><td key=5></td></tr>
                </tbody>
               </table>
-<h3 id="-86">返回数据</h3>
+<h3 id="-83">返回数据</h3>
 <table>
   <thead class="ant-table-thead">
     <tr>
@@ -1962,8 +1936,55 @@ uid:5037287 --&gt; uid:4930639<br>
 <h2 id="u7528u6237u5145u503cu8bb0u5f550a3ca20id3du7528u6237u5145u503cu8bb0u5f553e203ca3e">用户充值记录
 <a id=用户充值记录> </a></h2>
 <p></p>
-<h3 id="-87">基本信息</h3>
+<h3 id="-84">基本信息</h3>
 <p><strong>Path：</strong> /platformapi/chainup/open/user/depositRecord</p>
+<p><strong>Method：</strong> POST</p>
+<p><strong>接口描述：</strong></p>
+<h3 id="-85">请求参数</h3>
+<p><strong>Headers</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>参数值</th>
+<th>是否必须</th>
+<th>示例</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Content-Type</td>
+<td>application/json</td>
+<td>是</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Body</strong></p>
+<table>
+  <thead class="ant-table-thead">
+    <tr>
+      <th key=name>名称</th><th key=type>类型</th><th key=required>是否必须</th><th key=default>默认值</th><th key=desc>备注</th><th key=sub>其他信息</th>
+    </tr>
+  </thead><tbody className="ant-table-tbody"><tr key=0-0><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> appKey</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">appkey</span></td><td key=5></td></tr><tr key=0-1><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> openId</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">openId</span></td><td key=5></td></tr><tr key=0-2><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> userId</span></td><td key=1><span>number</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">用户id</span></td><td key=5></td></tr><tr key=0-3><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> mobileNumber</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">手机号码</span></td><td key=5></td></tr><tr key=0-4><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> email</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">用户邮箱(openId,userId,mobileNumber,email)四选一必填</span></td><td key=5></td></tr><tr key=0-5><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> pageSize</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">每页数量(默认，20，最大1000，可以等于1000)</span></td><td key=5></td></tr><tr key=0-6><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> pageNumber</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">页数（默认1，第一页）</span></td><td key=5></td></tr>
+               </tbody>
+              </table>
+<h3 id="-86">返回数据</h3>
+<table>
+  <thead class="ant-table-thead">
+    <tr>
+      <th key=name>名称</th><th key=type>类型</th><th key=required>是否必须</th><th key=default>默认值</th><th key=desc>备注</th><th key=sub>其他信息</th>
+    </tr>
+  </thead><tbody className="ant-table-tbody"><tr key=0-0><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> code</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr><tr key=0-1><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> msg</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr><tr key=0-2><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> message</span></td><td key=1><span>null</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr><tr key=0-3><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> data</span></td><td key=1><span>object []</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5><p key=3><span style="font-weight: '700'">item 类型: </span><span>object</span></p></td></tr><tr key=0-3-0><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> symbol</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">充值币种</span></td><td key=5></td></tr><tr key=0-3-1><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> id</span></td><td key=1><span>number</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">充值id</span></td><td key=5></td></tr><tr key=0-3-2><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> uid</span></td><td key=1><span>number</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">充值用户id</span></td><td key=5></td></tr><tr key=0-3-3><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> createdAt</span></td><td key=1><span>number</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">充值创建时间</span></td><td key=5></td></tr><tr key=0-3-4><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> addressTo</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">充值地址</span></td><td key=5></td></tr><tr key=0-3-5><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> amount</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">充值金额</span></td><td key=5></td></tr><tr key=0-3-6><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> txid</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">txid</span></td><td key=5></td></tr><tr key=0-3-7><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> status</span></td><td key=1><span>number</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">充值状态 0 待确认，1 已完成 2 充值状态异常</span></td><td key=5></td></tr><tr key=0-3-8><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> depositType</span></td><td key=1><span>number</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">充值类型，0 外部充值 1 内部充值</span></td><td key=5></td></tr><tr key=0-3-9><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> statusDesc</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">充值状态描述</span></td><td key=5></td></tr><tr key=0-3-10><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> mobileNumber</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">用户手机号</span></td><td key=5></td></tr><tr key=0-3-11><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> email</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">邮箱</span></td><td key=5></td></tr><tr key=0-3-12><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> riskLevel</span></td><td key=1><span>number</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">0:No Risk Detected   1:Low Risk  2:Medium Risk  3:High Risk</span></td><td key=5></td></tr>
+               </tbody>
+              </table>
+<h2 id="u7528u6237u63d0u73b0u8bb0u5f550a3ca20id3du7528u6237u63d0u73b0u8bb0u5f553e203ca3e">用户提现记录
+<a id=用户提现记录> </a></h2>
+<p></p>
+<h3 id="-87">基本信息</h3>
+<p><strong>Path：</strong> /platformapi/chainup/open/user/withdrawRecord</p>
 <p><strong>Method：</strong> POST</p>
 <p><strong>接口描述：</strong></p>
 <h3 id="-88">请求参数</h3>
@@ -2003,14 +2024,16 @@ uid:5037287 --&gt; uid:4930639<br>
     <tr>
       <th key=name>名称</th><th key=type>类型</th><th key=required>是否必须</th><th key=default>默认值</th><th key=desc>备注</th><th key=sub>其他信息</th>
     </tr>
-  </thead><tbody className="ant-table-tbody"><tr key=0-0><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> code</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr><tr key=0-1><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> msg</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr><tr key=0-2><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> message</span></td><td key=1><span>null</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr><tr key=0-3><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> data</span></td><td key=1><span>object []</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5><p key=3><span style="font-weight: '700'">item 类型: </span><span>object</span></p></td></tr><tr key=0-3-0><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> symbol</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">充值币种</span></td><td key=5></td></tr><tr key=0-3-1><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> id</span></td><td key=1><span>number</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">充值id</span></td><td key=5></td></tr><tr key=0-3-2><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> uid</span></td><td key=1><span>number</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">充值用户id</span></td><td key=5></td></tr><tr key=0-3-3><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> createdAt</span></td><td key=1><span>number</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">充值创建时间</span></td><td key=5></td></tr><tr key=0-3-4><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> addressTo</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">充值地址</span></td><td key=5></td></tr><tr key=0-3-5><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> amount</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">充值金额</span></td><td key=5></td></tr><tr key=0-3-6><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> txid</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">txid</span></td><td key=5></td></tr><tr key=0-3-7><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> status</span></td><td key=1><span>number</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">充值状态 0 待确认，1 已完成 2 充值状态异常</span></td><td key=5></td></tr><tr key=0-3-8><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> depositType</span></td><td key=1><span>number</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">充值类型，0 外部充值 1 内部充值</span></td><td key=5></td></tr><tr key=0-3-9><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> statusDesc</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">充值状态描述</span></td><td key=5></td></tr><tr key=0-3-10><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> mobileNumber</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">用户手机号</span></td><td key=5></td></tr><tr key=0-3-11><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> email</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">邮箱</span></td><td key=5></td></tr><tr key=0-3-12><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> riskLevel</span></td><td key=1><span>number</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">0:No Risk Detected   1:Low Risk  2:Medium Risk  3:High Risk</span></td><td key=5></td></tr>
+  </thead><tbody className="ant-table-tbody"><tr key=0-0><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> code</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr><tr key=0-1><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> msg</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr><tr key=0-2><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> message</span></td><td key=1><span>null</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr><tr key=0-3><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> data</span></td><td key=1><span>object []</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5><p key=3><span style="font-weight: '700'">item 类型: </span><span>object</span></p></td></tr><tr key=0-3-0><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> symbol</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">提现币种</span></td><td key=5></td></tr><tr key=0-3-1><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> id</span></td><td key=1><span>number</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">提现id</span></td><td key=5></td></tr><tr key=0-3-2><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> uid</span></td><td key=1><span>number</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">用户id</span></td><td key=5></td></tr><tr key=0-3-3><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> createdAt</span></td><td key=1><span>number</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">提现创建时间</span></td><td key=5></td></tr><tr key=0-3-4><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> addressTo</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">提现地址</span></td><td key=5></td></tr><tr key=0-3-5><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> amount</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">提现金额</span></td><td key=5></td></tr><tr key=0-3-6><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> txid</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">txid</span></td><td key=5></td></tr><tr key=0-3-7><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> status</span></td><td key=1><span>number</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">提现状态   0未审核 1 审核通过 2审核拒绝 3支付中，已打币 4支付失败  5已完成  6已撤销</span></td><td key=5></td></tr><tr key=0-3-8><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> statusDesc</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">提现状态描述</span></td><td key=5></td></tr><tr key=0-3-9><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> fee</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">手续费</span></td><td key=5></td></tr><tr key=0-3-10><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> mobileNumber</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">手机号</span></td><td key=5></td></tr><tr key=0-3-11><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> email</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">邮箱</span></td><td key=5></td></tr><tr key=0-3-12><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> warningLevel</span></td><td key=1><span>number</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">风控警告等级</span></td><td key=5></td></tr><tr key=0-3-13><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> warningLevelDesc</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">警告等级提示</span></td><td key=5></td></tr><tr key=0-3-14><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> warningTip</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">报警内容</span></td><td key=5></td></tr><tr key=0-3-15><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> warningTiplevel</span></td><td key=1><span>number</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">商户后台报警等级展示</span></td><td key=5></td></tr>
                </tbody>
               </table>
-<h2 id="u7528u6237u63d0u73b0u8bb0u5f550a3ca20id3du7528u6237u63d0u73b0u8bb0u5f553e203ca3e">用户提现记录
-<a id=用户提现记录> </a></h2>
+<h1 id="u7528u6237u4ea4u6613u67e5u8be2u63a5u53e3">用户交易查询接口</h1>
+<p></p>
+<h2 id="u573au5916u4ea4u6613u8bb0u5f55u67e5u8be2u63a5u53e30a3ca20id3du573au5916u4ea4u6613u8bb0u5f55u67e5u8be2u63a5u53e33e203ca3e">场外交易记录查询接口
+<a id=场外交易记录查询接口> </a></h2>
 <p></p>
 <h3 id="-90">基本信息</h3>
-<p><strong>Path：</strong> /platformapi/chainup/open/user/withdrawRecord</p>
+<p><strong>Path：</strong> /platformapi/chainup/open/user/otcTradeRecord</p>
 <p><strong>Method：</strong> POST</p>
 <p><strong>接口描述：</strong></p>
 <h3 id="-91">请求参数</h3>
@@ -2045,55 +2068,6 @@ uid:5037287 --&gt; uid:4930639<br>
                </tbody>
               </table>
 <h3 id="-92">返回数据</h3>
-<table>
-  <thead class="ant-table-thead">
-    <tr>
-      <th key=name>名称</th><th key=type>类型</th><th key=required>是否必须</th><th key=default>默认值</th><th key=desc>备注</th><th key=sub>其他信息</th>
-    </tr>
-  </thead><tbody className="ant-table-tbody"><tr key=0-0><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> code</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr><tr key=0-1><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> msg</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr><tr key=0-2><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> message</span></td><td key=1><span>null</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5></td></tr><tr key=0-3><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> data</span></td><td key=1><span>object []</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap"></span></td><td key=5><p key=3><span style="font-weight: '700'">item 类型: </span><span>object</span></p></td></tr><tr key=0-3-0><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> symbol</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">提现币种</span></td><td key=5></td></tr><tr key=0-3-1><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> id</span></td><td key=1><span>number</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">提现id</span></td><td key=5></td></tr><tr key=0-3-2><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> uid</span></td><td key=1><span>number</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">用户id</span></td><td key=5></td></tr><tr key=0-3-3><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> createdAt</span></td><td key=1><span>number</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">提现创建时间</span></td><td key=5></td></tr><tr key=0-3-4><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> addressTo</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">提现地址</span></td><td key=5></td></tr><tr key=0-3-5><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> amount</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">提现金额</span></td><td key=5></td></tr><tr key=0-3-6><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> txid</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">txid</span></td><td key=5></td></tr><tr key=0-3-7><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> status</span></td><td key=1><span>number</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">提现状态   0未审核 1 审核通过 2审核拒绝 3支付中，已打币 4支付失败  5已完成  6已撤销</span></td><td key=5></td></tr><tr key=0-3-8><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> statusDesc</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">提现状态描述</span></td><td key=5></td></tr><tr key=0-3-9><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> fee</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">手续费</span></td><td key=5></td></tr><tr key=0-3-10><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> mobileNumber</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">手机号</span></td><td key=5></td></tr><tr key=0-3-11><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> email</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">邮箱</span></td><td key=5></td></tr><tr key=0-3-12><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> warningLevel</span></td><td key=1><span>number</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">风控警告等级</span></td><td key=5></td></tr><tr key=0-3-13><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> warningLevelDesc</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">警告等级提示</span></td><td key=5></td></tr><tr key=0-3-14><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> warningTip</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">报警内容</span></td><td key=5></td></tr><tr key=0-3-15><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> warningTiplevel</span></td><td key=1><span>number</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">商户后台报警等级展示</span></td><td key=5></td></tr>
-               </tbody>
-              </table>
-<h1 id="u7528u6237u4ea4u6613u67e5u8be2u63a5u53e3">用户交易查询接口</h1>
-<p></p>
-<h2 id="u573au5916u4ea4u6613u8bb0u5f55u67e5u8be2u63a5u53e30a3ca20id3du573au5916u4ea4u6613u8bb0u5f55u67e5u8be2u63a5u53e33e203ca3e">场外交易记录查询接口
-<a id=场外交易记录查询接口> </a></h2>
-<p></p>
-<h3 id="-93">基本信息</h3>
-<p><strong>Path：</strong> /platformapi/chainup/open/user/otcTradeRecord</p>
-<p><strong>Method：</strong> POST</p>
-<p><strong>接口描述：</strong></p>
-<h3 id="-94">请求参数</h3>
-<p><strong>Headers</strong></p>
-<table>
-<thead>
-<tr>
-<th>参数名称</th>
-<th>参数值</th>
-<th>是否必须</th>
-<th>示例</th>
-<th>备注</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Content-Type</td>
-<td>application/json</td>
-<td>是</td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Body</strong></p>
-<table>
-  <thead class="ant-table-thead">
-    <tr>
-      <th key=name>名称</th><th key=type>类型</th><th key=required>是否必须</th><th key=default>默认值</th><th key=desc>备注</th><th key=sub>其他信息</th>
-    </tr>
-  </thead><tbody className="ant-table-tbody"><tr key=0-0><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> appKey</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">appkey</span></td><td key=5></td></tr><tr key=0-1><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> openId</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">openId</span></td><td key=5></td></tr><tr key=0-2><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> userId</span></td><td key=1><span>number</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">用户id</span></td><td key=5></td></tr><tr key=0-3><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> mobileNumber</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">手机号码</span></td><td key=5></td></tr><tr key=0-4><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> email</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">用户邮箱(openId,userId,mobileNumber,email)四选一必填</span></td><td key=5></td></tr><tr key=0-5><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> pageSize</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">每页数量(默认，20，最大1000，可以等于1000)</span></td><td key=5></td></tr><tr key=0-6><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> pageNumber</span></td><td key=1><span>string</span></td><td key=2>非必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">页数（默认1，第一页）</span></td><td key=5></td></tr>
-               </tbody>
-              </table>
-<h3 id="-95">返回数据</h3>
 <table>
   <thead class="ant-table-thead">
     <tr>
