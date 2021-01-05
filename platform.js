@@ -1,4 +1,4 @@
-[
+window.platform =[
   {
     "index": 0,
     "name": "新手指引",
