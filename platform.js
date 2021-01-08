@@ -8,7 +8,7 @@ window.platform =[
     "list": [
     ]
   },
-  {
+  { 
     "index": 2,
     "name": "APP OAuth授权",
     "desc": null,
@@ -53,7 +53,7 @@ window.platform =[
         "method": "GET",
         "catid": 1125,
         "title": "App授权登录页",
-        "path": "/platform/authorized.html?appKey=xxx&redirectUrl=xxx&state=xxx&lan=en_US",
+        "path": "/platform/authorized.html",
         "project_id": 146,
         "req_params": [],
         "res_body_type": "json",
@@ -135,7 +135,7 @@ window.platform =[
         "method": "GET",
         "catid": 1125,
         "title": "OAuth授权登录页(不需要实名)",
-        "path": "/platform/authorized_nokyc.html?appKey=xxx&redirectUrl=xxx&state=xxx&lan=en_US",
+        "path": "/platform/authorized_nokyc.html",
         "project_id": 146,
         "req_params": [],
         "res_body_type": "json",
